@@ -1,0 +1,451 @@
+claim_id,employee_id,pay_period,expense_category,submitted_amount,approved_amount,is_tax_exempt
+CLM-0001-01,EMP-0001,2026-01,Telecom & Data Connectivity,70.3,68.96,1
+CLM-0001-02,EMP-0001,2026-02,Client Meals & Onsite Hospitality,132.4,128.58,1
+CLM-0001-04,EMP-0001,2026-04,Client Meals & Onsite Hospitality,117.83,117.14,1
+CLM-0001-05,EMP-0001,2026-05,Professional Certification & Training,509.65,497.36,1
+CLM-0002-05,EMP-0002,2026-05,Client Meals & Onsite Hospitality,197.34,177.42,1
+CLM-0003-01,EMP-0003,2026-01,Client Meals & Onsite Hospitality,258.29,241.14,1
+CLM-0003-03,EMP-0003,2026-03,Client Travel & Lodging,322.19,318.04,1
+CLM-0004-03,EMP-0004,2026-03,Client Travel & Lodging,692.58,678.69,1
+CLM-0004-04,EMP-0004,2026-04,Client Travel & Lodging,467.16,462.2,1
+CLM-0004-06,EMP-0004,2026-06,Client Travel & Lodging,777.1,769.87,1
+CLM-0005-01,EMP-0005,2026-01,Telecom & Data Connectivity,99.38,98.89,1
+CLM-0005-02,EMP-0005,2026-02,Home Office & Ergonomic Equipment,151.85,148.97,1
+CLM-0005-04,EMP-0005,2026-04,Client Meals & Onsite Hospitality,111.29,105.56,1
+CLM-0005-06,EMP-0005,2026-06,Home Office & Ergonomic Equipment,154.26,151.09,1
+CLM-0006-01,EMP-0006,2026-01,Professional Certification & Training,587.02,575.93,1
+CLM-0006-02,EMP-0006,2026-02,Client Meals & Onsite Hospitality,190.94,181.51,1
+CLM-0006-03,EMP-0006,2026-03,Telecom & Data Connectivity,59.53,58.77,1
+CLM-0006-05,EMP-0006,2026-05,Telecom & Data Connectivity,129.75,128.74,1
+CLM-0007-01,EMP-0007,2026-01,Home Office & Ergonomic Equipment,330.75,319.19,1
+CLM-0007-03,EMP-0007,2026-03,Telecom & Data Connectivity,62.83,62.65,1
+CLM-0007-05,EMP-0007,2026-05,Professional Certification & Training,553.83,541.62,1
+CLM-0007-06,EMP-0007,2026-06,Telecom & Data Connectivity,54.62,54.46,1
+CLM-0008-01,EMP-0008,2026-01,Professional Certification & Training,276.42,275.5,1
+CLM-0009-01,EMP-0009,2026-01,Professional Certification & Training,234.11,230.96,1
+CLM-0009-02,EMP-0009,2026-02,Telecom & Data Connectivity,138.94,137.33,1
+CLM-0009-04,EMP-0009,2026-04,Telecom & Data Connectivity,76.88,75.35,1
+CLM-0010-01,EMP-0010,2026-01,Professional Certification & Training,264.69,260.58,1
+CLM-0010-02,EMP-0010,2026-02,Professional Certification & Training,271.98,268.1,1
+CLM-0010-03,EMP-0010,2026-03,Telecom & Data Connectivity,81.9,80.33,1
+CLM-0010-05,EMP-0010,2026-05,Client Travel & Lodging,566.41,546.55,1
+CLM-0010-06,EMP-0010,2026-06,Client Travel & Lodging,760.43,721.68,1
+CLM-0011-01,EMP-0011,2026-01,Client Travel & Lodging,877.11,856.04,1
+CLM-0011-03,EMP-0011,2026-03,Telecom & Data Connectivity,52.48,51.61,1
+CLM-0011-05,EMP-0011,2026-05,Client Meals & Onsite Hospitality,89.42,85.26,1
+CLM-0012-01,EMP-0012,2026-01,Client Meals & Onsite Hospitality,93.48,82.43,1
+CLM-0012-03,EMP-0012,2026-03,Home Office & Ergonomic Equipment,157.16,154.54,1
+CLM-0012-05,EMP-0012,2026-05,Telecom & Data Connectivity,121.69,120.21,1
+CLM-0012-06,EMP-0012,2026-06,Client Meals & Onsite Hospitality,125.57,121.04,1
+CLM-0013-02,EMP-0013,2026-02,Client Travel & Lodging,542.04,513.19,1
+CLM-0013-04,EMP-0013,2026-04,Home Office & Ergonomic Equipment,180.18,165.72,1
+CLM-0014-02,EMP-0014,2026-02,Client Travel & Lodging,420.23,400.63,1
+CLM-0014-06,EMP-0014,2026-06,Telecom & Data Connectivity,76.98,75.46,1
+CLM-0015-01,EMP-0015,2026-01,Client Meals & Onsite Hospitality,220.38,204.51,1
+CLM-0016-03,EMP-0016,2026-03,Home Office & Ergonomic Equipment,228.02,211.82,1
+CLM-0016-04,EMP-0016,2026-04,Telecom & Data Connectivity,63.88,62.87,1
+CLM-0016-05,EMP-0016,2026-05,Home Office & Ergonomic Equipment,243.72,236.78,1
+CLM-0017-02,EMP-0017,2026-02,Home Office & Ergonomic Equipment,248.13,242.49,1
+CLM-0017-04,EMP-0017,2026-04,Client Meals & Onsite Hospitality,91.02,80.9,1
+CLM-0017-05,EMP-0017,2026-05,Telecom & Data Connectivity,139.69,137.03,1
+CLM-0018-01,EMP-0018,2026-01,Client Meals & Onsite Hospitality,120.47,114.21,1
+CLM-0018-02,EMP-0018,2026-02,Home Office & Ergonomic Equipment,341.51,335.43,1
+CLM-0018-05,EMP-0018,2026-05,Home Office & Ergonomic Equipment,234.06,232.55,1
+CLM-0019-02,EMP-0019,2026-02,Professional Certification & Training,368.71,364.55,1
+CLM-0019-03,EMP-0019,2026-03,Telecom & Data Connectivity,101.97,101.44,1
+CLM-0019-04,EMP-0019,2026-04,Telecom & Data Connectivity,85.7,84.54,1
+CLM-0020-02,EMP-0020,2026-02,Professional Certification & Training,210.15,204.2,1
+CLM-0020-03,EMP-0020,2026-03,Professional Certification & Training,385.06,383.29,1
+CLM-0020-05,EMP-0020,2026-05,Client Travel & Lodging,838.82,835.13,1
+CLM-0021-01,EMP-0021,2026-01,Home Office & Ergonomic Equipment,405.16,371.83,1
+CLM-0021-02,EMP-0021,2026-02,Telecom & Data Connectivity,123.71,123.33,1
+CLM-0021-03,EMP-0021,2026-03,Professional Certification & Training,195.96,192.5,1
+CLM-0021-04,EMP-0021,2026-04,Client Meals & Onsite Hospitality,298.71,281.39,1
+CLM-0021-06,EMP-0021,2026-06,Professional Certification & Training,173.23,171.5,1
+CLM-0022-01,EMP-0022,2026-01,Telecom & Data Connectivity,70.61,69.55,1
+CLM-0022-03,EMP-0022,2026-03,Home Office & Ergonomic Equipment,304.61,285.68,1
+CLM-0024-02,EMP-0024,2026-02,Home Office & Ergonomic Equipment,288.43,275.1,1
+CLM-0024-06,EMP-0024,2026-06,Professional Certification & Training,203.27,198.2,1
+CLM-0025-01,EMP-0025,2026-01,Client Meals & Onsite Hospitality,144.2,140.97,1
+CLM-0025-04,EMP-0025,2026-04,Client Meals & Onsite Hospitality,76.32,66.75,1
+CLM-0026-02,EMP-0026,2026-02,Telecom & Data Connectivity,51.93,51.61,1
+CLM-0026-03,EMP-0026,2026-03,Home Office & Ergonomic Equipment,127.4,124.49,1
+CLM-0026-04,EMP-0026,2026-04,Client Meals & Onsite Hospitality,271.35,243.55,1
+CLM-0026-05,EMP-0026,2026-05,Home Office & Ergonomic Equipment,129.57,129.51,1
+CLM-0027-01,EMP-0027,2026-01,Telecom & Data Connectivity,86.9,85.65,1
+CLM-0028-04,EMP-0028,2026-04,Client Travel & Lodging,818.76,799.08,1
+CLM-0028-05,EMP-0028,2026-05,Client Travel & Lodging,826.89,798.66,1
+CLM-0028-06,EMP-0028,2026-06,Home Office & Ergonomic Equipment,374.44,365.62,1
+CLM-0029-02,EMP-0029,2026-02,Professional Certification & Training,570.19,554.45,1
+CLM-0030-04,EMP-0030,2026-04,Client Travel & Lodging,675.64,640.93,1
+CLM-0030-05,EMP-0030,2026-05,Telecom & Data Connectivity,93.86,92.21,1
+CLM-0031-01,EMP-0031,2026-01,Telecom & Data Connectivity,112.95,110.8,1
+CLM-0031-04,EMP-0031,2026-04,Client Meals & Onsite Hospitality,71.15,65.2,1
+CLM-0032-01,EMP-0032,2026-01,Client Meals & Onsite Hospitality,105.32,96.14,1
+CLM-0032-03,EMP-0032,2026-03,Client Travel & Lodging,682.45,659.94,1
+CLM-0033-01,EMP-0033,2026-01,Client Meals & Onsite Hospitality,93.3,84.49,1
+CLM-0033-02,EMP-0033,2026-02,Professional Certification & Training,383.48,372.45,1
+CLM-0033-03,EMP-0033,2026-03,Client Meals & Onsite Hospitality,304.57,277.07,1
+CLM-0033-04,EMP-0033,2026-04,Home Office & Ergonomic Equipment,304.54,297.02,1
+CLM-0033-05,EMP-0033,2026-05,Telecom & Data Connectivity,141.84,139.54,1
+CLM-0033-06,EMP-0033,2026-06,Client Travel & Lodging,802.63,756.35,1
+CLM-0034-04,EMP-0034,2026-04,Telecom & Data Connectivity,74.02,73.26,1
+CLM-0034-05,EMP-0034,2026-05,Home Office & Ergonomic Equipment,358.41,326.96,1
+CLM-0034-06,EMP-0034,2026-06,Client Meals & Onsite Hospitality,127.41,116.3,1
+CLM-0035-03,EMP-0035,2026-03,Home Office & Ergonomic Equipment,259.48,259.46,1
+CLM-0035-05,EMP-0035,2026-05,Home Office & Ergonomic Equipment,325.42,306.37,1
+CLM-0036-01,EMP-0036,2026-01,Telecom & Data Connectivity,107.44,105.6,1
+CLM-0036-02,EMP-0036,2026-02,Client Travel & Lodging,810.99,801.32,1
+CLM-0036-04,EMP-0036,2026-04,Client Travel & Lodging,403.26,384.23,1
+CLM-0037-04,EMP-0037,2026-04,Telecom & Data Connectivity,113.84,113.74,1
+CLM-0037-05,EMP-0037,2026-05,Home Office & Ergonomic Equipment,242.18,223.56,1
+CLM-0038-02,EMP-0038,2026-02,Home Office & Ergonomic Equipment,188.44,182.65,1
+CLM-0038-05,EMP-0038,2026-05,Client Meals & Onsite Hospitality,119.74,114.5,1
+CLM-0039-01,EMP-0039,2026-01,Client Travel & Lodging,284.29,277.5,1
+CLM-0039-03,EMP-0039,2026-03,Client Travel & Lodging,835.25,793.05,1
+CLM-0039-04,EMP-0039,2026-04,Telecom & Data Connectivity,130.85,129.35,1
+CLM-0040-01,EMP-0040,2026-01,Telecom & Data Connectivity,83.63,82.38,1
+CLM-0040-02,EMP-0040,2026-02,Telecom & Data Connectivity,91.23,91.11,1
+CLM-0041-03,EMP-0041,2026-03,Home Office & Ergonomic Equipment,408.1,397.62,1
+CLM-0041-04,EMP-0041,2026-04,Telecom & Data Connectivity,69.85,68.91,1
+CLM-0041-05,EMP-0041,2026-05,Professional Certification & Training,664.8,642.02,1
+CLM-0041-06,EMP-0041,2026-06,Home Office & Ergonomic Equipment,399.77,380.03,1
+CLM-0042-01,EMP-0042,2026-01,Professional Certification & Training,645.81,644.4,1
+CLM-0042-02,EMP-0042,2026-02,Client Meals & Onsite Hospitality,257.49,242.07,1
+CLM-0042-06,EMP-0042,2026-06,Telecom & Data Connectivity,133.99,131.31,1
+CLM-0043-01,EMP-0043,2026-01,Home Office & Ergonomic Equipment,179.92,166.78,1
+CLM-0043-03,EMP-0043,2026-03,Professional Certification & Training,258.29,250.57,1
+CLM-0043-04,EMP-0043,2026-04,Client Meals & Onsite Hospitality,217.07,193.79,1
+CLM-0043-05,EMP-0043,2026-05,Professional Certification & Training,611.96,608.12,1
+CLM-0044-03,EMP-0044,2026-03,Professional Certification & Training,329.61,326.73,1
+CLM-0044-04,EMP-0044,2026-04,Professional Certification & Training,652.31,632.18,1
+CLM-0044-05,EMP-0044,2026-05,Telecom & Data Connectivity,64.85,64.17,1
+CLM-0044-06,EMP-0044,2026-06,Home Office & Ergonomic Equipment,320.04,296.41,1
+CLM-0045-01,EMP-0045,2026-01,Telecom & Data Connectivity,76.48,75.03,1
+CLM-0045-02,EMP-0045,2026-02,Telecom & Data Connectivity,112.6,112.22,1
+CLM-0046-01,EMP-0046,2026-01,Home Office & Ergonomic Equipment,395.66,360.52,1
+CLM-0046-03,EMP-0046,2026-03,Telecom & Data Connectivity,70.08,69.95,1
+CLM-0046-05,EMP-0046,2026-05,Client Travel & Lodging,875.83,829.12,1
+CLM-0047-03,EMP-0047,2026-03,Client Travel & Lodging,499.92,490.09,1
+CLM-0047-06,EMP-0047,2026-06,Professional Certification & Training,391.96,389.34,1
+CLM-0048-02,EMP-0048,2026-02,Client Meals & Onsite Hospitality,211.21,195.5,1
+CLM-0048-03,EMP-0048,2026-03,Professional Certification & Training,617.0,606.98,1
+CLM-0048-04,EMP-0048,2026-04,Home Office & Ergonomic Equipment,234.99,228.99,1
+CLM-0049-03,EMP-0049,2026-03,Client Travel & Lodging,307.02,295.68,1
+CLM-0049-04,EMP-0049,2026-04,Telecom & Data Connectivity,127.08,124.94,1
+CLM-0049-05,EMP-0049,2026-05,Telecom & Data Connectivity,105.28,103.45,1
+CLM-0050-01,EMP-0050,2026-01,Professional Certification & Training,663.41,656.01,1
+CLM-0050-05,EMP-0050,2026-05,Client Travel & Lodging,269.29,261.27,1
+CLM-0050-06,EMP-0050,2026-06,Client Meals & Onsite Hospitality,277.4,253.1,1
+CLM-0051-01,EMP-0051,2026-01,Client Travel & Lodging,346.26,332.51,1
+CLM-0051-03,EMP-0051,2026-03,Telecom & Data Connectivity,118.62,117.06,1
+CLM-0051-05,EMP-0051,2026-05,Client Travel & Lodging,886.71,858.93,1
+CLM-0052-01,EMP-0052,2026-01,Telecom & Data Connectivity,90.26,88.78,1
+CLM-0052-03,EMP-0052,2026-03,Professional Certification & Training,475.02,469.24,1
+CLM-0052-06,EMP-0052,2026-06,Professional Certification & Training,200.21,193.86,1
+CLM-0053-01,EMP-0053,2026-01,Client Travel & Lodging,370.47,364.53,1
+CLM-0053-02,EMP-0053,2026-02,Client Meals & Onsite Hospitality,292.68,266.95,1
+CLM-0053-04,EMP-0053,2026-04,Telecom & Data Connectivity,54.02,53.89,1
+CLM-0053-05,EMP-0053,2026-05,Client Travel & Lodging,734.95,701.74,1
+CLM-0054-01,EMP-0054,2026-01,Client Meals & Onsite Hospitality,179.3,156.92,1
+CLM-0054-02,EMP-0054,2026-02,Telecom & Data Connectivity,52.19,51.73,1
+CLM-0054-04,EMP-0054,2026-04,Professional Certification & Training,227.89,224.9,1
+CLM-0054-06,EMP-0054,2026-06,Client Meals & Onsite Hospitality,117.02,115.1,1
+CLM-0056-01,EMP-0056,2026-01,Professional Certification & Training,174.07,169.64,1
+CLM-0056-02,EMP-0056,2026-02,Client Meals & Onsite Hospitality,190.06,183.32,1
+CLM-0057-02,EMP-0057,2026-02,Professional Certification & Training,362.59,352.18,1
+CLM-0057-04,EMP-0057,2026-04,Client Meals & Onsite Hospitality,284.5,248.46,1
+CLM-0058-01,EMP-0058,2026-01,Home Office & Ergonomic Equipment,332.15,306.82,1
+CLM-0058-02,EMP-0058,2026-02,Home Office & Ergonomic Equipment,411.55,380.86,1
+CLM-0058-04,EMP-0058,2026-04,Professional Certification & Training,302.55,294.18,1
+CLM-0059-03,EMP-0059,2026-03,Client Meals & Onsite Hospitality,260.64,247.95,1
+CLM-0059-04,EMP-0059,2026-04,Client Travel & Lodging,400.79,382.42,1
+CLM-0059-05,EMP-0059,2026-05,Client Meals & Onsite Hospitality,278.27,249.97,1
+CLM-0060-03,EMP-0060,2026-03,Telecom & Data Connectivity,93.36,91.83,1
+CLM-0061-04,EMP-0061,2026-04,Home Office & Ergonomic Equipment,175.84,173.26,1
+CLM-0062-04,EMP-0062,2026-04,Telecom & Data Connectivity,133.78,133.31,1
+CLM-0062-05,EMP-0062,2026-05,Client Meals & Onsite Hospitality,134.25,118.19,1
+CLM-0062-06,EMP-0062,2026-06,Client Travel & Lodging,580.85,549.76,1
+CLM-0063-05,EMP-0063,2026-05,Home Office & Ergonomic Equipment,311.69,296.77,1
+CLM-0063-06,EMP-0063,2026-06,Home Office & Ergonomic Equipment,231.34,216.19,1
+CLM-0064-03,EMP-0064,2026-03,Telecom & Data Connectivity,122.07,120.46,1
+CLM-0064-05,EMP-0064,2026-05,Client Travel & Lodging,696.62,695.51,1
+CLM-0065-01,EMP-0065,2026-01,Client Meals & Onsite Hospitality,73.18,66.66,1
+CLM-0065-02,EMP-0065,2026-02,Home Office & Ergonomic Equipment,400.38,370.59,1
+CLM-0065-03,EMP-0065,2026-03,Telecom & Data Connectivity,97.17,95.95,1
+CLM-0065-05,EMP-0065,2026-05,Telecom & Data Connectivity,128.87,126.89,1
+CLM-0066-05,EMP-0066,2026-05,Professional Certification & Training,616.35,616.24,1
+CLM-0067-02,EMP-0067,2026-02,Professional Certification & Training,597.71,578.07,1
+CLM-0068-02,EMP-0068,2026-02,Client Meals & Onsite Hospitality,119.66,114.88,1
+CLM-0068-03,EMP-0068,2026-03,Professional Certification & Training,451.42,449.19,1
+CLM-0068-04,EMP-0068,2026-04,Home Office & Ergonomic Equipment,371.2,358.05,1
+CLM-0068-05,EMP-0068,2026-05,Client Travel & Lodging,754.57,728.87,1
+CLM-0068-06,EMP-0068,2026-06,Professional Certification & Training,182.62,175.84,1
+CLM-0069-02,EMP-0069,2026-02,Client Travel & Lodging,362.68,354.53,1
+CLM-0069-03,EMP-0069,2026-03,Home Office & Ergonomic Equipment,271.92,260.47,1
+CLM-0069-04,EMP-0069,2026-04,Home Office & Ergonomic Equipment,180.99,171.4,1
+CLM-0069-05,EMP-0069,2026-05,Client Meals & Onsite Hospitality,214.54,205.33,1
+CLM-0070-01,EMP-0070,2026-01,Home Office & Ergonomic Equipment,372.75,369.13,1
+CLM-0070-02,EMP-0070,2026-02,Client Travel & Lodging,918.07,893.07,1
+CLM-0070-05,EMP-0070,2026-05,Home Office & Ergonomic Equipment,305.01,286.74,1
+CLM-0070-06,EMP-0070,2026-06,Professional Certification & Training,366.85,362.59,1
+CLM-0071-02,EMP-0071,2026-02,Professional Certification & Training,548.4,542.38,1
+CLM-0071-06,EMP-0071,2026-06,Client Meals & Onsite Hospitality,147.22,133.12,1
+CLM-0072-06,EMP-0072,2026-06,Client Travel & Lodging,428.72,420.46,1
+CLM-0073-02,EMP-0073,2026-02,Home Office & Ergonomic Equipment,210.28,209.34,1
+CLM-0073-04,EMP-0073,2026-04,Telecom & Data Connectivity,75.95,75.77,1
+CLM-0073-05,EMP-0073,2026-05,Telecom & Data Connectivity,116.5,116.08,1
+CLM-0073-06,EMP-0073,2026-06,Telecom & Data Connectivity,90.48,90.27,1
+CLM-0074-03,EMP-0074,2026-03,Telecom & Data Connectivity,55.99,54.93,1
+CLM-0075-02,EMP-0075,2026-02,Client Meals & Onsite Hospitality,70.23,61.39,1
+CLM-0075-04,EMP-0075,2026-04,Client Meals & Onsite Hospitality,287.52,272.08,1
+CLM-0075-06,EMP-0075,2026-06,Telecom & Data Connectivity,57.52,57.34,1
+CLM-0076-01,EMP-0076,2026-01,Home Office & Ergonomic Equipment,403.44,371.97,1
+CLM-0076-02,EMP-0076,2026-02,Telecom & Data Connectivity,102.11,101.93,1
+CLM-0076-03,EMP-0076,2026-03,Client Travel & Lodging,512.83,502.05,1
+CLM-0077-01,EMP-0077,2026-01,Telecom & Data Connectivity,50.66,49.8,1
+CLM-0078-01,EMP-0078,2026-01,Professional Certification & Training,433.26,431.91,1
+CLM-0078-02,EMP-0078,2026-02,Professional Certification & Training,377.69,367.17,1
+CLM-0079-02,EMP-0079,2026-02,Client Travel & Lodging,253.16,245.0,1
+CLM-0079-03,EMP-0079,2026-03,Client Meals & Onsite Hospitality,293.68,288.07,1
+CLM-0079-04,EMP-0079,2026-04,Client Meals & Onsite Hospitality,76.02,66.57,1
+CLM-0080-01,EMP-0080,2026-01,Professional Certification & Training,567.66,546.67,1
+CLM-0080-04,EMP-0080,2026-04,Client Travel & Lodging,458.36,439.82,1
+CLM-0080-06,EMP-0080,2026-06,Client Travel & Lodging,483.99,460.51,1
+CLM-0081-04,EMP-0081,2026-04,Client Meals & Onsite Hospitality,120.2,111.7,1
+CLM-0082-02,EMP-0082,2026-02,Professional Certification & Training,389.71,374.44,1
+CLM-0082-03,EMP-0082,2026-03,Professional Certification & Training,512.26,497.53,1
+CLM-0082-04,EMP-0082,2026-04,Telecom & Data Connectivity,80.14,78.99,1
+CLM-0083-03,EMP-0083,2026-03,Telecom & Data Connectivity,122.76,121.54,1
+CLM-0083-04,EMP-0083,2026-04,Telecom & Data Connectivity,141.54,140.81,1
+CLM-0084-01,EMP-0084,2026-01,Telecom & Data Connectivity,95.72,94.44,1
+CLM-0084-02,EMP-0084,2026-02,Client Travel & Lodging,413.75,394.08,1
+CLM-0085-01,EMP-0085,2026-01,Client Meals & Onsite Hospitality,129.8,127.43,1
+CLM-0085-03,EMP-0085,2026-03,Client Travel & Lodging,444.73,423.39,1
+CLM-0085-05,EMP-0085,2026-05,Client Meals & Onsite Hospitality,260.86,232.81,1
+CLM-0085-06,EMP-0085,2026-06,Professional Certification & Training,500.7,490.4,1
+CLM-0086-03,EMP-0086,2026-03,Home Office & Ergonomic Equipment,400.45,366.0,1
+CLM-0087-01,EMP-0087,2026-01,Telecom & Data Connectivity,87.05,86.46,1
+CLM-0087-03,EMP-0087,2026-03,Telecom & Data Connectivity,143.25,140.95,1
+CLM-0087-04,EMP-0087,2026-04,Home Office & Ergonomic Equipment,378.37,369.1,1
+CLM-0087-06,EMP-0087,2026-06,Professional Certification & Training,595.45,574.89,1
+CLM-0088-01,EMP-0088,2026-01,Client Travel & Lodging,541.9,525.48,1
+CLM-0088-02,EMP-0088,2026-02,Professional Certification & Training,623.46,616.23,1
+CLM-0088-03,EMP-0088,2026-03,Home Office & Ergonomic Equipment,260.31,240.12,1
+CLM-0088-04,EMP-0088,2026-04,Client Travel & Lodging,820.92,789.49,1
+CLM-0089-02,EMP-0089,2026-02,Client Travel & Lodging,523.13,516.81,1
+CLM-0089-06,EMP-0089,2026-06,Client Meals & Onsite Hospitality,258.57,231.75,1
+CLM-0090-04,EMP-0090,2026-04,Professional Certification & Training,511.0,493.32,1
+CLM-0091-04,EMP-0091,2026-04,Professional Certification & Training,275.47,269.7,1
+CLM-0092-02,EMP-0092,2026-02,Client Meals & Onsite Hospitality,143.34,139.27,1
+CLM-0092-05,EMP-0092,2026-05,Home Office & Ergonomic Equipment,173.44,170.94,1
+CLM-0092-06,EMP-0092,2026-06,Home Office & Ergonomic Equipment,378.91,355.46,1
+CLM-0093-04,EMP-0093,2026-04,Professional Certification & Training,328.4,327.21,1
+CLM-0094-05,EMP-0094,2026-05,Client Meals & Onsite Hospitality,128.07,111.53,1
+CLM-0095-01,EMP-0095,2026-01,Client Travel & Lodging,793.63,770.77,1
+CLM-0095-02,EMP-0095,2026-02,Professional Certification & Training,340.98,328.47,1
+CLM-0096-03,EMP-0096,2026-03,Home Office & Ergonomic Equipment,144.74,139.04,1
+CLM-0096-05,EMP-0096,2026-05,Home Office & Ergonomic Equipment,377.61,371.23,1
+CLM-0096-06,EMP-0096,2026-06,Professional Certification & Training,314.8,309.66,1
+CLM-0097-01,EMP-0097,2026-01,Client Travel & Lodging,364.11,356.48,1
+CLM-0097-04,EMP-0097,2026-04,Telecom & Data Connectivity,90.0,89.64,1
+CLM-0097-05,EMP-0097,2026-05,Professional Certification & Training,452.56,437.57,1
+CLM-0098-01,EMP-0098,2026-01,Client Travel & Lodging,908.73,861.67,1
+CLM-0098-04,EMP-0098,2026-04,Client Travel & Lodging,497.87,481.43,1
+CLM-0098-05,EMP-0098,2026-05,Professional Certification & Training,521.86,517.13,1
+CLM-0098-06,EMP-0098,2026-06,Professional Certification & Training,347.33,333.68,1
+CLM-0099-03,EMP-0099,2026-03,Home Office & Ergonomic Equipment,244.17,240.84,1
+CLM-0099-05,EMP-0099,2026-05,Client Meals & Onsite Hospitality,132.7,130.52,1
+CLM-0099-06,EMP-0099,2026-06,Client Travel & Lodging,615.24,583.69,1
+CLM-0100-01,EMP-0100,2026-01,Professional Certification & Training,386.21,370.84,1
+CLM-0100-02,EMP-0100,2026-02,Client Travel & Lodging,751.59,723.67,1
+CLM-0100-04,EMP-0100,2026-04,Client Travel & Lodging,461.85,441.77,1
+CLM-0101-01,EMP-0101,2026-01,Client Travel & Lodging,711.96,672.97,1
+CLM-0102-02,EMP-0102,2026-02,Professional Certification & Training,348.49,339.06,1
+CLM-0102-03,EMP-0102,2026-03,Telecom & Data Connectivity,83.12,81.83,1
+CLM-0102-04,EMP-0102,2026-04,Client Meals & Onsite Hospitality,65.57,62.79,1
+CLM-0102-06,EMP-0102,2026-06,Home Office & Ergonomic Equipment,352.36,324.25,1
+CLM-0103-01,EMP-0103,2026-01,Client Travel & Lodging,480.7,478.63,1
+CLM-0103-03,EMP-0103,2026-03,Telecom & Data Connectivity,130.27,129.9,1
+CLM-0103-04,EMP-0103,2026-04,Client Travel & Lodging,560.97,549.87,1
+CLM-0103-05,EMP-0103,2026-05,Client Meals & Onsite Hospitality,168.2,163.88,1
+CLM-0104-03,EMP-0104,2026-03,Home Office & Ergonomic Equipment,271.24,262.83,1
+CLM-0104-06,EMP-0104,2026-06,Client Travel & Lodging,219.99,207.0,1
+CLM-0105-06,EMP-0105,2026-06,Telecom & Data Connectivity,94.01,93.04,1
+CLM-0106-02,EMP-0106,2026-02,Client Travel & Lodging,648.51,639.01,1
+CLM-0106-03,EMP-0106,2026-03,Client Travel & Lodging,340.97,327.34,1
+CLM-0106-05,EMP-0106,2026-05,Client Meals & Onsite Hospitality,111.5,98.1,1
+CLM-0106-06,EMP-0106,2026-06,Home Office & Ergonomic Equipment,174.97,172.17,1
+CLM-0107-02,EMP-0107,2026-02,Client Travel & Lodging,365.88,357.7,1
+CLM-0107-06,EMP-0107,2026-06,Telecom & Data Connectivity,129.71,128.9,1
+CLM-0108-03,EMP-0108,2026-03,Professional Certification & Training,226.76,221.96,1
+CLM-0109-01,EMP-0109,2026-01,Telecom & Data Connectivity,64.03,63.25,1
+CLM-0109-04,EMP-0109,2026-04,Client Travel & Lodging,753.61,747.92,1
+CLM-0109-05,EMP-0109,2026-05,Client Travel & Lodging,473.17,451.13,1
+CLM-0110-05,EMP-0110,2026-05,Professional Certification & Training,643.27,642.9,1
+CLM-0111-01,EMP-0111,2026-01,Client Meals & Onsite Hospitality,189.59,172.43,1
+CLM-0111-04,EMP-0111,2026-04,Telecom & Data Connectivity,78.3,77.28,1
+CLM-0111-05,EMP-0111,2026-05,Client Travel & Lodging,211.29,207.54,1
+CLM-0111-06,EMP-0111,2026-06,Telecom & Data Connectivity,57.99,57.92,1
+CLM-0112-01,EMP-0112,2026-01,Professional Certification & Training,523.47,515.88,1
+CLM-0112-02,EMP-0112,2026-02,Home Office & Ergonomic Equipment,396.13,395.79,1
+CLM-0112-04,EMP-0112,2026-04,Home Office & Ergonomic Equipment,199.33,186.43,1
+CLM-0113-03,EMP-0113,2026-03,Client Travel & Lodging,421.15,413.27,1
+CLM-0113-04,EMP-0113,2026-04,Home Office & Ergonomic Equipment,178.08,166.21,1
+CLM-0114-02,EMP-0114,2026-02,Client Meals & Onsite Hospitality,156.94,153.17,1
+CLM-0114-04,EMP-0114,2026-04,Client Travel & Lodging,371.86,355.56,1
+CLM-0115-01,EMP-0115,2026-01,Telecom & Data Connectivity,136.84,135.36,1
+CLM-0115-03,EMP-0115,2026-03,Professional Certification & Training,222.67,220.8,1
+CLM-0115-05,EMP-0115,2026-05,Telecom & Data Connectivity,50.36,50.06,1
+CLM-0116-06,EMP-0116,2026-06,Professional Certification & Training,480.07,476.56,1
+CLM-0117-03,EMP-0117,2026-03,Home Office & Ergonomic Equipment,195.01,184.13,1
+CLM-0117-04,EMP-0117,2026-04,Telecom & Data Connectivity,136.88,135.97,1
+CLM-0117-05,EMP-0117,2026-05,Client Meals & Onsite Hospitality,181.12,175.82,1
+CLM-0119-01,EMP-0119,2026-01,Client Meals & Onsite Hospitality,237.94,234.2,1
+CLM-0119-02,EMP-0119,2026-02,Home Office & Ergonomic Equipment,222.51,218.58,1
+CLM-0119-04,EMP-0119,2026-04,Client Meals & Onsite Hospitality,303.93,290.08,1
+CLM-0120-02,EMP-0120,2026-02,Home Office & Ergonomic Equipment,138.17,130.35,1
+CLM-0120-04,EMP-0120,2026-04,Client Travel & Lodging,200.29,195.76,1
+CLM-0120-05,EMP-0120,2026-05,Client Travel & Lodging,493.31,489.07,1
+CLM-0120-06,EMP-0120,2026-06,Home Office & Ergonomic Equipment,248.76,245.34,1
+CLM-0121-02,EMP-0121,2026-02,Client Travel & Lodging,711.23,698.34,1
+CLM-0121-04,EMP-0121,2026-04,Telecom & Data Connectivity,90.29,88.69,1
+CLM-0121-05,EMP-0121,2026-05,Telecom & Data Connectivity,108.07,106.69,1
+CLM-0122-03,EMP-0122,2026-03,Home Office & Ergonomic Equipment,298.27,290.7,1
+CLM-0123-04,EMP-0123,2026-04,Home Office & Ergonomic Equipment,371.95,366.67,1
+CLM-0123-05,EMP-0123,2026-05,Home Office & Ergonomic Equipment,143.31,141.11,1
+CLM-0123-06,EMP-0123,2026-06,Home Office & Ergonomic Equipment,352.71,340.02,1
+CLM-0124-02,EMP-0124,2026-02,Telecom & Data Connectivity,127.92,127.71,1
+CLM-0124-04,EMP-0124,2026-04,Client Meals & Onsite Hospitality,270.81,245.9,1
+CLM-0124-06,EMP-0124,2026-06,Professional Certification & Training,284.69,278.88,1
+CLM-0125-01,EMP-0125,2026-01,Professional Certification & Training,658.01,633.97,1
+CLM-0125-02,EMP-0125,2026-02,Client Meals & Onsite Hospitality,216.85,212.64,1
+CLM-0126-02,EMP-0126,2026-02,Client Travel & Lodging,357.93,353.28,1
+CLM-0126-03,EMP-0126,2026-03,Home Office & Ergonomic Equipment,341.06,327.61,1
+CLM-0126-05,EMP-0126,2026-05,Home Office & Ergonomic Equipment,414.42,378.33,1
+CLM-0127-02,EMP-0127,2026-02,Client Meals & Onsite Hospitality,86.41,83.72,1
+CLM-0127-04,EMP-0127,2026-04,Client Meals & Onsite Hospitality,93.06,83.91,1
+CLM-0128-02,EMP-0128,2026-02,Client Meals & Onsite Hospitality,270.25,246.09,1
+CLM-0128-03,EMP-0128,2026-03,Professional Certification & Training,483.24,476.88,1
+CLM-0128-06,EMP-0128,2026-06,Home Office & Ergonomic Equipment,297.93,288.49,1
+CLM-0129-04,EMP-0129,2026-04,Professional Certification & Training,667.13,654.14,1
+CLM-0129-06,EMP-0129,2026-06,Client Meals & Onsite Hospitality,219.71,208.55,1
+CLM-0130-01,EMP-0130,2026-01,Client Meals & Onsite Hospitality,90.34,85.08,1
+CLM-0130-02,EMP-0130,2026-02,Professional Certification & Training,222.05,217.44,1
+CLM-0130-03,EMP-0130,2026-03,Professional Certification & Training,186.06,183.93,1
+CLM-0130-05,EMP-0130,2026-05,Telecom & Data Connectivity,89.63,89.01,1
+CLM-0130-06,EMP-0130,2026-06,Professional Certification & Training,679.87,668.78,1
+CLM-0131-05,EMP-0131,2026-05,Telecom & Data Connectivity,120.17,119.76,1
+CLM-0131-06,EMP-0131,2026-06,Telecom & Data Connectivity,106.78,104.74,1
+CLM-0132-01,EMP-0132,2026-01,Telecom & Data Connectivity,96.58,95.94,1
+CLM-0132-02,EMP-0132,2026-02,Telecom & Data Connectivity,139.69,138.72,1
+CLM-0132-03,EMP-0132,2026-03,Home Office & Ergonomic Equipment,247.46,236.1,1
+CLM-0132-04,EMP-0132,2026-04,Client Travel & Lodging,420.42,418.24,1
+CLM-0132-06,EMP-0132,2026-06,Home Office & Ergonomic Equipment,377.66,346.99,1
+CLM-0133-03,EMP-0133,2026-03,Home Office & Ergonomic Equipment,282.82,267.91,1
+CLM-0133-04,EMP-0133,2026-04,Client Travel & Lodging,200.77,197.41,1
+CLM-0134-02,EMP-0134,2026-02,Professional Certification & Training,403.8,391.23,1
+CLM-0134-04,EMP-0134,2026-04,Telecom & Data Connectivity,64.95,64.73,1
+CLM-0135-03,EMP-0135,2026-03,Client Travel & Lodging,191.53,191.45,1
+CLM-0136-01,EMP-0136,2026-01,Professional Certification & Training,222.93,221.7,1
+CLM-0136-03,EMP-0136,2026-03,Telecom & Data Connectivity,56.04,55.02,1
+CLM-0136-04,EMP-0136,2026-04,Telecom & Data Connectivity,50.61,50.52,1
+CLM-0137-03,EMP-0137,2026-03,Home Office & Ergonomic Equipment,102.57,98.51,1
+CLM-0137-06,EMP-0137,2026-06,Home Office & Ergonomic Equipment,245.05,225.07,1
+CLM-0138-01,EMP-0138,2026-01,Client Meals & Onsite Hospitality,136.59,129.2,1
+CLM-0138-03,EMP-0138,2026-03,Client Meals & Onsite Hospitality,197.06,174.01,1
+CLM-0138-05,EMP-0138,2026-05,Professional Certification & Training,303.51,295.51,1
+CLM-0139-01,EMP-0139,2026-01,Client Meals & Onsite Hospitality,82.82,78.14,1
+CLM-0140-02,EMP-0140,2026-02,Client Travel & Lodging,415.01,408.59,1
+CLM-0140-05,EMP-0140,2026-05,Home Office & Ergonomic Equipment,241.8,231.72,1
+CLM-0141-01,EMP-0141,2026-01,Home Office & Ergonomic Equipment,295.54,278.86,1
+CLM-0141-05,EMP-0141,2026-05,Client Travel & Lodging,695.83,673.04,1
+CLM-0142-03,EMP-0142,2026-03,Professional Certification & Training,606.69,602.39,1
+CLM-0143-02,EMP-0143,2026-02,Client Travel & Lodging,316.68,312.52,1
+CLM-0144-01,EMP-0144,2026-01,Professional Certification & Training,235.2,232.98,1
+CLM-0144-03,EMP-0144,2026-03,Telecom & Data Connectivity,100.83,100.04,1
+CLM-0144-04,EMP-0144,2026-04,Client Meals & Onsite Hospitality,176.47,166.33,1
+CLM-0145-01,EMP-0145,2026-01,Professional Certification & Training,635.69,613.13,1
+CLM-0145-02,EMP-0145,2026-02,Telecom & Data Connectivity,64.17,63.22,1
+CLM-0145-04,EMP-0145,2026-04,Home Office & Ergonomic Equipment,408.71,399.55,1
+CLM-0145-06,EMP-0145,2026-06,Client Meals & Onsite Hospitality,272.93,238.28,1
+CLM-0146-01,EMP-0146,2026-01,Telecom & Data Connectivity,137.74,136.65,1
+CLM-0146-02,EMP-0146,2026-02,Professional Certification & Training,517.46,516.78,1
+CLM-0147-01,EMP-0147,2026-01,Client Meals & Onsite Hospitality,138.36,129.14,1
+CLM-0147-02,EMP-0147,2026-02,Client Travel & Lodging,487.68,468.25,1
+CLM-0147-03,EMP-0147,2026-03,Home Office & Ergonomic Equipment,226.54,212.96,1
+CLM-0148-01,EMP-0148,2026-01,Telecom & Data Connectivity,57.92,57.1,1
+CLM-0148-03,EMP-0148,2026-03,Telecom & Data Connectivity,86.25,84.79,1
+CLM-0148-04,EMP-0148,2026-04,Client Meals & Onsite Hospitality,82.43,74.57,1
+CLM-0148-05,EMP-0148,2026-05,Home Office & Ergonomic Equipment,104.56,98.49,1
+CLM-0148-06,EMP-0148,2026-06,Professional Certification & Training,434.81,422.67,1
+CLM-0149-01,EMP-0149,2026-01,Home Office & Ergonomic Equipment,345.27,344.02,1
+CLM-0149-06,EMP-0149,2026-06,Client Meals & Onsite Hospitality,75.69,72.88,1
+CLM-0150-02,EMP-0150,2026-02,Client Meals & Onsite Hospitality,171.46,165.97,1
+CLM-0151-01,EMP-0151,2026-01,Telecom & Data Connectivity,142.47,141.96,1
+CLM-0151-05,EMP-0151,2026-05,Client Meals & Onsite Hospitality,305.49,297.16,1
+CLM-0151-06,EMP-0151,2026-06,Professional Certification & Training,305.52,294.83,1
+CLM-0154-01,EMP-0154,2026-01,Professional Certification & Training,351.11,346.25,1
+CLM-0154-02,EMP-0154,2026-02,Telecom & Data Connectivity,143.84,141.32,1
+CLM-0154-05,EMP-0154,2026-05,Telecom & Data Connectivity,81.11,79.83,1
+CLM-0155-02,EMP-0155,2026-02,Home Office & Ergonomic Equipment,170.61,169.2,1
+CLM-0155-03,EMP-0155,2026-03,Client Travel & Lodging,369.04,348.05,1
+CLM-0156-01,EMP-0156,2026-01,Telecom & Data Connectivity,75.37,74.85,1
+CLM-0156-03,EMP-0156,2026-03,Telecom & Data Connectivity,107.49,106.56,1
+CLM-0157-02,EMP-0157,2026-02,Home Office & Ergonomic Equipment,404.48,370.15,1
+CLM-0157-03,EMP-0157,2026-03,Telecom & Data Connectivity,75.92,74.99,1
+CLM-0157-04,EMP-0157,2026-04,Home Office & Ergonomic Equipment,411.39,375.5,1
+CLM-0158-02,EMP-0158,2026-02,Telecom & Data Connectivity,107.67,107.59,1
+CLM-0158-05,EMP-0158,2026-05,Telecom & Data Connectivity,107.72,106.61,1
+CLM-0158-06,EMP-0158,2026-06,Professional Certification & Training,643.43,630.36,1
+CLM-0159-02,EMP-0159,2026-02,Client Meals & Onsite Hospitality,305.57,278.68,1
+CLM-0159-04,EMP-0159,2026-04,Client Meals & Onsite Hospitality,68.27,62.51,1
+CLM-0159-05,EMP-0159,2026-05,Professional Certification & Training,603.29,590.13,1
+CLM-0160-06,EMP-0160,2026-06,Professional Certification & Training,372.67,361.6,1
+CLM-0161-02,EMP-0161,2026-02,Home Office & Ergonomic Equipment,322.01,309.67,1
+CLM-0161-05,EMP-0161,2026-05,Home Office & Ergonomic Equipment,334.18,312.64,1
+CLM-0162-01,EMP-0162,2026-01,Professional Certification & Training,451.71,434.06,1
+CLM-0162-04,EMP-0162,2026-04,Client Travel & Lodging,254.05,247.11,1
+CLM-0163-02,EMP-0163,2026-02,Telecom & Data Connectivity,110.85,109.0,1
+CLM-0163-05,EMP-0163,2026-05,Client Meals & Onsite Hospitality,77.43,76.31,1
+CLM-0163-06,EMP-0163,2026-06,Professional Certification & Training,212.99,210.72,1
+CLM-0164-01,EMP-0164,2026-01,Client Travel & Lodging,253.41,240.39,1
+CLM-0164-02,EMP-0164,2026-02,Telecom & Data Connectivity,94.94,93.76,1
+CLM-0164-04,EMP-0164,2026-04,Client Travel & Lodging,430.77,418.73,1
+CLM-0165-01,EMP-0165,2026-01,Professional Certification & Training,502.61,494.11,1
+CLM-0165-03,EMP-0165,2026-03,Professional Certification & Training,538.16,532.74,1
+CLM-0165-04,EMP-0165,2026-04,Telecom & Data Connectivity,61.99,60.89,1
+CLM-0165-06,EMP-0165,2026-06,Professional Certification & Training,627.22,623.82,1
+CLM-0166-04,EMP-0166,2026-04,Telecom & Data Connectivity,126.93,126.68,1
+CLM-0167-04,EMP-0167,2026-04,Telecom & Data Connectivity,75.9,75.6,1
+CLM-0168-03,EMP-0168,2026-03,Professional Certification & Training,658.38,649.73,1
+CLM-0169-02,EMP-0169,2026-02,Client Travel & Lodging,192.45,187.54,1
+CLM-0169-04,EMP-0169,2026-04,Telecom & Data Connectivity,123.83,123.08,1
+CLM-0169-05,EMP-0169,2026-05,Telecom & Data Connectivity,139.41,138.51,1
+CLM-0170-03,EMP-0170,2026-03,Telecom & Data Connectivity,56.05,55.31,1
+CLM-0170-05,EMP-0170,2026-05,Telecom & Data Connectivity,70.45,69.93,1
+CLM-0171-03,EMP-0171,2026-03,Client Meals & Onsite Hospitality,178.32,177.65,1
+CLM-0171-05,EMP-0171,2026-05,Home Office & Ergonomic Equipment,301.2,277.7,1
+CLM-0171-06,EMP-0171,2026-06,Home Office & Ergonomic Equipment,212.75,202.16,1
+CLM-0172-02,EMP-0172,2026-02,Client Travel & Lodging,416.48,398.15,1
+CLM-0172-03,EMP-0172,2026-03,Home Office & Ergonomic Equipment,323.64,316.01,1
+CLM-0172-04,EMP-0172,2026-04,Client Meals & Onsite Hospitality,168.61,161.76,1
+CLM-0172-06,EMP-0172,2026-06,Client Travel & Lodging,899.2,859.62,1
+CLM-0173-01,EMP-0173,2026-01,Client Meals & Onsite Hospitality,79.7,76.87,1
+CLM-0173-03,EMP-0173,2026-03,Home Office & Ergonomic Equipment,330.26,311.43,1
+CLM-0173-06,EMP-0173,2026-06,Client Travel & Lodging,802.64,791.55,1
+CLM-0175-01,EMP-0175,2026-01,Client Travel & Lodging,744.73,720.59,1
+CLM-0175-02,EMP-0175,2026-02,Professional Certification & Training,252.07,244.63,1
+CLM-0175-03,EMP-0175,2026-03,Home Office & Ergonomic Equipment,180.87,169.19,1
+CLM-0176-03,EMP-0176,2026-03,Home Office & Ergonomic Equipment,316.59,302.68,1
+CLM-0177-04,EMP-0177,2026-04,Home Office & Ergonomic Equipment,136.22,134.64,1
+CLM-0178-02,EMP-0178,2026-02,Home Office & Ergonomic Equipment,249.38,238.34,1
+CLM-0178-05,EMP-0178,2026-05,Professional Certification & Training,466.71,456.35,1
+CLM-0179-01,EMP-0179,2026-01,Professional Certification & Training,328.98,316.68,1
+CLM-0179-02,EMP-0179,2026-02,Home Office & Ergonomic Equipment,370.05,346.5,1
+CLM-0179-03,EMP-0179,2026-03,Client Meals & Onsite Hospitality,261.08,231.36,1
+CLM-0179-05,EMP-0179,2026-05,Home Office & Ergonomic Equipment,352.73,346.05,1
+CLM-0180-01,EMP-0180,2026-01,Client Travel & Lodging,573.62,562.98,1
+CLM-0180-02,EMP-0180,2026-02,Client Travel & Lodging,832.41,787.04,1
+CLM-0180-03,EMP-0180,2026-03,Client Travel & Lodging,201.76,200.87,1
+CLM-0180-06,EMP-0180,2026-06,Client Meals & Onsite Hospitality,91.77,82.07,1

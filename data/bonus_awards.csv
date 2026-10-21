@@ -1,0 +1,184 @@
+bonus_id,employee_id,pay_period,bonus_type,bonus_amount,performance_rating
+BON-0001-01,EMP-0001,2026-03,Quarterly Service Excellence Bonus,2845.16,Exceeds Expectations
+BON-0001-02,EMP-0001,2026-06,Annual Performance & Retention Bonus,4853.48,Outstanding Impact
+BON-0002-01,EMP-0002,2026-03,Quarterly Service Excellence Bonus,3460.31,Exceeds Expectations
+BON-0003-01,EMP-0003,2026-03,Quarterly Service Excellence Bonus,4453.22,Exceeds Expectations
+BON-0004-01,EMP-0004,2026-03,Quarterly Service Excellence Bonus,5077.93,Exceeds Expectations
+BON-0004-02,EMP-0004,2026-06,Annual Performance & Retention Bonus,3261.09,Outstanding Impact
+BON-0004-03,EMP-0004,2026-01,Milestone Delivery Bonus,3781.83,Meets Plus
+BON-0005-01,EMP-0005,2026-03,Quarterly Service Excellence Bonus,3330.05,Exceeds Expectations
+BON-0006-01,EMP-0006,2026-03,Quarterly Service Excellence Bonus,4218.56,Exceeds Expectations
+BON-0006-02,EMP-0006,2026-06,Annual Performance & Retention Bonus,6618.43,Outstanding Impact
+BON-0007-01,EMP-0007,2026-03,Quarterly Service Excellence Bonus,4805.78,Exceeds Expectations
+BON-0007-02,EMP-0007,2026-06,Annual Performance & Retention Bonus,3115.59,Outstanding Impact
+BON-0007-03,EMP-0007,2026-01,Milestone Delivery Bonus,5138.44,Meets Plus
+BON-0008-01,EMP-0008,2026-03,Quarterly Service Excellence Bonus,4666.53,Exceeds Expectations
+BON-0008-02,EMP-0008,2026-06,Annual Performance & Retention Bonus,5668.86,Outstanding Impact
+BON-0009-01,EMP-0009,2026-03,Quarterly Service Excellence Bonus,5680.43,Exceeds Expectations
+BON-0009-02,EMP-0009,2026-06,Annual Performance & Retention Bonus,3645.11,Outstanding Impact
+BON-0010-01,EMP-0010,2026-03,Quarterly Service Excellence Bonus,2897.49,Exceeds Expectations
+BON-0011-01,EMP-0011,2026-03,Quarterly Service Excellence Bonus,6853.04,Exceeds Expectations
+BON-0012-01,EMP-0012,2026-03,Quarterly Service Excellence Bonus,5520.84,Exceeds Expectations
+BON-0012-02,EMP-0012,2026-06,Annual Performance & Retention Bonus,6730.4,Outstanding Impact
+BON-0012-03,EMP-0012,2026-01,Milestone Delivery Bonus,7443.3,Meets Plus
+BON-0013-01,EMP-0013,2026-03,Quarterly Service Excellence Bonus,4476.52,Exceeds Expectations
+BON-0014-01,EMP-0014,2026-03,Quarterly Service Excellence Bonus,4238.16,Exceeds Expectations
+BON-0014-02,EMP-0014,2026-06,Annual Performance & Retention Bonus,4028.7,Outstanding Impact
+BON-0015-01,EMP-0015,2026-03,Quarterly Service Excellence Bonus,5441.45,Exceeds Expectations
+BON-0016-01,EMP-0016,2026-03,Quarterly Service Excellence Bonus,6305.13,Exceeds Expectations
+BON-0017-01,EMP-0017,2026-03,Quarterly Service Excellence Bonus,6951.54,Exceeds Expectations
+BON-0017-02,EMP-0017,2026-06,Annual Performance & Retention Bonus,5287.13,Outstanding Impact
+BON-0018-01,EMP-0018,2026-03,Quarterly Service Excellence Bonus,7055.5,Exceeds Expectations
+BON-0018-02,EMP-0018,2026-06,Annual Performance & Retention Bonus,4597.28,Outstanding Impact
+BON-0031-01,EMP-0031,2026-03,Quarterly Service Excellence Bonus,5261.14,Exceeds Expectations
+BON-0032-01,EMP-0032,2026-03,Quarterly Service Excellence Bonus,7524.59,Exceeds Expectations
+BON-0032-02,EMP-0032,2026-06,Annual Performance & Retention Bonus,7384.43,Outstanding Impact
+BON-0032-03,EMP-0032,2026-01,Milestone Delivery Bonus,4807.2,Meets Plus
+BON-0033-01,EMP-0033,2026-03,Quarterly Service Excellence Bonus,9514.34,Exceeds Expectations
+BON-0033-02,EMP-0033,2026-06,Annual Performance & Retention Bonus,5896.0,Outstanding Impact
+BON-0033-03,EMP-0033,2026-01,Milestone Delivery Bonus,9422.03,Meets Plus
+BON-0034-01,EMP-0034,2026-03,Quarterly Service Excellence Bonus,2536.63,Exceeds Expectations
+BON-0035-01,EMP-0035,2026-03,Quarterly Service Excellence Bonus,4353.13,Exceeds Expectations
+BON-0035-02,EMP-0035,2026-06,Annual Performance & Retention Bonus,3176.73,Outstanding Impact
+BON-0036-01,EMP-0036,2026-03,Quarterly Service Excellence Bonus,5592.52,Exceeds Expectations
+BON-0036-02,EMP-0036,2026-01,Annual Performance & Retention Bonus,4444.64,Outstanding Impact
+BON-0037-01,EMP-0037,2026-03,Quarterly Service Excellence Bonus,5158.15,Exceeds Expectations
+BON-0037-02,EMP-0037,2026-06,Annual Performance & Retention Bonus,6094.03,Outstanding Impact
+BON-0038-01,EMP-0038,2026-03,Quarterly Service Excellence Bonus,7230.15,Exceeds Expectations
+BON-0038-02,EMP-0038,2026-06,Annual Performance & Retention Bonus,8367.51,Outstanding Impact
+BON-0039-01,EMP-0039,2026-03,Quarterly Service Excellence Bonus,4566.45,Exceeds Expectations
+BON-0040-01,EMP-0040,2026-03,Quarterly Service Excellence Bonus,4109.56,Exceeds Expectations
+BON-0041-01,EMP-0041,2026-03,Quarterly Service Excellence Bonus,5208.41,Exceeds Expectations
+BON-0042-01,EMP-0042,2026-03,Quarterly Service Excellence Bonus,4258.66,Exceeds Expectations
+BON-0042-02,EMP-0042,2026-06,Annual Performance & Retention Bonus,5489.81,Outstanding Impact
+BON-0042-03,EMP-0042,2026-01,Milestone Delivery Bonus,3888.11,Meets Plus
+BON-0043-01,EMP-0043,2026-03,Quarterly Service Excellence Bonus,10422.16,Exceeds Expectations
+BON-0043-02,EMP-0043,2026-06,Annual Performance & Retention Bonus,8971.16,Outstanding Impact
+BON-0044-01,EMP-0044,2026-03,Quarterly Service Excellence Bonus,4139.58,Exceeds Expectations
+BON-0045-01,EMP-0045,2026-03,Quarterly Service Excellence Bonus,3260.32,Exceeds Expectations
+BON-0045-02,EMP-0045,2026-06,Annual Performance & Retention Bonus,3915.13,Outstanding Impact
+BON-0046-01,EMP-0046,2026-03,Quarterly Service Excellence Bonus,4264.67,Exceeds Expectations
+BON-0047-01,EMP-0047,2026-03,Quarterly Service Excellence Bonus,4857.34,Exceeds Expectations
+BON-0047-02,EMP-0047,2026-06,Annual Performance & Retention Bonus,6115.06,Outstanding Impact
+BON-0048-01,EMP-0048,2026-03,Quarterly Service Excellence Bonus,4501.8,Exceeds Expectations
+BON-0048-02,EMP-0048,2026-06,Annual Performance & Retention Bonus,3443.68,Outstanding Impact
+BON-0061-01,EMP-0061,2026-03,Quarterly Service Excellence Bonus,5145.34,Exceeds Expectations
+BON-0061-02,EMP-0061,2026-06,Annual Performance & Retention Bonus,4972.84,Outstanding Impact
+BON-0061-03,EMP-0061,2026-01,Milestone Delivery Bonus,3553.39,Meets Plus
+BON-0062-01,EMP-0062,2026-03,Quarterly Service Excellence Bonus,6623.37,Exceeds Expectations
+BON-0062-02,EMP-0062,2026-06,Annual Performance & Retention Bonus,6265.1,Outstanding Impact
+BON-0063-01,EMP-0063,2026-03,Quarterly Service Excellence Bonus,4531.87,Exceeds Expectations
+BON-0063-02,EMP-0063,2026-06,Annual Performance & Retention Bonus,3278.89,Outstanding Impact
+BON-0064-01,EMP-0064,2026-03,Quarterly Service Excellence Bonus,5331.2,Exceeds Expectations
+BON-0064-02,EMP-0064,2026-01,Annual Performance & Retention Bonus,6482.7,Outstanding Impact
+BON-0065-01,EMP-0065,2026-03,Quarterly Service Excellence Bonus,6428.92,Exceeds Expectations
+BON-0065-02,EMP-0065,2026-06,Annual Performance & Retention Bonus,5999.39,Outstanding Impact
+BON-0065-03,EMP-0065,2026-01,Milestone Delivery Bonus,4370.63,Meets Plus
+BON-0066-01,EMP-0066,2026-03,Quarterly Service Excellence Bonus,8790.82,Exceeds Expectations
+BON-0066-02,EMP-0066,2026-06,Annual Performance & Retention Bonus,8049.93,Outstanding Impact
+BON-0067-01,EMP-0067,2026-03,Quarterly Service Excellence Bonus,6682.73,Exceeds Expectations
+BON-0067-02,EMP-0067,2026-01,Annual Performance & Retention Bonus,5110.52,Outstanding Impact
+BON-0067-03,EMP-0067,2026-04,Milestone Delivery Bonus,5636.51,Meets Plus
+BON-0068-01,EMP-0068,2026-03,Quarterly Service Excellence Bonus,3706.08,Exceeds Expectations
+BON-0069-01,EMP-0069,2026-03,Quarterly Service Excellence Bonus,6912.99,Exceeds Expectations
+BON-0069-02,EMP-0069,2026-06,Annual Performance & Retention Bonus,5334.29,Outstanding Impact
+BON-0070-01,EMP-0070,2026-03,Quarterly Service Excellence Bonus,6044.8,Exceeds Expectations
+BON-0070-02,EMP-0070,2026-06,Annual Performance & Retention Bonus,6811.28,Outstanding Impact
+BON-0071-01,EMP-0071,2026-03,Quarterly Service Excellence Bonus,4838.35,Exceeds Expectations
+BON-0072-01,EMP-0072,2026-03,Quarterly Service Excellence Bonus,3418.61,Exceeds Expectations
+BON-0072-02,EMP-0072,2026-06,Annual Performance & Retention Bonus,2797.18,Outstanding Impact
+BON-0073-01,EMP-0073,2026-03,Quarterly Service Excellence Bonus,5687.81,Exceeds Expectations
+BON-0073-02,EMP-0073,2026-06,Annual Performance & Retention Bonus,4436.26,Outstanding Impact
+BON-0074-01,EMP-0074,2026-03,Quarterly Service Excellence Bonus,8088.96,Exceeds Expectations
+BON-0074-02,EMP-0074,2026-01,Annual Performance & Retention Bonus,7809.62,Outstanding Impact
+BON-0075-01,EMP-0075,2026-03,Quarterly Service Excellence Bonus,6231.58,Exceeds Expectations
+BON-0076-01,EMP-0076,2026-03,Quarterly Service Excellence Bonus,5605.74,Exceeds Expectations
+BON-0077-01,EMP-0077,2026-03,Quarterly Service Excellence Bonus,4145.94,Exceeds Expectations
+BON-0078-01,EMP-0078,2026-03,Quarterly Service Excellence Bonus,2903.38,Exceeds Expectations
+BON-0091-01,EMP-0091,2026-03,Quarterly Service Excellence Bonus,11991.25,Exceeds Expectations
+BON-0092-01,EMP-0092,2026-03,Quarterly Service Excellence Bonus,4723.27,Exceeds Expectations
+BON-0092-02,EMP-0092,2026-06,Annual Performance & Retention Bonus,4348.96,Outstanding Impact
+BON-0093-01,EMP-0093,2026-03,Quarterly Service Excellence Bonus,4263.2,Exceeds Expectations
+BON-0094-01,EMP-0094,2026-03,Quarterly Service Excellence Bonus,4875.96,Exceeds Expectations
+BON-0095-01,EMP-0095,2026-03,Quarterly Service Excellence Bonus,6636.77,Exceeds Expectations
+BON-0096-01,EMP-0096,2026-03,Quarterly Service Excellence Bonus,5129.61,Exceeds Expectations
+BON-0096-02,EMP-0096,2026-06,Annual Performance & Retention Bonus,3922.09,Outstanding Impact
+BON-0097-01,EMP-0097,2026-03,Quarterly Service Excellence Bonus,4084.58,Exceeds Expectations
+BON-0098-01,EMP-0098,2026-03,Quarterly Service Excellence Bonus,3409.03,Exceeds Expectations
+BON-0098-02,EMP-0098,2026-06,Annual Performance & Retention Bonus,3946.78,Outstanding Impact
+BON-0099-01,EMP-0099,2026-03,Quarterly Service Excellence Bonus,3169.36,Exceeds Expectations
+BON-0100-01,EMP-0100,2026-03,Quarterly Service Excellence Bonus,5768.5,Exceeds Expectations
+BON-0100-02,EMP-0100,2026-06,Annual Performance & Retention Bonus,3823.41,Outstanding Impact
+BON-0101-01,EMP-0101,2026-03,Quarterly Service Excellence Bonus,5415.6,Exceeds Expectations
+BON-0101-02,EMP-0101,2026-06,Annual Performance & Retention Bonus,5301.51,Outstanding Impact
+BON-0102-01,EMP-0102,2026-03,Quarterly Service Excellence Bonus,5670.11,Exceeds Expectations
+BON-0102-02,EMP-0102,2026-06,Annual Performance & Retention Bonus,4454.99,Outstanding Impact
+BON-0102-03,EMP-0102,2026-01,Milestone Delivery Bonus,5408.08,Meets Plus
+BON-0103-01,EMP-0103,2026-03,Quarterly Service Excellence Bonus,4175.56,Exceeds Expectations
+BON-0103-02,EMP-0103,2026-06,Annual Performance & Retention Bonus,4675.71,Outstanding Impact
+BON-0103-03,EMP-0103,2026-01,Milestone Delivery Bonus,3182.11,Meets Plus
+BON-0104-01,EMP-0104,2026-03,Quarterly Service Excellence Bonus,7055.5,Exceeds Expectations
+BON-0105-01,EMP-0105,2026-03,Quarterly Service Excellence Bonus,4620.06,Exceeds Expectations
+BON-0105-02,EMP-0105,2026-06,Annual Performance & Retention Bonus,5153.2,Outstanding Impact
+BON-0106-01,EMP-0106,2026-03,Quarterly Service Excellence Bonus,5850.53,Exceeds Expectations
+BON-0106-02,EMP-0106,2026-06,Annual Performance & Retention Bonus,4114.86,Outstanding Impact
+BON-0106-03,EMP-0106,2026-01,Milestone Delivery Bonus,4608.47,Meets Plus
+BON-0107-01,EMP-0107,2026-03,Quarterly Service Excellence Bonus,5925.3,Exceeds Expectations
+BON-0107-02,EMP-0107,2026-06,Annual Performance & Retention Bonus,4674.54,Outstanding Impact
+BON-0108-01,EMP-0108,2026-03,Quarterly Service Excellence Bonus,6834.59,Exceeds Expectations
+BON-0108-02,EMP-0108,2026-06,Annual Performance & Retention Bonus,5412.93,Outstanding Impact
+BON-0121-01,EMP-0121,2026-03,Quarterly Service Excellence Bonus,5383.13,Exceeds Expectations
+BON-0121-02,EMP-0121,2026-06,Annual Performance & Retention Bonus,4496.14,Outstanding Impact
+BON-0122-01,EMP-0122,2026-03,Quarterly Service Excellence Bonus,6158.06,Exceeds Expectations
+BON-0123-01,EMP-0123,2026-03,Quarterly Service Excellence Bonus,5664.07,Exceeds Expectations
+BON-0124-01,EMP-0124,2026-03,Quarterly Service Excellence Bonus,8471.56,Exceeds Expectations
+BON-0125-01,EMP-0125,2026-03,Quarterly Service Excellence Bonus,4145.63,Exceeds Expectations
+BON-0125-02,EMP-0125,2026-06,Annual Performance & Retention Bonus,2362.53,Outstanding Impact
+BON-0126-01,EMP-0126,2026-03,Quarterly Service Excellence Bonus,2865.12,Exceeds Expectations
+BON-0127-01,EMP-0127,2026-03,Quarterly Service Excellence Bonus,7787.36,Exceeds Expectations
+BON-0128-01,EMP-0128,2026-03,Quarterly Service Excellence Bonus,4912.87,Exceeds Expectations
+BON-0129-01,EMP-0129,2026-03,Quarterly Service Excellence Bonus,8262.57,Exceeds Expectations
+BON-0130-01,EMP-0130,2026-03,Quarterly Service Excellence Bonus,4104.24,Exceeds Expectations
+BON-0131-01,EMP-0131,2026-03,Quarterly Service Excellence Bonus,2641.54,Exceeds Expectations
+BON-0132-01,EMP-0132,2026-03,Quarterly Service Excellence Bonus,4608.76,Exceeds Expectations
+BON-0133-01,EMP-0133,2026-03,Quarterly Service Excellence Bonus,7700.46,Exceeds Expectations
+BON-0133-02,EMP-0133,2026-01,Annual Performance & Retention Bonus,8223.23,Outstanding Impact
+BON-0133-03,EMP-0133,2026-04,Milestone Delivery Bonus,6880.93,Meets Plus
+BON-0134-01,EMP-0134,2026-03,Quarterly Service Excellence Bonus,7287.67,Exceeds Expectations
+BON-0134-02,EMP-0134,2026-06,Annual Performance & Retention Bonus,6358.96,Outstanding Impact
+BON-0134-03,EMP-0134,2026-01,Milestone Delivery Bonus,5822.84,Meets Plus
+BON-0135-01,EMP-0135,2026-03,Quarterly Service Excellence Bonus,2731.65,Exceeds Expectations
+BON-0136-01,EMP-0136,2026-03,Quarterly Service Excellence Bonus,3393.53,Exceeds Expectations
+BON-0136-02,EMP-0136,2026-06,Annual Performance & Retention Bonus,2124.55,Outstanding Impact
+BON-0137-01,EMP-0137,2026-03,Quarterly Service Excellence Bonus,4149.67,Exceeds Expectations
+BON-0138-01,EMP-0138,2026-03,Quarterly Service Excellence Bonus,5655.36,Exceeds Expectations
+BON-0138-02,EMP-0138,2026-06,Annual Performance & Retention Bonus,4334.84,Outstanding Impact
+BON-0151-01,EMP-0151,2026-03,Quarterly Service Excellence Bonus,3926.79,Exceeds Expectations
+BON-0152-01,EMP-0152,2026-03,Quarterly Service Excellence Bonus,4571.08,Exceeds Expectations
+BON-0152-02,EMP-0152,2026-06,Annual Performance & Retention Bonus,4958.38,Outstanding Impact
+BON-0153-01,EMP-0153,2026-03,Quarterly Service Excellence Bonus,5653.47,Exceeds Expectations
+BON-0153-02,EMP-0153,2026-06,Annual Performance & Retention Bonus,4650.69,Outstanding Impact
+BON-0154-01,EMP-0154,2026-03,Quarterly Service Excellence Bonus,6841.4,Exceeds Expectations
+BON-0154-02,EMP-0154,2026-06,Annual Performance & Retention Bonus,6354.86,Outstanding Impact
+BON-0155-01,EMP-0155,2026-03,Quarterly Service Excellence Bonus,5872.73,Exceeds Expectations
+BON-0156-01,EMP-0156,2026-03,Quarterly Service Excellence Bonus,6068.05,Exceeds Expectations
+BON-0157-01,EMP-0157,2026-03,Quarterly Service Excellence Bonus,5535.25,Exceeds Expectations
+BON-0158-01,EMP-0158,2026-03,Quarterly Service Excellence Bonus,4295.09,Exceeds Expectations
+BON-0159-01,EMP-0159,2026-03,Quarterly Service Excellence Bonus,5978.89,Exceeds Expectations
+BON-0159-02,EMP-0159,2026-06,Annual Performance & Retention Bonus,4360.05,Outstanding Impact
+BON-0160-01,EMP-0160,2026-03,Quarterly Service Excellence Bonus,5373.52,Exceeds Expectations
+BON-0160-02,EMP-0160,2026-06,Annual Performance & Retention Bonus,7045.3,Outstanding Impact
+BON-0161-01,EMP-0161,2026-03,Quarterly Service Excellence Bonus,4604.4,Exceeds Expectations
+BON-0161-02,EMP-0161,2026-06,Annual Performance & Retention Bonus,8297.0,Outstanding Impact
+BON-0161-03,EMP-0161,2026-01,Milestone Delivery Bonus,8224.82,Meets Plus
+BON-0162-01,EMP-0162,2026-03,Quarterly Service Excellence Bonus,8659.22,Exceeds Expectations
+BON-0162-02,EMP-0162,2026-06,Annual Performance & Retention Bonus,8766.87,Outstanding Impact
+BON-0162-03,EMP-0162,2026-01,Milestone Delivery Bonus,8189.68,Meets Plus
+BON-0163-01,EMP-0163,2026-03,Quarterly Service Excellence Bonus,4488.61,Exceeds Expectations
+BON-0164-01,EMP-0164,2026-03,Quarterly Service Excellence Bonus,4272.33,Exceeds Expectations
+BON-0165-01,EMP-0165,2026-03,Quarterly Service Excellence Bonus,4288.92,Exceeds Expectations
+BON-0165-02,EMP-0165,2026-06,Annual Performance & Retention Bonus,7436.28,Outstanding Impact
+BON-0166-01,EMP-0166,2026-03,Quarterly Service Excellence Bonus,7937.5,Exceeds Expectations
+BON-0167-01,EMP-0167,2026-03,Quarterly Service Excellence Bonus,8295.27,Exceeds Expectations
+BON-0167-02,EMP-0167,2026-06,Annual Performance & Retention Bonus,6343.83,Outstanding Impact
+BON-0168-01,EMP-0168,2026-03,Quarterly Service Excellence Bonus,3492.74,Exceeds Expectations

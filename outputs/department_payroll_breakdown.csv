@@ -1,0 +1,7 @@
+department_id,department_name,cost_center_code,headcount,avg_tenure_months,regular_hours,billable_service_hours,overtime_hours,base_service_pay,overtime_pay,bonus_pay,gross_taxable_pay,tds_deducted,reimbursements_approved,net_pay_disbursed,total_cost_per_billable_hour
+DEPT-CDS,Clinical Data Sciences,CC-204,30,34.51,26916.0,23365.2,912.14,1620540.64,89273.26,166129.97,1875943.87,391315.72,20818.96,1505447.11,81.18
+DEPT-ENG,Platform Engineering,CC-101,30,33.93,25984.0,22557.33,914.56,1555863.4,89055.77,184898.12,1829817.29,372150.06,19197.55,1476864.78,81.97
+DEPT-CLS,Client Delivery Services,CC-412,30,34.02,27412.0,23725.56,880.75,1597470.04,82728.3,143198.24,1823396.58,392510.33,28159.55,1459045.8,78.04
+DEPT-PRD,Product & Decision Analytics,CC-309,30,36.67,26640.0,23230.88,527.17,1586128.88,49173.93,148316.51,1783619.32,381503.96,20320.95,1422436.31,77.65
+DEPT-FIN,Finance & Payroll Operations,CC-518,30,34.09,28116.0,24309.43,659.04,1555432.0,58035.31,154806.8,1768274.11,379611.16,19450.74,1408113.69,73.54
+DEPT-POP,People & Talent Operations,CC-622,30,36.77,26008.0,22538.56,622.79,1414758.0,54189.15,189236.49,1658183.64,361300.54,20233.89,1317116.99,74.47

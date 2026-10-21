@@ -1,0 +1,5 @@
+tax_slab_group,statutory_base_rate_pct,employee_count,total_gross_taxable_pay,taxable_bonus_included,total_tds_deducted,realized_effective_tds_pct,non_taxable_reimbursements,total_net_pay
+10%-12% Entry Slab,12.0,44,1758035.6,136138.92,218572.93,12.43,33615.74,1573078.41
+18% Mid Slab,18.0,67,3671178.03,344376.21,680263.54,18.53,50700.1,3041614.59
+24% Senior Slab,24.0,47,3393073.56,318860.31,832278.12,24.53,28834.01,2589629.45
+28%+ Executive Slab,28.0,22,1916947.62,187210.69,547277.18,28.55,15031.79,1384702.23

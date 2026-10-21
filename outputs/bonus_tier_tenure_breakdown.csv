@@ -1,0 +1,5 @@
+bonus_frequency_tier,employee_count,avg_total_bonus_usd,avg_tenure_months,active_retention_rate_pct,avg_service_quality_score,avg_billable_hours
+0_No_Bonus,72,0.0,24.46,72.22,3.85,717.46
+1_Single_Spot_or_Annual_Bonus,49,5001.18,36.49,87.76,4.24,808.01
+2_Dual_Performance_Bonuses,43,10683.98,44.23,93.02,4.24,825.76
+3+_Multi_Cycle_Retention_and_Performance,16,17632.32,49.94,87.5,4.23,810.6

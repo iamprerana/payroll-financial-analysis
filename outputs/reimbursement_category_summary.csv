@@ -1,0 +1,6 @@
+expense_category,claim_count,distinct_claimants,total_submitted_usd,total_approved_usd,disallowed_variance_usd,approval_rate_pct
+Client Travel & Lodging,85,65,45704.07,44264.19,1439.88,96.85
+Professional Certification & Training,88,74,37308.1,36576.25,731.85,98.04
+Home Office & Ergonomic Equipment,92,69,25743.29,24542.55,1200.74,95.34
+Client Meals & Onsite Hospitality,82,69,14048.25,13079.74,968.51,93.11
+Telecom & Data Connectivity,103,79,9820.64,9718.91,101.73,98.96

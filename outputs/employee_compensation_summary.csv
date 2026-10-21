@@ -1,0 +1,181 @@
+employee_id,full_name,department_name,job_title,job_level,employment_status,tenure_months,months_paid,total_regular_hours,total_billable_hours,total_overtime_hours,total_base_service_pay,total_overtime_pay,total_bonus_pay,total_gross_taxable_pay,total_tds_deducted,effective_tds_rate_pct,total_reimbursements,total_net_pay,dept_net_pay_rank
+EMP-0038,Devon Desai,Clinical Data Sciences,Lead Engineering Manager,L4,Active,69.1,6,936.0,829.67,34.8,94816.8,5593.02,15597.66,116007.48,33453.18,28.84,297.15,82851.45,1
+EMP-0134,Lucas Desai,Clinical Data Sciences,Lead Engineering Manager,L4,Active,47.2,6,960.0,868.94,30.07,88003.2,4134.78,19469.47,111607.45,32553.8,29.17,455.96,79509.61,2
+EMP-0162,Julian Kapoor,People & Talent Operations,Lead Engineering Manager,L4,Active,68.9,6,944.0,845.89,28.14,81618.24,3959.01,25615.77,111193.02,32502.37,29.23,681.17,79371.82,1
+EMP-0033,Clara Brooks,Product & Decision Analytics,Lead Engineering Manager,L4,Active,64.0,6,944.0,854.15,24.13,81127.36,3110.6,24832.37,109070.33,31879.41,29.23,1926.92,79117.84,1
+EMP-0043,Maya Hayes,Platform Engineering,Lead Engineering Manager,L4,Active,55.4,6,936.0,810.14,27.9,82143.36,3672.75,19393.32,105209.43,30414.76,28.91,1219.26,76013.93,1
+EMP-0124,Adrian Kulkarni,Client Delivery Services,Lead Engineering Manager,L4,Active,50.2,6,960.0,853.65,26.39,90748.8,4082.75,8471.56,103303.11,29396.79,28.46,652.49,74558.81,1
+EMP-0129,Sofia Brooks,Product & Decision Analytics,Lead Engineering Manager,L4,Active,58.1,6,936.0,858.6,28.87,83846.88,4525.8,8262.57,96635.25,27509.77,28.47,862.69,69988.17,2
+EMP-0066,Mason Kapoor,People & Talent Operations,Lead Engineering Manager,L4,Active,66.7,6,952.0,859.72,14.62,78835.12,1816.02,16840.75,97491.89,28181.63,28.91,616.24,69926.5,2
+EMP-0069,Sofia Bennett,Product & Decision Analytics,Senior Statistical Programmer,L3,Active,55.8,6,948.0,842.77,28.03,75299.64,3584.08,12247.28,91131.0,22624.73,24.83,991.73,69498.0,3
+EMP-0032,Logan Verma,Clinical Data Sciences,Senior Product Analyst,L3,Active,57.2,6,952.0,839.2,19.61,69667.36,2413.48,19716.22,91797.06,23128.98,25.2,756.08,69424.16,3
+EMP-0161,Iris Price,Finance & Payroll Operations,Senior Product Analyst,L3,Active,65.0,6,940.0,812.68,20.96,68300.4,2284.44,21126.22,91711.06,23137.01,25.23,622.31,69196.36,1
+EMP-0167,Nora Foster,Finance & Payroll Operations,Lead Engineering Manager,L4,Active,44.9,6,948.0,806.41,13.99,76039.08,1683.2,14639.1,92361.38,26648.06,28.85,75.6,65788.92,2
+EMP-0166,Isaac Nguyen,Client Delivery Services,Senior Product Analyst,L3,Active,35.0,6,952.0,836.58,56.17,71647.52,7070.49,7937.5,86655.51,21232.17,24.5,126.68,65550.02,2
+EMP-0127,Meera Morgan,Platform Engineering,Senior Statistical Programmer,L3,Active,50.9,6,960.0,868.29,43.76,72998.4,5823.15,7787.36,86608.91,21226.98,24.51,167.63,65549.56,2
+EMP-0028,Caleb Kulkarni,Client Delivery Services,Lead Engineering Manager,L4,Active,28.0,6,960.0,798.07,0.0,87753.6,0.0,0.0,87753.6,24571.02,28.0,1963.36,65145.94,3
+EMP-0017,Nora Price,Finance & Payroll Operations,Senior Product Analyst,L3,Active,47.3,6,960.0,851.79,29.39,70003.2,3214.67,12238.67,85456.54,21245.23,24.86,460.42,64671.73,3
+EMP-0031,Priya Morgan,Platform Engineering,Senior Statistical Programmer,L3,Active,51.5,6,956.0,850.76,36.46,74682.72,4808.09,5261.14,84751.95,20695.68,24.42,176.0,64232.27,3
+EMP-0076,Isaac Kulkarni,Client Delivery Services,Lead Engineering Manager,L4,Active,56.1,6,952.0,823.42,43.65,75864.88,5800.83,5605.74,87271.45,24796.76,28.41,975.95,63450.64,4
+EMP-0065,Ananya Price,Finance & Payroll Operations,Senior Product Analyst,L3,Active,52.9,6,952.0,850.6,25.64,64212.4,2594.13,16798.94,83605.47,21073.39,25.21,660.09,63192.17,4
+EMP-0114,Owen Kapoor,People & Talent Operations,Lead Engineering Manager,L4,Active,32.5,6,952.0,805.15,44.17,80824.8,6152.06,0.0,86976.86,24353.52,28.0,508.73,63132.07,3
+EMP-0122,Logan Chen,Clinical Data Sciences,Senior Statistical Programmer,L3,Active,39.7,6,944.0,816.86,37.74,72272.64,4622.88,6158.06,83053.58,20314.5,24.46,290.7,63029.78,4
+EMP-0172,Noah Kulkarni,Client Delivery Services,Lead Engineering Manager,L4,Active,35.7,6,956.0,758.38,40.81,79166.36,5631.91,0.0,84798.27,23743.52,28.0,1735.54,62790.29,5
+EMP-0012,Julian Nair,People & Talent Operations,Senior Product Analyst,L3,Active,61.8,6,956.0,848.77,7.96,62484.16,780.4,19694.54,82959.1,20926.29,25.22,478.22,62511.03,4
+EMP-0170,Nathan Chen,Clinical Data Sciences,Senior Statistical Programmer,L3,Active,26.7,6,956.0,800.6,33.41,76680.76,4580.19,0.0,81260.95,19502.61,24.0,125.24,61883.58,5
+EMP-0080,Nathan Verma,Clinical Data Sciences,Senior Product Analyst,L3,Active,25.8,6,948.0,792.6,29.39,75546.12,3809.78,0.0,79355.9,19045.43,24.0,1447.0,61757.47,6
+EMP-0175,Leah Morgan,Platform Engineering,Senior Statistical Programmer,L3,Active,23.2,6,944.0,784.7,17.17,76209.12,2079.2,0.0,78288.32,18789.19,24.0,1134.41,60633.54,4
+EMP-0023,Elena Foster,Finance & Payroll Operations,Lead Engineering Manager,L4,Active,38.9,6,952.0,782.34,2.93,83795.04,386.85,0.0,84181.89,23570.94,28.0,0.0,60610.95,5
+EMP-0165,Kavya Bennett,Product & Decision Analytics,Senior Statistical Programmer,L3,Active,59.0,6,948.0,864.67,13.04,65175.0,1344.75,11725.2,78244.95,19451.23,24.86,1711.56,60505.28,4
+EMP-0119,Tara Foster,Finance & Payroll Operations,Lead Engineering Manager,L4,Active,39.4,6,948.0,780.43,19.61,80238.72,2745.3,0.0,82984.02,23235.52,28.0,742.86,60491.36,6
+EMP-0091,Priya Hayes,Platform Engineering,Lead Engineering Manager,L4,Separated,51.3,4,640.0,570.6,42.19,64832.0,7479.23,11991.25,84302.48,24211.57,28.72,269.7,60360.61,5
+EMP-0037,Meera Rivera,Platform Engineering,Senior Product Analyst,L3,Active,42.5,6,944.0,847.37,34.95,64409.12,3801.95,11252.18,79463.25,19760.2,24.87,337.3,60040.35,6
+EMP-0108,Ethan Nair,People & Talent Operations,Senior Product Analyst,L3,Active,39.9,6,940.0,875.1,8.91,66335.8,943.17,12247.52,79526.49,19782.89,24.88,221.96,59965.56,5
+EMP-0018,Ethan Kapoor,People & Talent Operations,Lead Engineering Manager,L4,Active,66.2,6,932.0,821.66,22.41,68688.4,2758.96,11652.78,83100.14,23956.55,28.83,682.19,59825.78,6
+EMP-0071,Iris Foster,Finance & Payroll Operations,Lead Engineering Manager,L4,Active,47.3,6,936.0,831.96,30.04,73616.4,4134.63,4838.35,82589.38,23467.17,28.41,675.5,59797.71,7
+EMP-0085,Leah Rivera,Platform Engineering,Senior Product Analyst,L3,Active,31.3,6,960.0,796.55,24.84,73747.2,2862.32,0.0,76609.52,18386.3,24.0,1274.03,59497.25,7
+EMP-0106,Isaac Joshi,Client Delivery Services,Financial Data Analyst,L2,Active,33.9,6,956.0,853.53,48.75,53029.32,4439.28,14573.86,72042.46,13810.66,19.17,1236.62,59468.42,6
+EMP-0016,Isaac Mehta,Client Delivery Services,Senior Statistical Programmer,L3,Active,48.1,6,948.0,863.72,11.15,69621.12,1228.28,6305.13,77154.53,18877.52,24.47,511.47,58788.48,7
+EMP-0026,Liam Chen,Clinical Data Sciences,Senior Statistical Programmer,L3,Active,25.9,6,956.0,812.24,38.07,71948.56,4581.83,0.0,76530.39,18367.28,24.0,549.16,58712.27,7
+EMP-0011,Iris Sharma,Finance & Payroll Operations,Senior Statistical Programmer,L3,Active,45.9,6,948.0,839.0,30.78,66160.92,3222.21,6853.04,76236.17,18674.69,24.5,992.91,58554.39,8
+EMP-0154,Adrian Joshi,Client Delivery Services,Financial Data Analyst,L2,Active,50.3,6,956.0,861.99,33.27,55017.8,3292.3,13196.26,71506.36,13535.01,18.93,567.4,58538.75,8
+EMP-0022,Noah Nguyen,Client Delivery Services,Senior Product Analyst,L3,Active,30.3,6,960.0,785.58,24.19,72499.2,2740.24,0.0,75239.44,18057.47,24.0,355.23,57537.2,9
+EMP-0102,Julian Rao,People & Talent Operations,Senior Statistical Programmer,L3,Active,51.2,6,948.0,854.01,10.32,59250.0,967.5,15533.18,75750.68,19110.18,25.23,807.93,57448.43,7
+EMP-0070,Rohan Nguyen,Client Delivery Services,Senior Product Analyst,L3,Active,45.8,6,948.0,843.52,23.29,58757.04,2353.69,12856.08,73966.81,18442.77,24.93,1911.53,57435.57,10
+EMP-0123,Clara Carter,Product & Decision Analytics,Senior Product Analyst,L3,Active,44.7,6,936.0,847.08,36.71,64593.36,4273.62,5664.07,74531.05,18234.68,24.47,847.8,57144.17,5
+EMP-0073,Maya Reed,Platform Engineering,Financial Data Analyst,L2,Active,39.8,6,944.0,860.05,41.06,55063.52,3801.79,10124.07,68989.38,13010.21,18.86,491.46,56470.63,8
+EMP-0121,Priya Reed,Platform Engineering,Financial Data Analyst,L2,Active,39.7,6,944.0,826.2,31.1,55554.4,2947.36,9879.27,68381.03,12901.68,18.87,893.72,56373.07,9
+EMP-0100,Rohan Kulkarni,Client Delivery Services,Software Engineer,L2,Active,38.1,6,956.0,876.38,30.47,55266.36,2642.21,9591.91,67500.48,12747.63,18.89,1536.28,56289.13,11
+EMP-0160,Rohan Mehta,Client Delivery Services,Senior Statistical Programmer,L3,Active,41.6,6,936.0,811.45,42.07,57526.56,4283.46,12418.82,74228.84,18452.38,24.86,361.6,56138.06,12
+EMP-0157,Meera Rivera,Platform Engineering,Client Implementation Specialist,L2,Active,46.6,6,948.0,844.11,21.12,60235.92,2012.94,5535.25,67784.11,12510.09,18.46,820.64,56094.66,10
+EMP-0104,Lucas Verma,Clinical Data Sciences,Client Implementation Specialist,L2,Active,41.5,6,956.0,859.52,23.17,58755.76,2348.39,7055.5,68159.65,12617.38,18.51,469.83,56012.1,8
+EMP-0117,Zoe Bennett,Product & Decision Analytics,Senior Statistical Programmer,L3,Active,32.0,6,944.0,776.69,17.65,70800.0,2223.56,0.0,73023.56,17525.65,24.0,495.92,55993.83,6
+EMP-0021,Sana Bennett,Product & Decision Analytics,Senior Statistical Programmer,L3,Active,21.9,6,952.0,810.99,24.98,68172.72,2934.76,0.0,71107.48,17065.78,24.0,1140.55,55182.25,7
+EMP-0027,Zoe Carter,Product & Decision Analytics,Senior Product Analyst,L3,Active,21.2,6,948.0,792.85,11.05,71100.0,1243.13,0.0,72343.13,17362.35,24.0,85.65,55066.43,8
+EMP-0062,Logan Desai,Clinical Data Sciences,Software Engineer,L2,Active,46.5,6,940.0,844.95,13.87,52386.2,1159.46,12888.47,66434.13,12582.57,18.94,801.26,54652.82,9
+EMP-0075,Kavya Carter,Product & Decision Analytics,Senior Product Analyst,L3,Active,44.8,6,944.0,877.85,11.95,64409.12,1223.02,6231.58,71863.72,17603.91,24.5,390.81,54650.62,9
+EMP-0006,Mason Rao,People & Talent Operations,Senior Statistical Programmer,L3,Active,49.0,6,944.0,856.72,8.57,59245.44,806.78,10836.99,70889.21,17637.89,24.88,944.95,54196.27,8
+EMP-0118,Caleb Nguyen,Client Delivery Services,Senior Product Analyst,L3,Active,31.4,6,952.0,782.24,36.38,67182.64,4103.83,0.0,71286.47,17108.75,24.0,0.0,54177.72,13
+EMP-0107,Nora Sharma,Finance & Payroll Operations,Senior Statistical Programmer,L3,Active,60.8,6,948.0,851.89,22.32,58757.04,2075.09,10599.84,71431.97,17755.71,24.86,486.6,54162.86,9
+EMP-0059,Tara Sharma,Finance & Payroll Operations,Senior Statistical Programmer,L3,Active,25.9,6,944.0,792.76,41.79,64900.0,5027.85,0.0,69927.85,16782.68,24.0,880.34,54025.51,10
+EMP-0116,Liam Iyer,Clinical Data Sciences,Financial Data Analyst,L2,Active,20.4,6,960.0,824.36,61.59,58752.0,6477.26,0.0,65229.26,11741.27,18.0,476.56,53964.55,10
+EMP-0061,Priya Rivera,Platform Engineering,Client Implementation Specialist,L2,Active,31.9,6,948.0,861.95,58.83,47892.96,4623.84,13671.57,66188.37,12710.77,19.2,173.26,53650.86,11
+EMP-0153,Clara Brooks,Product & Decision Analytics,Software Engineer,L2,Active,51.1,6,952.0,818.75,9.33,54540.08,801.78,10304.16,65646.02,12389.01,18.87,0.0,53257.01,10
+EMP-0152,Logan Verma,Clinical Data Sciences,Client Implementation Specialist,L2,Active,50.8,6,932.0,795.95,32.83,52909.64,2966.37,9529.46,65405.47,12334.31,18.86,0.0,53071.16,11
+EMP-0164,Lucas Iyer,Clinical Data Sciences,Financial Data Analyst,L2,Active,44.5,6,952.0,853.77,41.48,55530.16,4020.98,4272.33,63823.47,11775.17,18.45,752.88,52801.18,12
+EMP-0112,Noah Mehta,Client Delivery Services,Senior Statistical Programmer,L3,Active,34.6,6,952.0,831.02,12.01,66687.6,1261.95,0.0,67949.55,16307.89,24.0,1098.1,52739.76,14
+EMP-0128,Devon Verma,Clinical Data Sciences,Senior Product Analyst,L3,Active,43.1,6,940.0,845.36,24.14,60949.6,2557.61,4912.87,68420.08,16721.38,24.44,1011.46,52710.16,13
+EMP-0133,Maya Rivera,Platform Engineering,Senior Product Analyst,L3,Separated,40.7,4,636.0,564.35,16.66,45378.6,2024.2,22804.62,70207.42,18031.32,25.68,465.32,52641.42,12
+EMP-0159,Sofia Patel,Product & Decision Analytics,Financial Data Analyst,L2,Active,50.0,6,948.0,834.59,6.17,52585.56,513.37,10338.94,63437.87,11977.58,18.88,931.32,52391.61,11
+EMP-0158,Devon Desai,Clinical Data Sciences,Software Engineer,L2,Active,27.5,6,952.0,824.78,42.45,54540.08,3873.37,4295.09,62708.54,11583.74,18.47,844.56,51969.36,14
+EMP-0163,Maya Hayes,Platform Engineering,Software Engineer,L2,Active,35.6,6,956.0,836.13,30.66,56012.04,2694.56,4488.61,63195.21,11656.32,18.44,396.03,51934.92,13
+EMP-0004,Adrian Kulkarni,Client Delivery Services,Software Engineer,L2,Active,48.8,6,940.0,822.01,42.56,46022.4,3483.75,12120.85,61627.0,11837.44,19.21,1910.76,51700.32,15
+EMP-0103,Maya Morgan,Platform Engineering,Junior Payroll Specialist,L1,Active,30.7,6,956.0,828.15,22.1,43564.92,1510.64,12033.38,57108.94,7539.06,13.2,1322.28,50892.16,14
+EMP-0095,Ananya Foster,Finance & Payroll Operations,Software Engineer,L2,Active,27.5,6,948.0,840.81,2.29,54064.44,195.9,6636.77,60897.11,11272.14,18.51,1099.24,50724.21,11
+EMP-0155,Ananya Sharma,Finance & Payroll Operations,Senior Statistical Programmer,L3,Active,35.3,6,952.0,861.85,19.24,58757.44,1781.24,5872.73,66411.41,16253.34,24.47,517.25,50675.32,12
+EMP-0138,Ethan Kapoor,People & Talent Operations,Software Engineer,L2,Active,45.8,6,932.0,822.54,15.43,50486.44,1253.77,9990.2,61730.41,11665.61,18.9,598.72,50663.52,9
+EMP-0054,Owen Rao,People & Talent Operations,Senior Statistical Programmer,L3,Active,29.1,6,944.0,794.5,26.75,62936.48,2675.13,0.0,65611.61,15746.8,24.0,548.65,50413.46,10
+EMP-0074,Lucas Chen,Clinical Data Sciences,Senior Statistical Programmer,L3,Separated,46.9,4,636.0,576.64,33.22,47203.92,4231.47,15898.58,67333.97,16986.36,25.23,54.93,50402.54,15
+EMP-0020,Nathan Iyer,Clinical Data Sciences,Financial Data Analyst,L2,Active,28.2,6,960.0,817.03,26.36,57254.4,2358.17,0.0,59612.57,10730.26,18.0,1422.62,50304.93,16
+EMP-0007,Meera Morgan,Platform Engineering,Junior Payroll Specialist,L1,Active,38.9,6,944.0,868.59,31.28,41300.0,2208.83,13059.81,56568.64,7476.45,13.22,977.92,50070.11,15
+EMP-0047,Nora Foster,Finance & Payroll Operations,Software Engineer,L2,Active,36.7,6,944.0,842.18,5.87,48918.08,456.28,10972.4,60346.76,11418.51,18.92,879.43,49807.68,13
+EMP-0042,Julian Kapoor,People & Talent Operations,Software Engineer,L2,Active,52.9,6,960.0,827.79,17.78,45004.8,1403.93,13636.58,60045.31,11559.0,19.25,1017.78,49504.09,11
+EMP-0046,Isaac Nguyen,Client Delivery Services,Client Implementation Specialist,L2,Active,26.7,6,948.0,833.52,29.24,51846.12,2798.48,4264.67,58909.27,10863.96,18.44,1259.59,49304.9,16
+EMP-0096,Mason Kim,People & Talent Operations,Financial Data Analyst,L2,Active,43.8,6,952.0,816.16,18.62,48837.6,1432.8,9051.7,59322.1,11195.06,18.87,819.93,48946.97,12
+EMP-0008,Devon Verma,Clinical Data Sciences,Client Implementation Specialist,L2,Active,48.4,6,948.0,836.57,49.36,45428.16,4083.5,10335.39,59847.05,11297.94,18.88,275.5,48824.61,17
+EMP-0064,Adrian Mehta,Client Delivery Services,Senior Statistical Programmer,L3,Separated,45.8,5,784.0,692.82,19.74,49815.36,1881.42,11813.9,63510.68,15895.74,25.03,815.97,48430.91,17
+EMP-0109,Nadia Rivera,Platform Engineering,Client Implementation Specialist,L2,Active,25.0,6,960.0,792.56,47.67,53001.6,4341.85,0.0,57343.45,10321.82,18.0,1262.3,48283.93,16
+EMP-0009,Sofia Brooks,Product & Decision Analytics,Software Engineer,L2,Active,51.2,6,948.0,826.15,0.0,49125.36,0.0,9325.54,58450.9,11039.34,18.89,443.64,47855.2,12
+EMP-0052,Noah Kulkarni,Client Delivery Services,Software Engineer,L2,Active,26.4,6,952.0,793.83,50.5,52807.44,4594.3,0.0,57401.74,10332.31,18.0,751.88,47821.31,18
+EMP-0098,Devon Chen,Clinical Data Sciences,Junior Payroll Specialist,L1,Active,29.4,6,952.0,811.44,48.64,41402.48,3331.44,7355.81,52089.73,6676.23,12.82,2193.91,47607.41,18
+EMP-0003,Clara Carter,Product & Decision Analytics,Client Implementation Specialist,L2,Active,27.9,6,952.0,842.53,27.96,50827.28,2407.09,4453.22,57687.59,10643.68,18.45,559.18,47603.09,13
+EMP-0048,Ethan Kim,People & Talent Operations,Financial Data Analyst,L2,Active,50.8,6,956.0,830.98,21.58,47800.0,1618.5,7945.48,57363.98,10810.75,18.85,1031.47,47584.7,13
+EMP-0063,Clara Patel,Product & Decision Analytics,Financial Data Analyst,L2,Active,50.1,6,948.0,841.3,20.53,48385.92,1738.3,7810.76,57934.98,10911.17,18.83,512.96,47536.77,14
+EMP-0068,Devon Iyer,Clinical Data Sciences,Financial Data Analyst,L2,Active,29.4,6,956.0,848.39,14.6,50782.72,1329.33,3706.08,55818.13,10294.73,18.44,1826.83,47350.23,19
+EMP-0171,Sana Carter,Product & Decision Analytics,Senior Product Analyst,L3,Active,25.2,6,924.0,769.09,14.45,59671.92,1399.78,0.0,61071.7,14657.21,24.0,657.51,47072.0,15
+EMP-0111,Sana Patel,Product & Decision Analytics,Financial Data Analyst,L2,Active,22.8,6,956.0,775.1,11.41,55763.48,998.32,0.0,56761.8,10217.12,18.0,515.17,47059.85,16
+EMP-0014,Lucas Desai,Clinical Data Sciences,Software Engineer,L2,Active,44.9,6,948.0,842.05,15.79,47892.96,1196.56,8266.86,57356.38,10820.31,18.87,476.09,47012.16,20
+EMP-0105,Kavya Brooks,Product & Decision Analytics,Software Engineer,L2,Active,47.8,6,928.0,821.73,20.4,46400.0,1683.75,9773.26,57857.01,10939.24,18.91,93.04,47010.81,17
+EMP-0137,Nora Price,Finance & Payroll Operations,Client Implementation Specialist,L2,Active,40.0,6,920.0,816.47,22.35,51032.4,2032.69,4149.67,57214.76,10554.72,18.45,323.58,46983.62,14
+EMP-0067,Meera Hayes,Platform Engineering,Software Engineer,L2,Separated,53.1,4,628.0,569.05,18.3,38596.88,1687.08,17429.76,57713.72,11327.62,19.63,578.07,46964.17,17
+EMP-0148,Caleb Kulkarni,Client Delivery Services,Software Engineer,L2,Active,25.0,6,944.0,798.04,31.43,53345.44,2843.87,0.0,56189.31,10114.08,18.0,737.62,46812.85,19
+EMP-0101,Iris Silva,Finance & Payroll Operations,Financial Data Analyst,L2,Active,39.0,6,928.0,821.58,8.1,45434.88,594.86,10717.11,56746.85,10743.02,18.93,672.97,46676.8,15
+EMP-0132,Julian Nair,People & Talent Operations,Client Implementation Specialist,L2,Active,26.5,6,944.0,818.82,46.82,46218.24,3951.2,4608.76,54778.2,10116.17,18.47,1235.99,45898.02,14
+EMP-0113,Elena Price,Finance & Payroll Operations,Senior Product Analyst,L3,Active,28.4,6,956.0,791.44,14.36,58010.08,1307.05,0.0,59317.13,14236.1,24.0,579.48,45660.51,16
+EMP-0092,Logan Iyer,Clinical Data Sciences,Associate Analyst,L1,Active,19.4,6,944.0,867.38,23.35,40809.12,1683.05,9072.23,51564.4,6669.51,12.93,665.67,45560.56,21
+EMP-0001,Priya Reed,Platform Engineering,Associate Analyst,L1,Active,34.9,6,952.0,851.53,25.93,41650.0,1701.65,7698.64,51050.29,6568.74,12.87,812.04,45293.59,18
+EMP-0013,Maya Rivera,Platform Engineering,Client Implementation Specialist,L2,Active,39.6,6,936.0,837.9,58.95,45583.2,4633.44,4476.52,54693.16,10106.51,18.48,678.91,45265.56,19
+EMP-0036,Mason Nair,People & Talent Operations,Client Implementation Specialist,L2,Separated,32.3,5,792.0,709.17,36.98,40423.68,3207.09,10037.16,53667.93,10221.33,19.05,1291.15,44737.75,15
+EMP-0051,Sana Carter,Product & Decision Analytics,Client Implementation Specialist,L2,Active,27.9,6,936.0,791.59,5.62,52406.64,472.0,0.0,52878.64,9518.15,18.0,1308.5,44668.99,18
+EMP-0097,Meera Reed,Platform Engineering,Associate Analyst,L1,Active,18.1,6,952.0,833.2,39.77,42887.6,3029.05,4084.58,50001.23,6246.68,12.49,883.69,44638.24,20
+EMP-0180,Aarav Nair,People & Talent Operations,Client Implementation Specialist,L2,Active,25.1,6,956.0,790.99,46.65,48297.12,4089.84,0.0,52386.96,9429.66,18.0,1632.96,44590.26,16
+EMP-0005,Ananya Silva,Finance & Payroll Operations,Financial Data Analyst,L2,Active,35.3,6,940.0,839.19,37.14,45778.0,2880.25,3330.05,51988.3,9572.54,18.41,504.51,42920.27,17
+EMP-0089,Tara Price,Finance & Payroll Operations,Client Implementation Specialist,L2,Active,16.9,6,956.0,761.71,24.32,49042.8,2029.17,0.0,51071.97,9192.95,18.0,748.56,42627.58,18
+EMP-0169,Nadia Reed,Platform Engineering,Financial Data Analyst,L2,Separated,19.3,5,800.0,664.53,21.02,49168.0,2137.73,0.0,51305.73,9235.04,18.0,449.13,42519.82,21
+EMP-0130,Rohan Joshi,Client Delivery Services,Associate Analyst,L1,Active,24.3,6,960.0,870.56,47.56,39753.6,3237.84,4104.24,47095.68,5879.28,12.48,1244.24,42460.64,20
+EMP-0177,Zoe Brooks,Product & Decision Analytics,Lead Engineering Manager,L4,Separated,26.0,4,636.0,538.8,2.0,58467.48,275.79,0.0,58743.27,16448.11,28.0,134.64,42429.8,19
+EMP-0019,Nadia Hayes,Platform Engineering,Software Engineer,L2,Separated,26.0,5,792.0,656.52,28.0,47646.72,2743.9,0.0,50390.62,9070.31,18.0,550.53,41870.84,22
+EMP-0099,Sofia Carter,Product & Decision Analytics,Client Implementation Specialist,L2,Active,45.5,6,960.0,875.36,17.18,45753.6,1228.2,3169.36,50151.16,9250.56,18.45,955.05,41855.65,20
+EMP-0145,Leah Reed,Platform Engineering,Associate Analyst,L1,Active,14.3,6,956.0,800.37,33.74,43316.36,2431.34,0.0,45747.7,5489.72,12.0,1314.18,41572.16,23
+EMP-0115,Leah Hayes,Platform Engineering,Software Engineer,L2,Active,25.2,6,952.0,795.67,30.97,47600.0,2505.75,0.0,50105.75,9019.04,18.0,406.22,41492.93,24
+EMP-0041,Iris Price,Finance & Payroll Operations,Client Implementation Specialist,L2,Active,38.4,6,940.0,849.58,25.98,41858.2,1900.1,5208.41,48966.71,9072.72,18.53,1488.58,41382.57,19
+EMP-0010,Rohan Joshi,Client Delivery Services,Financial Data Analyst,L2,Active,36.2,6,960.0,844.34,41.04,42499.2,2867.81,2897.49,48264.5,8898.59,18.44,1877.24,41243.15,21
+EMP-0035,Ananya Sharma,Finance & Payroll Operations,Junior Payroll Specialist,L1,Active,19.6,6,956.0,847.29,14.62,38087.04,873.69,7529.86,46490.59,5998.74,12.9,565.83,41057.68,20
+EMP-0144,Owen Kim,People & Talent Operations,Financial Data Analyst,L2,Active,16.6,6,948.0,766.54,13.02,47646.48,981.58,0.0,48628.06,8753.06,18.0,499.35,40374.35,17
+EMP-0045,Kavya Bennett,Product & Decision Analytics,Junior Payroll Specialist,L1,Active,26.6,6,936.0,810.33,35.27,36560.16,2318.79,7175.45,46054.4,5940.13,12.9,187.25,40301.52,21
+EMP-0110,Nathan Desai,Clinical Data Sciences,Software Engineer,L2,Active,26.2,6,952.0,798.04,40.76,45124.8,3226.17,0.0,48350.97,8703.17,18.0,642.9,40290.7,22
+EMP-0151,Priya Morgan,Platform Engineering,Junior Payroll Specialist,L1,Active,27.6,6,948.0,820.26,30.49,39256.68,1893.88,3926.79,45077.35,5633.51,12.5,733.95,40177.79,25
+EMP-0143,Elena Foster,Finance & Payroll Operations,Software Engineer,L2,Active,21.8,6,944.0,798.45,34.32,45481.92,2638.46,0.0,48120.38,8661.65,18.0,312.52,39771.25,21
+EMP-0125,Ananya Silva,Finance & Payroll Operations,Associate Analyst,L1,Active,31.5,6,956.0,849.63,25.74,36347.12,1712.61,6508.16,44567.89,5736.32,12.87,846.61,39678.18,22
+EMP-0053,Elena Silva,Finance & Payroll Operations,Financial Data Analyst,L2,Active,28.1,6,960.0,778.01,57.17,42249.6,4217.48,0.0,46467.08,8364.08,18.0,1387.11,39490.11,23
+EMP-0050,Nathan Chen,Clinical Data Sciences,Junior Payroll Specialist,L1,Active,19.6,6,940.0,775.33,42.74,40636.2,2771.47,0.0,43407.67,5208.93,12.0,1170.38,39369.12,23
+EMP-0002,Logan Chen,Clinical Data Sciences,Junior Payroll Specialist,L1,Active,20.0,6,948.0,824.66,31.95,39010.2,2122.4,3460.31,44592.91,5560.5,12.47,177.42,39209.83,24
+EMP-0093,Clara Bennett,Product & Decision Analytics,Junior Payroll Specialist,L1,Active,35.2,6,952.0,859.09,27.27,38175.2,1913.67,4263.2,44352.07,5532.62,12.47,327.21,39146.66,22
+EMP-0140,Nathan Iyer,Clinical Data Sciences,Associate Analyst,L1,Active,20.3,6,952.0,777.21,34.39,40907.44,2357.88,0.0,43265.32,5191.83,12.0,640.31,38713.8,25
+EMP-0094,Adrian Nguyen,Client Delivery Services,Client Implementation Specialist,L2,Separated,35.8,5,796.0,694.4,23.98,40627.84,1835.91,4875.96,47339.71,8797.3,18.58,111.53,38653.94,22
+EMP-0141,Sana Bennett,Product & Decision Analytics,Junior Payroll Specialist,L1,Active,21.1,6,944.0,778.25,18.41,41300.0,1370.03,0.0,42670.03,5120.4,12.0,951.9,38501.53,23
+EMP-0090,Aarav Kapoor,People & Talent Operations,Software Engineer,L2,Active,23.1,6,948.0,785.94,2.2,45921.12,159.85,0.0,46080.97,8294.58,18.0,493.32,38279.71,18
+EMP-0058,Caleb Joshi,Client Delivery Services,Financial Data Analyst,L2,Separated,18.7,5,800.0,647.7,19.54,43544.0,1781.49,0.0,45325.49,8158.58,18.0,981.86,38148.77,23
+EMP-0039,Sofia Patel,Product & Decision Analytics,Associate Analyst,L1,Active,20.8,6,956.0,866.89,7.66,36844.24,442.82,4566.45,41853.51,5245.94,12.53,1199.9,37807.47,24
+EMP-0139,Nadia Hayes,Platform Engineering,Lead Engineering Manager,L4,Separated,38.2,3,480.0,392.09,24.51,48000.0,4064.5,0.0,52064.5,14578.06,28.0,78.14,37564.58,26
+EMP-0081,Sana Brooks,Product & Decision Analytics,Lead Engineering Manager,L4,Separated,35.8,4,632.0,512.74,0.0,51842.96,0.0,0.0,51842.96,14516.02,28.0,111.7,37438.64,25
+EMP-0077,Nora Silva,Finance & Payroll Operations,Associate Analyst,L1,Active,34.2,6,944.0,830.65,7.09,37854.4,426.46,4145.94,42426.8,5302.45,12.5,49.8,37174.15,24
+EMP-0149,Tara Silva,Finance & Payroll Operations,Financial Data Analyst,L2,Active,25.9,6,948.0,786.54,49.67,40982.04,3514.7,0.0,44496.74,8009.41,18.0,416.9,36904.23,25
+EMP-0135,Kavya Patel,Product & Decision Analytics,Associate Analyst,L1,Active,30.5,6,948.0,864.78,38.0,36535.92,2320.41,2731.65,41587.98,5178.54,12.45,191.45,36600.89,26
+EMP-0120,Aarav Kim,People & Talent Operations,Associate Analyst,L1,Active,19.5,6,956.0,805.31,37.14,37838.48,2352.04,0.0,40190.52,4822.87,12.0,1060.52,36428.17,19
+EMP-0044,Lucas Iyer,Clinical Data Sciences,Associate Analyst,L1,Active,33.0,6,956.0,884.63,24.96,34110.08,1335.86,4139.58,39585.52,4951.64,12.51,1319.49,35953.37,26
+EMP-0156,Mason Nair,People & Talent Operations,Senior Product Analyst,L3,Separated,52.4,4,624.0,578.51,21.87,38675.52,2281.02,6068.05,47024.59,11605.6,24.68,181.41,35600.4,20
+EMP-0040,Rohan Mehta,Client Delivery Services,Junior Payroll Specialist,L1,Active,29.8,6,952.0,855.54,35.18,34214.88,2038.07,4109.56,40362.51,5052.67,12.52,173.49,35483.33,24
+EMP-0060,Aarav Nair,People & Talent Operations,Senior Product Analyst,L3,Separated,30.1,5,780.0,639.04,10.26,45497.4,897.7,0.0,46395.1,11134.82,24.0,91.83,35352.11,21
+EMP-0055,Leah Morgan,Platform Engineering,Junior Payroll Specialist,L1,Active,18.3,6,956.0,784.13,25.92,38087.04,1807.14,0.0,39894.18,4787.3,12.0,0.0,35106.88,27
+EMP-0146,Liam Chen,Clinical Data Sciences,Junior Payroll Specialist,L1,Active,12.6,6,960.0,791.87,21.27,37747.2,1254.5,0.0,39001.7,4680.19,12.0,653.43,34974.94,27
+EMP-0034,Adrian Joshi,Client Delivery Services,Associate Analyst,L1,Active,31.0,6,960.0,838.2,36.15,34502.4,2220.19,2536.63,39259.22,4883.26,12.44,516.52,34892.48,25
+EMP-0086,Liam Desai,Clinical Data Sciences,Lead Engineering Manager,L4,Separated,34.3,3,472.0,394.77,16.79,44740.88,2718.58,0.0,47459.46,13288.65,28.0,366.0,34536.81,28
+EMP-0173,Elena Silva,Finance & Payroll Operations,Associate Analyst,L1,Active,13.7,6,952.0,804.33,34.8,35204.96,2054.34,0.0,37259.3,4471.13,12.0,1179.85,33968.02,26
+EMP-0015,Kavya Patel,Product & Decision Analytics,Financial Data Analyst,L2,Separated,27.3,4,628.0,548.9,14.42,34671.88,1194.19,5441.45,41307.52,7740.65,18.74,204.51,33771.38,27
+EMP-0136,Isaac Mehta,Client Delivery Services,Junior Payroll Specialist,L1,Active,21.0,6,940.0,833.72,10.73,32063.4,549.0,5518.08,38130.48,4904.32,12.86,327.24,33553.4,26
+EMP-0087,Zoe Patel,Product & Decision Analytics,Associate Analyst,L1,Active,13.6,6,952.0,800.2,34.11,34462.4,1993.09,0.0,36455.49,4374.66,12.0,1171.4,33252.23,28
+EMP-0126,Mason Rao,People & Talent Operations,Junior Payroll Specialist,L1,Active,22.0,6,948.0,829.91,18.8,32592.24,969.52,2865.12,36426.88,4538.56,12.46,1059.22,32947.54,22
+EMP-0079,Nadia Morgan,Platform Engineering,Senior Statistical Programmer,L3,Separated,32.8,4,636.0,540.78,0.0,42402.12,0.0,0.0,42402.12,10176.51,24.0,599.64,32825.25,28
+EMP-0072,Julian Kim,People & Talent Operations,Associate Analyst,L1,Active,25.7,6,920.0,864.91,9.8,30185.2,482.3,6215.79,36883.29,4747.17,12.87,420.46,32556.58,23
+EMP-0176,Liam Verma,Clinical Data Sciences,Senior Product Analyst,L3,Separated,31.0,4,640.0,524.21,3.16,41331.2,306.11,0.0,41637.31,9992.95,24.0,302.68,31947.04,29
+EMP-0024,Owen Kim,People & Talent Operations,Associate Analyst,L1,Active,19.3,6,940.0,764.11,7.81,35250.0,439.31,0.0,35689.31,4282.72,12.0,473.3,31879.89,24
+EMP-0179,Tara Sharma,Finance & Payroll Operations,Junior Payroll Specialist,L1,Active,12.9,6,960.0,798.76,18.81,33753.6,992.03,0.0,34745.63,4169.46,12.0,1240.59,31816.76,27
+EMP-0174,Owen Rao,People & Talent Operations,Junior Payroll Specialist,L1,Active,15.5,6,956.0,795.84,23.59,34607.2,1280.94,0.0,35888.14,4306.58,12.0,0.0,31581.56,25
+EMP-0131,Iris Sharma,Finance & Payroll Operations,Junior Payroll Specialist,L1,Active,25.3,6,956.0,870.37,0.0,32360.6,0.0,2641.54,35002.14,4361.41,12.46,224.5,30865.23,28
+EMP-0088,Caleb Mehta,Client Delivery Services,Junior Payroll Specialist,L1,Active,19.3,6,948.0,803.84,14.54,31596.84,726.92,0.0,32323.76,3878.86,12.0,2171.32,30616.22,27
+EMP-0049,Nadia Reed,Platform Engineering,Associate Analyst,L1,Separated,18.8,5,788.0,654.5,25.88,32221.32,1746.4,0.0,33967.72,4076.12,12.0,524.07,30415.67,29
+EMP-0030,Aarav Rao,People & Talent Operations,Junior Payroll Specialist,L1,Active,21.9,6,944.0,800.29,25.82,30972.64,1396.4,0.0,32369.04,3884.28,12.0,733.14,29217.9,26
+EMP-0082,Noah Joshi,Client Delivery Services,Associate Analyst,L1,Active,20.9,6,936.0,768.21,22.77,30710.16,1120.63,0.0,31830.79,3819.69,12.0,950.96,28962.06,28
+EMP-0025,Leah Reed,Platform Engineering,Financial Data Analyst,L2,Separated,23.1,4,632.0,546.3,23.33,32421.6,1981.21,0.0,34402.81,6192.5,18.0,207.72,28418.03,30
+EMP-0083,Elena Sharma,Finance & Payroll Operations,Junior Payroll Specialist,L1,Active,21.6,6,960.0,800.86,2.38,31747.2,118.06,0.0,31865.26,3823.81,12.0,262.35,28303.8,29
+EMP-0178,Caleb Joshi,Client Delivery Services,Associate Analyst,L1,Separated,20.0,5,772.0,635.79,12.62,29552.16,724.65,0.0,30276.81,3633.22,12.0,694.69,27338.28,29
+EMP-0057,Zoe Brooks,Product & Decision Analytics,Software Engineer,L2,Separated,22.2,4,632.0,540.66,9.2,30121.12,657.71,0.0,30778.83,5540.2,18.0,600.64,25839.27,29
+EMP-0084,Owen Nair,People & Talent Operations,Client Implementation Specialist,L2,Separated,18.8,4,632.0,534.49,33.24,27978.64,2375.97,0.0,30354.61,5463.83,18.0,488.52,25379.3,27
+EMP-0147,Zoe Carter,Product & Decision Analytics,Client Implementation Specialist,L2,Separated,19.7,3,472.0,388.4,11.37,27163.6,981.52,0.0,28145.12,5066.12,18.0,810.35,23889.35,30
+EMP-0150,Aarav Rao,People & Talent Operations,Senior Statistical Programmer,L3,Separated,25.7,3,480.0,384.42,10.12,28876.8,913.23,0.0,29790.03,7149.6,24.0,165.97,22806.4,28
+EMP-0029,Tara Silva,Finance & Payroll Operations,Associate Analyst,L1,Separated,16.5,4,620.0,519.87,17.34,22444.0,941.57,0.0,23385.57,2806.26,12.0,554.45,21133.76,30
+EMP-0056,Liam Verma,Clinical Data Sciences,Client Implementation Specialist,L2,Separated,23.0,3,468.0,386.18,22.18,23400.0,1827.37,0.0,25227.37,4540.92,18.0,352.96,21039.41,30
+EMP-0142,Noah Nguyen,Client Delivery Services,Client Implementation Specialist,L2,Separated,24.4,3,476.0,413.51,14.57,23800.0,1092.75,0.0,24892.75,4480.69,18.0,602.39,21014.45,30
+EMP-0078,Ethan Rao,People & Talent Operations,Junior Payroll Specialist,L1,Separated,19.1,3,468.0,407.54,23.16,16576.56,1346.67,2903.38,20826.61,2686.87,12.9,799.08,18938.82,29
+EMP-0168,Ethan Kim,People & Talent Operations,Associate Analyst,L1,Separated,30.8,3,460.0,403.74,10.25,14853.4,496.46,3492.74,18842.6,2434.3,12.92,649.73,17058.03,30

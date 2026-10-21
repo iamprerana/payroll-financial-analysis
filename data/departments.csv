@@ -1,0 +1,7 @@
+department_id,department_name,cost_center_code,annual_budget_usd
+DEPT-ENG,Platform Engineering,CC-101,4850000.0
+DEPT-CDS,Clinical Data Sciences,CC-204,3900000.0
+DEPT-PRD,Product & Decision Analytics,CC-309,3350000.0
+DEPT-CLS,Client Delivery Services,CC-412,3100000.0
+DEPT-FIN,Finance & Payroll Operations,CC-518,2250000.0
+DEPT-POP,People & Talent Operations,CC-622,1850000.0

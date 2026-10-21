@@ -1,0 +1,1499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Financial Analysis for Payroll — Interactive Architecture & SQL Learning Lab</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --bg-card: #1e293b;
+      --bg-elevated: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent: #38bdf8;
+      --accent-soft: rgba(56, 189, 248, 0.14);
+      --emerald: #34d399;
+      --emerald-soft: rgba(52, 211, 153, 0.14);
+      --amber: #fbbf24;
+      --amber-soft: rgba(251, 191, 36, 0.14);
+      --rose: #fb7185;
+      --rose-soft: rgba(251, 113, 133, 0.14);
+      --violet: #a78bfa;
+      --border: #334155;
+      --code-bg: #090d16;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding-bottom: 60px;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 55%, #0f172a 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 28px 24px 20px;
+    }
+
+    .container {
+      max-width: 1240px;
+      margin: 0 auto;
+    }
+
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .badge {
+      font-size: 12px;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+    }
+
+    .badge.emerald {
+      background: var(--emerald-soft);
+      color: var(--emerald);
+      border-color: rgba(52, 211, 153, 0.3);
+    }
+
+    .badge.amber {
+      background: var(--amber-soft);
+      color: var(--amber);
+      border-color: rgba(251, 191, 36, 0.3);
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 15px;
+      max-width: 920px;
+    }
+
+    .kpi-strip {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .kpi-card {
+      background: rgba(30, 41, 59, 0.85);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px 14px;
+    }
+
+    .kpi-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+    }
+
+    .kpi-val {
+      font-size: 20px;
+      font-weight: 700;
+      margin-top: 2px;
+      color: var(--text);
+    }
+
+    .kpi-val.highlight {
+      color: var(--emerald);
+    }
+
+    .kpi-sub {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    nav.tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 22px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 12px;
+    }
+
+    .tab-btn {
+      background: var(--bg-card);
+      color: var(--text-muted);
+      border: 1px solid var(--border);
+      padding: 9px 15px;
+      border-radius: 8px;
+      font-size: 13.5px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .tab-btn:hover {
+      color: var(--text);
+      border-color: var(--accent);
+    }
+
+    .tab-btn.active {
+      background: var(--accent);
+      color: #0f172a;
+      border-color: var(--accent);
+    }
+
+    main {
+      padding: 24px;
+    }
+
+    .tab-panel {
+      display: none;
+    }
+
+    .tab-panel.active {
+      display: block;
+    }
+
+    .section-title {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .section-desc {
+      color: var(--text-muted);
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1.35fr;
+      gap: 20px;
+    }
+
+    @media (max-width: 920px) {
+      .grid-2 {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 16px;
+    }
+
+    .card h3 {
+      font-size: 16px;
+      margin-bottom: 8px;
+      color: var(--accent);
+    }
+
+    /* Pipeline nodes */
+    .pipeline-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .pipe-node {
+      background: rgba(15, 23, 42, 0.65);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent);
+      border-radius: 10px;
+      padding: 14px 16px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .pipe-node:hover {
+      background: rgba(56, 189, 248, 0.08);
+    }
+
+    .pipe-node.active {
+      background: var(--accent-soft);
+      border-color: var(--accent);
+    }
+
+    .pipe-step {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    .pipe-title {
+      font-size: 15px;
+      font-weight: 700;
+      margin: 2px 0;
+    }
+
+    .pipe-file {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 12px;
+      color: var(--emerald);
+    }
+
+    pre {
+      background: var(--code-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 14px;
+      overflow-x: auto;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 12.5px;
+      line-height: 1.55;
+      color: #e2e8f0;
+      margin-top: 10px;
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 12.5px;
+      background: rgba(15, 23, 42, 0.8);
+      padding: 2px 6px;
+      border-radius: 4px;
+      color: var(--accent);
+    }
+
+    /* Schema cards */
+    .schema-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+    .table-btn {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 14px;
+      text-align: left;
+      color: var(--text);
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .table-btn:hover {
+      border-color: var(--accent);
+    }
+
+    .table-btn.active {
+      background: var(--accent-soft);
+      border-color: var(--accent);
+    }
+
+    .table-btn .t-name {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-weight: 700;
+      font-size: 14px;
+      color: var(--emerald);
+    }
+
+    .table-btn .t-rows {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    table.data-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      margin-top: 10px;
+    }
+
+    table.data-table th,
+    table.data-table td {
+      border-bottom: 1px solid var(--border);
+      padding: 8px 10px;
+      text-align: left;
+    }
+
+    table.data-table th {
+      color: var(--accent);
+      font-weight: 600;
+      background: rgba(15, 23, 42, 0.6);
+    }
+
+    table.data-table td.num,
+    table.data-table th.num {
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+    }
+
+    /* Simulator */
+    .sim-control {
+      margin-bottom: 14px;
+    }
+
+    .sim-control label {
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .sim-control input[type="range"],
+    .sim-control select {
+      width: 100%;
+      padding: 6px;
+      background: var(--bg);
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+    }
+
+    .waterfall-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 9px 12px;
+      border-radius: 8px;
+      margin-bottom: 8px;
+      background: rgba(15, 23, 42, 0.6);
+      border-left: 4px solid var(--accent);
+    }
+
+    .waterfall-row.plus {
+      border-left-color: var(--emerald);
+    }
+
+    .waterfall-row.minus {
+      border-left-color: var(--rose);
+    }
+
+    .waterfall-row.total {
+      border-left-color: var(--amber);
+      background: rgba(251, 191, 36, 0.1);
+      font-weight: 700;
+    }
+
+    /* Bars */
+    .bar-row {
+      margin-bottom: 12px;
+    }
+
+    .bar-header {
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+      margin-bottom: 4px;
+    }
+
+    .bar-track {
+      height: 12px;
+      background: rgba(15, 23, 42, 0.8);
+      border-radius: 999px;
+      overflow: hidden;
+    }
+
+    .bar-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--accent), var(--emerald));
+      border-radius: 999px;
+      transition: width 0.3s ease;
+    }
+
+    .callout {
+      background: var(--emerald-soft);
+      border: 1px solid rgba(52, 211, 153, 0.35);
+      border-radius: 10px;
+      padding: 14px 16px;
+      margin: 14px 0;
+      font-size: 13.5px;
+    }
+
+    .callout.amber {
+      background: var(--amber-soft);
+      border-color: rgba(251, 191, 36, 0.35);
+    }
+
+    .quiz-option {
+      display: block;
+      width: 100%;
+      text-align: left;
+      background: rgba(15, 23, 42, 0.65);
+      color: var(--text);
+      border: 1px solid var(--border);
+      padding: 10px 14px;
+      border-radius: 8px;
+      margin-top: 8px;
+      cursor: pointer;
+      font-size: 13.5px;
+    }
+
+    .quiz-option:hover {
+      border-color: var(--accent);
+    }
+
+    .quiz-option.correct {
+      background: var(--emerald-soft);
+      border-color: var(--emerald);
+    }
+
+    .quiz-option.wrong {
+      background: var(--rose-soft);
+      border-color: var(--rose);
+    }
+
+    .pill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+
+    .pill-btn {
+      background: rgba(15, 23, 42, 0.7);
+      color: var(--text-muted);
+      border: 1px solid var(--border);
+      padding: 7px 12px;
+      border-radius: 8px;
+      font-size: 12.5px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .pill-btn.active {
+      background: var(--emerald-soft);
+      color: var(--emerald);
+      border-color: var(--emerald);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="badge-row">
+        <span class="badge">MySQL 8.0 &amp; SQLite 3</span>
+        <span class="badge emerald">Python 3 Zero-Dependency Pipeline</span>
+        <span class="badge amber">180 Employees • 1,019 Payroll Statements</span>
+      </div>
+      <h1>Financial Analysis for Payroll — Interactive Project &amp; SQL Learning Guide</h1>
+      <p class="subtitle">
+        Learn how every file, SQL query, database table, and financial equation in
+        <code>payroll-financial-analysis</code>
+        works and binds together.
+      </p>
+
+      <div class="kpi-strip">
+        <div class="kpi-card">
+          <div class="kpi-label">Gross Taxable Payroll</div>
+          <div class="kpi-val">$10,739,234.81</div>
+          <div class="kpi-sub">Base + Overtime + Bonuses (H1 2026)</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Tax Deducted at Source (TDS)</div>
+          <div class="kpi-val">$2,278,391.77</div>
+          <div class="kpi-sub">21.22% Effective Withholding Rate</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Approved Reimbursements</div>
+          <div class="kpi-val">$128,181.64</div>
+          <div class="kpi-sub">450 Claims • 96.65% Approval Rate</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Net Disbursed Pay</div>
+          <div class="kpi-val">$8,589,024.68</div>
+          <div class="kpi-sub">0 Cent-Level Reconciliation Errors</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Bonus vs. Tenure Uplift</div>
+          <div class="kpi-val highlight">+69.91% (~70%)</div>
+          <div class="kpi-sub">41.56 mo vs. 24.46 mo (No Bonus)</div>
+        </div>
+      </div>
+
+      <nav class="tabs" role="tablist">
+        <button class="tab-btn active" onclick="switchTab('tab-arch', this)">1. Tech Stack &amp; How It Binds</button>
+        <button class="tab-btn" onclick="switchTab('tab-schema', this)">2. 6-Table SQL Schema Explorer</button>
+        <button class="tab-btn" onclick="switchTab('tab-sim', this)">3. Live Gross-to-Net Payroll Simulator</button>
+        <button class="tab-btn" onclick="switchTab('tab-sql', this)">4. All 8 SQL Queries Walkthrough</button>
+        <button class="tab-btn" onclick="switchTab('tab-tenure', this)">5. +70% Bonus–Tenure Deep Dive</button>
+        <button class="tab-btn" onclick="switchTab('tab-quiz', this)">6. Run Guide, Interview &amp; Quiz</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- TAB 1: ARCHITECTURE & BINDING -->
+    <section id="tab-arch" class="tab-panel active">
+      <div class="section-title">How the Technologies Are Bound Together</div>
+      <p class="section-desc">
+        Click each stage of the pipeline on the left to inspect how Python, SQLite, MySQL 8, and automated tests connect without external dependencies.
+      </p>
+
+      <div class="grid-2">
+        <div class="pipeline-list">
+          <div class="pipe-node active" onclick="selectArchStep(0, this)">
+            <div class="pipe-step">Stage 1 • Data &amp; Payroll Simulation</div>
+            <div class="pipe-title">Deterministic Synthetic Generator</div>
+            <div class="pipe-file">generate_data.py (seed = 20261020)</div>
+          </div>
+          <div class="pipe-node" onclick="selectArchStep(1, this)">
+            <div class="pipe-step">Stage 2 • Dual Database Persistence</div>
+            <div class="pipe-title">MySQL 8.0 DDL/Seed + Local SQLite DB + Raw CSVs</div>
+            <div class="pipe-file">sql/mysql_schema.sql • sql/mysql_seed_data.sql • data/payroll_analytics.db</div>
+          </div>
+          <div class="pipe-node" onclick="selectArchStep(2, this)">
+            <div class="pipe-step">Stage 3 • Shared Analytical SQL Layer</div>
+            <div class="pipe-title">8 Tagged ANSI/MySQL 8 Queries (CTEs &amp; Window Functions)</div>
+            <div class="pipe-file">sql/mysql_analysis_queries.sql</div>
+          </div>
+          <div class="pipe-node" onclick="selectArchStep(3, this)">
+            <div class="pipe-step">Stage 4 • SQL Runner &amp; Accounting Audit</div>
+            <div class="pipe-title">Regex Tag Parser, SQLite Executor &amp; Report Builder</div>
+            <div class="pipe-file">analytics.py → outputs/*.csv + outputs/FINDINGS_REPORT.md</div>
+          </div>
+          <div class="pipe-node" onclick="selectArchStep(4, this)">
+            <div class="pipe-step">Stage 5 • Automated Verification</div>
+            <div class="pipe-title">Unit &amp; SQL Reconciliation Test Suite</div>
+            <div class="pipe-file">tests/test_payroll_analytics.py</div>
+          </div>
+        </div>
+
+        <div class="card" id="arch-detail-card">
+          <!-- Populated dynamically by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 2: SCHEMA EXPLORER -->
+    <section id="tab-schema" class="tab-panel">
+      <div class="section-title">Normalized 6-Table Relational Schema</div>
+      <p class="section-desc">
+        Click any table below to inspect its Primary Key, Foreign Keys, column definitions, and how it feeds the payroll calculation.
+      </p>
+
+      <div class="schema-grid">
+        <button class="table-btn active" onclick="selectTable('departments', this)">
+          <div class="t-name">1. departments</div>
+          <div class="t-rows">6 rows • PK: department_id</div>
+        </button>
+        <button class="table-btn" onclick="selectTable('employees', this)">
+          <div class="t-name">2. employees</div>
+          <div class="t-rows">180 rows • PK: employee_id</div>
+        </button>
+        <button class="table-btn" onclick="selectTable('service_logs', this)">
+          <div class="t-name">3. service_logs</div>
+          <div class="t-rows">1,019 rows • Services rendered</div>
+        </button>
+        <button class="table-btn" onclick="selectTable('bonus_awards', this)">
+          <div class="t-name">4. bonus_awards</div>
+          <div class="t-rows">183 rows • Performance/Retention</div>
+        </button>
+        <button class="table-btn" onclick="selectTable('reimbursement_claims', this)">
+          <div class="t-name">5. reimbursement_claims</div>
+          <div class="t-rows">450 rows • Non-taxable expenses</div>
+        </button>
+        <button class="table-btn" onclick="selectTable('payroll_statements', this)">
+          <div class="t-name">6. payroll_statements</div>
+          <div class="t-rows">1,019 rows • Gross-to-Net ledger</div>
+        </button>
+      </div>
+
+      <div class="card" id="schema-detail-card"></div>
+    </section>
+
+    <!-- TAB 3: LIVE GROSS-TO-NET PAYROLL SIMULATOR -->
+    <section id="tab-sim" class="tab-panel">
+      <div class="section-title">Interactive Gross-to-Net Payroll &amp; TDS Calculator</div>
+      <p class="section-desc">
+        Adjust the sliders to see the exact payroll accounting equations used in <code>generate_data.py</code> and verified in <code>analytics.py</code>.
+      </p>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>Employee &amp; Monthly Service Inputs</h3>
+
+          <div class="sim-control">
+            <label>
+              <span>Job Level &amp; Base Statutory Tax Slab</span>
+              <span id="sim-level-label">L2 (18.0% Base TDS)</span>
+            </label>
+            <select id="sim-level" onchange="updateSimulator()">
+              <option value="12">L1 — Associate (12.0% Statutory TDS)</option>
+              <option value="18" selected>L2 — Mid-Level (18.0% Statutory TDS)</option>
+              <option value="24">L3 — Senior (24.0% Statutory TDS)</option>
+              <option value="28">L4 — Principal/Director (28.0% Statutory TDS)</option>
+            </select>
+          </div>
+
+          <div class="sim-control">
+            <label>
+              <span>Annual Base Salary ($)</span>
+              <span id="sim-salary-val">$102,000</span>
+            </label>
+            <input type="range" id="sim-salary" min="64000" max="186000" step="1000" value="102000" oninput="updateSimulator()" />
+          </div>
+
+          <div class="sim-control">
+            <label>
+              <span>Regular Service Hours Worked (Standard = 160 hrs)</span>
+              <span id="sim-reg-val">160 hrs</span>
+            </label>
+            <input type="range" id="sim-reg" min="120" max="160" step="4" value="160" oninput="updateSimulator()" />
+          </div>
+
+          <div class="sim-control">
+            <label>
+              <span>Overtime Hours Rendered (≤12h = 1.50x, &gt;12h = 1.75x)</span>
+              <span id="sim-ot-val">8 hrs (1.50x)</span>
+            </label>
+            <input type="range" id="sim-ot" min="0" max="20" step="1" value="8" oninput="updateSimulator()" />
+          </div>
+
+          <div class="sim-control">
+            <label>
+              <span>Performance / Retention Bonus in Period ($)</span>
+              <span id="sim-bonus-val">$4,500 (+2% TDS Supplemental)</span>
+            </label>
+            <input type="range" id="sim-bonus" min="0" max="10000" step="250" value="4500" oninput="updateSimulator()" />
+          </div>
+
+          <div class="sim-control">
+            <label>
+              <span>Approved Expense Reimbursement (Tax-Exempt $)</span>
+              <span id="sim-reimb-val">$320</span>
+            </label>
+            <input type="range" id="sim-reimb" min="0" max="1000" step="20" value="320" oninput="updateSimulator()" />
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Live Statement Reconciliation Waterfall</h3>
+          <div id="sim-waterfall"></div>
+          <pre id="sim-sql-preview"></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 4: SQL QUERIES WALKTHROUGH -->
+    <section id="tab-sql" class="tab-panel">
+      <div class="section-title">All 8 Production SQL Queries Explained</div>
+      <p class="section-desc">
+        Select any of the 8 tagged queries from <code>sql/mysql_analysis_queries.sql</code> to study the SQL syntax, why each clause is written that way, and the exact output from our database.
+      </p>
+
+      <div class="pill-list" id="sql-pill-list"></div>
+      <div class="card" id="sql-query-detail"></div>
+    </section>
+
+    <!-- TAB 5: +70% BONUS-TENURE DEEP DIVE -->
+    <section id="tab-tenure" class="tab-panel">
+      <div class="section-title">Headline Insight: Why Bonus Recipients Stay +69.91% (~70%) Longer</div>
+      <p class="section-desc">
+        In interviews, presenting a "+70% longer duration of work" finding is much stronger when you also test for confounding variables like job level and bonus frequency.
+      </p>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>1. Cohort Comparison (Query #6: <code>bonus_tenure_comparison</code>)</h3>
+          <div class="bar-row">
+            <div class="bar-header">
+              <span><strong>Bonus Recipients</strong> (n = 108 • 89.81% Active Retention)</span>
+              <span><strong>41.56 months</strong></span>
+            </div>
+            <div class="bar-track"><div class="bar-fill" style="width: 100%"></div></div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-header">
+              <span><strong>No Bonus Received</strong> (n = 72 • 72.22% Active Retention)</span>
+              <span><strong>24.46 months</strong></span>
+            </div>
+            <div class="bar-track"><div class="bar-fill" style="width: 58.85%"></div></div>
+          </div>
+
+          <div class="callout">
+            <strong>Exact Formula:</strong>
+            <code>(41.56 - 24.46) / 24.46 × 100 = +69.91% (~70% longer work duration)</code>
+          </div>
+
+          <h3 style="margin-top: 18px;">2. Dose-Response by Bonus Frequency Tier (Query #7)</h3>
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Bonus Tier</th>
+                <th class="num">Employees</th>
+                <th class="num">Avg Bonus ($)</th>
+                <th class="num">Avg Tenure (Mo)</th>
+                <th class="num">Active Retention</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>0_No_Bonus</td>
+                <td class="num">72</td>
+                <td class="num">$0.00</td>
+                <td class="num">24.46</td>
+                <td class="num">72.22%</td>
+              </tr>
+              <tr>
+                <td>1_Single_Spot_or_Annual_Bonus</td>
+                <td class="num">49</td>
+                <td class="num">$5,001.18</td>
+                <td class="num">36.49</td>
+                <td class="num">87.76%</td>
+              </tr>
+              <tr>
+                <td>2_Dual_Performance_Bonuses</td>
+                <td class="num">43</td>
+                <td class="num">$10,683.98</td>
+                <td class="num">44.23</td>
+                <td class="num">93.02%</td>
+              </tr>
+              <tr>
+                <td>3+_Multi_Cycle_Retention</td>
+                <td class="num">16</td>
+                <td class="num">$17,632.32</td>
+                <td class="num">49.94</td>
+                <td class="num">87.50%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="card">
+          <h3>3. Controlling for Seniority Confounding (Query #8)</h3>
+          <p style="font-size: 13.5px; color: var(--text-muted); margin-bottom: 12px;">
+            <strong>The Interviewer Question:</strong> <em>"Could the 70% longer tenure just be Simpson's Paradox—because senior employees (L3/L4) naturally have longer tenure AND get more bonuses?"</em>
+            <br /><br />
+            <strong>How Our SQL Answers It:</strong> Query #8 stratifies the cohort by <code>job_level</code> (<code>L1</code> through <code>L4</code>). Within every single level, bonus recipients still have <strong>+52% to +75% longer tenure</strong>:
+          </p>
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Job Level</th>
+                <th class="num">Bonus Tenure (Mo)</th>
+                <th class="num">Non-Bonus Tenure (Mo)</th>
+                <th class="num">Within-Level Uplift</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>L1 (Associate)</strong></td>
+                <td class="num">27.18</td>
+                <td class="num">17.88</td>
+                <td class="num" style="color: var(--emerald); font-weight: 700;">+52.00%</td>
+              </tr>
+              <tr>
+                <td><strong>L2 (Mid-Level)</strong></td>
+                <td class="num">40.70</td>
+                <td class="num">23.19</td>
+                <td class="num" style="color: var(--emerald); font-weight: 700;">+75.50%</td>
+              </tr>
+              <tr>
+                <td><strong>L3 (Senior)</strong></td>
+                <td class="num">48.38</td>
+                <td class="num">28.03</td>
+                <td class="num" style="color: var(--emerald); font-weight: 700;">+72.62%</td>
+              </tr>
+              <tr>
+                <td><strong>L4 (Principal/Lead)</strong></td>
+                <td class="num">57.34</td>
+                <td class="num">34.31</td>
+                <td class="num" style="color: var(--emerald); font-weight: 700;">+67.11%</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="callout amber" style="margin-top: 16px;">
+            <strong>Statistical Honesty Note for Interviews:</strong> Even after controlling for job level, observational payroll data can include reverse causality (employees who stay longer have more review cycles to earn bonuses). State clearly in interviews that this is a <strong>strong observational association (+69.91%)</strong> that motivates targeted retention bonus experiments.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 6: RUN GUIDE, INTERVIEW & QUIZ -->
+    <section id="tab-quiz" class="tab-panel">
+      <div class="section-title">How to Run, Resume/Interview Framing &amp; Mastery Quiz</div>
+      <p class="section-desc">
+        Everything you need to run the project from terminal, explain it in an interview, and test your knowledge.
+      </p>
+
+      <div class="grid-2">
+        <div>
+          <div class="card">
+            <h3>Terminal Commands to Run Everything</h3>
+            <pre>cd payroll-financial-analysis
+
+# 1. Generate CSVs, SQLite DB, and MySQL 8 seed file
+python3 generate_data.py
+
+# 2. Run all 8 SQL queries &amp; build outputs/FINDINGS_REPORT.md
+python3 analytics.py
+
+# 3. Run the automated unit &amp; SQL reconciliation tests
+python3 -m unittest discover -s tests -v</pre>
+          </div>
+
+          <div class="card">
+            <h3>Resume &amp; Interview Framing</h3>
+            <p style="font-size: 13.5px; color: var(--text-muted); margin-bottom: 8px;">
+              <strong>Original Prompt Bullet:</strong>
+            </p>
+            <pre>• Queried the MySQL database for salary calculations, bonus, overtime, tax deducted at source &amp; reimbursements.
+• Discovered insights: Bonuses contributed to 70% longer duration of work in the company by employees.</pre>
+            <p style="font-size: 13.5px; color: var(--text-muted); margin: 12px 0 8px;">
+              <strong>Upgraded Technical Interview Explanation:</strong>
+            </p>
+            <p style="font-size: 13.5px;">
+              "I designed a 6-table normalized MySQL/SQLite payroll schema covering 180 employees and 1,019 monthly statements. Using CTEs, window functions (<code>RANK() OVER</code>), and conditional aggregations, I reconciled gross-to-net compensation across base service hours, tiered overtime (1.5x/1.75x), progressive Tax Deducted at Source (TDS) slabs (21.22% effective withholding), and non-taxable expense reimbursements with zero cent-level drift. When analyzing retention, I found that bonus-receiving employees averaged 41.56 months of tenure vs. 24.46 months for non-recipients (+69.91% longer work duration), and verified that the uplift held within every job level (L1–L4) so it wasn't just seniority confounding."
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Interactive Self-Test Quiz (Click an Answer)</h3>
+          <div id="quiz-container"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const ARCH_STEPS = [
+      {
+        title: "Stage 1: Deterministic Synthetic Generator (generate_data.py)",
+        tech: "Python 3 Standard Library (random.Random(20261020), datetime, csv, sqlite3)",
+        howItBinds:
+          "Uses a fixed random seed (20261020) so every run produces the exact same 180 employees across 6 departments and 4 job levels (L1–L4). It simulates monthly service hours, overtime multipliers, bonus awards, TDS withholding, and reimbursement claims, then feeds those exact dictionaries into CSVs, SQLite, and the MySQL seed script.",
+        code: `# Inside generate_data.py: cent-exact gross-to-net payroll calculation
+hourly_base_rate = round((annual_base_salary / 12.0) / standard_monthly_hours, 2)
+base_service_pay = round(regular_hours * hourly_base_rate, 2)
+overtime_pay = round(overtime_hours * hourly_base_rate * overtime_multiplier, 2)
+bonus_pay = round(bonus_by_period.get(period, 0.0), 2)
+gross_taxable_pay = round(base_service_pay + overtime_pay + bonus_pay, 2)
+
+# Statutory TDS rate: base bracket + 2% supplemental withholding when bonus is paid
+tds_rate_pct = round(tax_bracket_pct + (2.0 if bonus_pay > 0 else 0.0), 2)
+tds_deducted = round(gross_taxable_pay * (tds_rate_pct / 100.0), 2)
+net_pay = round(gross_taxable_pay - tds_deducted + reimb_approved_total, 2)`
+      },
+      {
+        title: "Stage 2: Dual Database Persistence (SQLite + MySQL 8.0)",
+        tech: "MySQL 8.0 DDL (sql/mysql_schema.sql) + MySQL Seed (sql/mysql_seed_data.sql) + SQLite 3 (data/payroll_analytics.db)",
+        howItBinds:
+          "Why support both? In interviews and resumes, MySQL 8 is the target dialect, while locally on macOS you want zero-setup execution without needing a running MySQL server daemon. generate_data.py builds data/payroll_analytics.db (with PRAGMA foreign_keys = ON) AND exports sql/mysql_seed_data.sql so both engines share the identical 6-table schema.",
+        code: `-- Shared relational hierarchy (sql/mysql_schema.sql)
+departments (1) ───► (N) employees (1) ───┬──► (N) service_logs
+                                          ├──► (N) bonus_awards
+                                          ├──► (N) reimbursement_claims
+                                          └──► (N) payroll_statements`
+      },
+      {
+        title: "Stage 3: Single-Source-of-Truth SQL File (sql/mysql_analysis_queries.sql)",
+        tech: "Portable MySQL 8.0 / SQLite 3.35+ SQL (CTEs, RANK() OVER, CASE, NULLIF, CROSS JOIN)",
+        howItBinds:
+          "Instead of hardcoding SQL strings inside Python, all 8 analytical queries live in sql/mysql_analysis_queries.sql with marker comments like `-- [QUERY: bonus_tenure_comparison]`. Both a MySQL client and analytics.py read this exact same file.",
+        code: `-- Marker comment in sql/mysql_analysis_queries.sql:
+-- [QUERY: bonus_tenure_comparison]
+WITH cohort_stats AS (
+    SELECT e.received_bonus_flag,
+           ROUND(AVG(e.tenure_months), 2) AS avg_tenure_months
+    FROM employees e
+    GROUP BY e.received_bonus_flag
+) ...`
+      },
+      {
+        title: "Stage 4: SQL Runner & Reconciliation Engine (analytics.py)",
+        tech: "Python regex parser (QUERY_TAG_PATTERN) + sqlite3.Row + Markdown/CSV exporter",
+        howItBinds:
+          "analytics.py reads sql/mysql_analysis_queries.sql, splits it by `-- [QUERY: <name>]`, executes each query against data/payroll_analytics.db, verifies that 0 statements have gross or net rounding drift, and writes 9 CSVs + outputs/FINDINGS_REPORT.md.",
+        code: `# How analytics.py binds Python to sql/mysql_analysis_queries.sql:
+QUERY_TAG_PATTERN = re.compile(r"^--\\s*\\[QUERY:\\s*([a-zA-Z0-9_]+)\\]\\s*$")
+
+queries = load_named_queries(sql_path)
+for name, sql_text in queries.items():
+    rows = execute_named_query(conn, sql_text)
+    write_csv(output_dir / f"{name}.csv", rows)`
+      },
+      {
+        title: "Stage 5: Automated Verification (tests/test_payroll_analytics.py)",
+        tech: "Python unittest + tempfile.TemporaryDirectory",
+        howItBinds:
+          "Runs end-to-end in an isolated temporary directory: verifies deterministic data generation, checks every single payroll row for cent-exact math, executes all 8 SQL queries, and asserts that the bonus-tenure uplift is ~70% (+69.91%) and holds across job levels L1–L4.",
+        code: `def test_all_sql_queries_execute_and_confirm_70_percent_bonus_tenure_insight(self):
+    kpis = run_analytics(db_path=db_path, output_dir=out_dir)
+    self.assertEqual(int(kpis["gross_reconciliation_errors"]), 0)
+    self.assertEqual(int(kpis["net_reconciliation_errors"]), 0)
+    self.assertAlmostEqual(kpis["bonus_tenure_uplift_pct"], 69.91, delta=1.5)`
+      }
+    ];
+
+    const SCHEMA_TABLES = {
+      departments: {
+        title: "departments — Organizational Cost Centers",
+        pk: "department_id (VARCHAR(16))",
+        fk: "None (Root dimension table)",
+        role: "Groups employees and payroll statements into 6 operating departments for cost-center budgeting and cost-per-billable-hour analysis.",
+        columns: [
+          ["department_id", "VARCHAR(16) PK", "DEPT-ENG, DEPT-CDS, DEPT-PRD, DEPT-CLS, DEPT-FIN, DEPT-POP"],
+          ["department_name", "VARCHAR(80)", "Platform Engineering, Clinical Data Sciences, etc."],
+          ["cost_center_code", "VARCHAR(20)", "CC-101 through CC-622"],
+          ["annual_budget_usd", "DECIMAL(14,2)", "$1,850,000.00 to $4,850,000.00"]
+        ]
+      },
+      employees: {
+        title: "employees — Master Employee, Salary, Tax Slab & Tenure Table",
+        pk: "employee_id (VARCHAR(16))",
+        fk: "department_id → departments(department_id)",
+        role: "Stores each employee's annual base salary, standard monthly hours (160), statutory TDS bracket (12%, 18%, 24%, 28%), bonus receipt flag, and tenure in months.",
+        columns: [
+          ["employee_id", "VARCHAR(16) PK", "EMP-0001 through EMP-0180"],
+          ["department_id", "VARCHAR(16) FK", "Links to departments.department_id"],
+          ["job_level", "VARCHAR(8)", "L1, L2, L3, L4 (used for seniority confounding check)"],
+          ["employment_status", "VARCHAR(16)", "Active (150) or Separated (30)"],
+          ["tenure_months", "DECIMAL(6,1)", "Duration of work in company (months)"],
+          ["annual_base_salary", "DECIMAL(12,2)", "Annualized base compensation ($64k–$186k+)"],
+          ["tax_bracket_pct", "DECIMAL(5,2)", "Statutory base TDS slab: 12%, 18%, 24%, or 28%"],
+          ["received_bonus_flag", "TINYINT(1)", "1 = Bonus Recipient (108), 0 = No Bonus (72)"]
+        ]
+      },
+      service_logs: {
+        title: "service_logs — Monthly Services Rendered & Overtime Hours",
+        pk: "service_log_id (VARCHAR(24)) • UNIQUE(employee_id, pay_period)",
+        fk: "employee_id → employees(employee_id)",
+        role: "Captures actual services rendered each month: regular hours worked, billable client/project hours, overtime hours, overtime rate multiplier (1.50x or 1.75x), and service quality score.",
+        columns: [
+          ["service_log_id", "VARCHAR(24) PK", "SRV-0001-01 through SRV-0180-06"],
+          ["employee_id", "VARCHAR(16) FK", "Links to employees.employee_id"],
+          ["pay_period", "VARCHAR(7)", "2026-01 through 2026-06"],
+          ["regular_hours_worked", "DECIMAL(6,2)", "148, 152, 156, or 160 hours"],
+          ["billable_service_hours", "DECIMAL(6,2)", "Client/project billable hours (86.75% avg utilization)"],
+          ["overtime_hours", "DECIMAL(6,2)", "Extra hours worked beyond standard schedule"],
+          ["overtime_multiplier", "DECIMAL(4,2)", "1.50x (≤12 overtime hrs) or 1.75x (>12 overtime hrs)"],
+          ["service_quality_score", "DECIMAL(4,2)", "1.00–5.00 delivery quality rating"]
+        ]
+      },
+      bonus_awards: {
+        title: "bonus_awards — Performance, Milestone & Retention Bonuses",
+        pk: "bonus_id (VARCHAR(24))",
+        fk: "employee_id → employees(employee_id)",
+        role: "Records individual bonus disbursements in specific pay periods, which flow into gross taxable pay and trigger a +2% supplemental TDS withholding rate in that month.",
+        columns: [
+          ["bonus_id", "VARCHAR(24) PK", "BON-0001-01, etc. (183 total awards)"],
+          ["employee_id", "VARCHAR(16) FK", "Links to employees.employee_id"],
+          ["pay_period", "VARCHAR(7)", "Month the bonus was paid (e.g., 2026-03, 2026-06)"],
+          ["bonus_type", "VARCHAR(40)", "Quarterly Service Excellence, Annual Performance & Retention, Milestone"],
+          ["bonus_amount", "DECIMAL(12,2)", "Dollar bonus added to gross_taxable_pay"],
+          ["performance_rating", "VARCHAR(24)", "Exceeds Expectations, Outstanding Impact, Meets Plus"]
+        ]
+      },
+      reimbursement_claims: {
+        title: "reimbursement_claims — Non-Taxable Expense Reimbursements",
+        pk: "claim_id (VARCHAR(24))",
+        fk: "employee_id → employees(employee_id)",
+        role: "Tracks employee out-of-pocket expenses for services rendered. Approved amounts are non-taxable (`is_tax_exempt = 1`) and added after TDS deduction to compute net pay.",
+        columns: [
+          ["claim_id", "VARCHAR(24) PK", "CLM-0001-01, etc. (450 total claims)"],
+          ["employee_id", "VARCHAR(16) FK", "Links to employees.employee_id"],
+          ["pay_period", "VARCHAR(7)", "2026-01 through 2026-06"],
+          ["expense_category", "VARCHAR(40)", "Travel, Certification, Home Office, Client Meals, Telecom"],
+          ["submitted_amount", "DECIMAL(12,2)", "Amount claimed by employee ($132,624.35 total)"],
+          ["approved_amount", "DECIMAL(12,2)", "Amount approved after policy caps ($128,181.64 total)"]
+        ]
+      },
+      payroll_statements: {
+        title: "payroll_statements — Monthly Gross-to-Net Financial Register",
+        pk: "statement_id (VARCHAR(24)) • UNIQUE(employee_id, pay_period)",
+        fk: "employee_id → employees(employee_id), department_id → departments(department_id)",
+        role: "The central financial fact table combining service hours, base pay, overtime pay, bonus pay, gross taxable pay, TDS deducted, and approved reimbursements into net take-home pay.",
+        columns: [
+          ["statement_id", "VARCHAR(24) PK", "PAY-0001-01 through PAY-0180-06 (1,019 statements)"],
+          ["hourly_base_rate", "DECIMAL(10,2)", "ROUND((annual_base_salary / 12) / 160, 2)"],
+          ["base_service_pay", "DECIMAL(12,2)", "ROUND(regular_hours_worked * hourly_base_rate, 2)"],
+          ["overtime_pay", "DECIMAL(12,2)", "ROUND(overtime_hours * hourly_base_rate * overtime_multiplier, 2)"],
+          ["bonus_pay", "DECIMAL(12,2)", "Bonuses paid in that pay_period"],
+          ["gross_taxable_pay", "DECIMAL(12,2)", "base_service_pay + overtime_pay + bonus_pay"],
+          ["tds_deducted", "DECIMAL(12,2)", "ROUND(gross_taxable_pay * (tds_rate_pct / 100), 2)"],
+          ["reimbursements_approved", "DECIMAL(12,2)", "Non-taxable approved expense reimbursements"],
+          ["net_pay", "DECIMAL(12,2)", "gross_taxable_pay - tds_deducted + reimbursements_approved"]
+        ]
+      }
+    };
+
+    const SQL_QUERIES = [
+      {
+        id: "employee_compensation_summary",
+        label: "1. Employee Gross-to-Net & Rank",
+        question: "How do we calculate each employee's total H1 2026 compensation from services rendered and rank earners within each department?",
+        concepts: [
+          "CTE (`WITH employee_payroll_totals AS (...)`) pre-aggregates 1,019 monthly statements to one row per employee before joining dimension tables.",
+          "Window function `RANK() OVER (PARTITION BY e.department_id ORDER BY t.total_net_pay DESC)` ranks employees within their department without collapsing rows.",
+          "`NULLIF(t.total_gross_taxable_pay, 0)` prevents division-by-zero when computing effective TDS %."
+        ],
+        sql: `WITH employee_payroll_totals AS (
+    SELECT
+        p.employee_id,
+        COUNT(DISTINCT p.pay_period) AS months_paid,
+        ROUND(SUM(p.regular_hours_worked), 2) AS total_regular_hours,
+        ROUND(SUM(p.billable_service_hours), 2) AS total_billable_hours,
+        ROUND(SUM(p.overtime_hours), 2) AS total_overtime_hours,
+        ROUND(SUM(p.base_service_pay), 2) AS total_base_service_pay,
+        ROUND(SUM(p.overtime_pay), 2) AS total_overtime_pay,
+        ROUND(SUM(p.bonus_pay), 2) AS total_bonus_pay,
+        ROUND(SUM(p.gross_taxable_pay), 2) AS total_gross_taxable_pay,
+        ROUND(SUM(p.tds_deducted), 2) AS total_tds_deducted,
+        ROUND(SUM(p.reimbursements_approved), 2) AS total_reimbursements,
+        ROUND(SUM(p.net_pay), 2) AS total_net_pay
+    FROM payroll_statements p
+    GROUP BY p.employee_id
+)
+SELECT
+    e.employee_id, e.full_name, d.department_name, e.job_level, e.tenure_months,
+    t.total_base_service_pay, t.total_overtime_pay, t.total_bonus_pay,
+    t.total_gross_taxable_pay, t.total_tds_deducted, t.total_reimbursements, t.total_net_pay,
+    RANK() OVER (PARTITION BY e.department_id ORDER BY t.total_net_pay DESC) AS dept_net_pay_rank
+FROM employees e
+INNER JOIN departments d ON e.department_id = d.department_id
+INNER JOIN employee_payroll_totals t ON e.employee_id = t.employee_id
+ORDER BY t.total_net_pay DESC;`
+      },
+      {
+        id: "department_payroll_breakdown",
+        label: "2. Department Cost / Billable Hr",
+        question: "What is the total payroll cost structure across our 6 departments, and what does each billable service hour cost the company?",
+        concepts: [
+          "Joins `departments`, `employees`, and `payroll_statements` to roll up hours and compensation components by cost center.",
+          "Computes `total_cost_per_billable_hour` as `(SUM(gross_taxable_pay) + SUM(reimbursements_approved)) / NULLIF(SUM(billable_service_hours), 0)`."
+        ],
+        sql: `SELECT
+    d.department_id,
+    d.department_name,
+    COUNT(DISTINCT e.employee_id) AS headcount,
+    ROUND(AVG(e.tenure_months), 2) AS avg_tenure_months,
+    ROUND(SUM(p.base_service_pay), 2) AS base_service_pay,
+    ROUND(SUM(p.overtime_pay), 2) AS overtime_pay,
+    ROUND(SUM(p.bonus_pay), 2) AS bonus_pay,
+    ROUND(SUM(p.gross_taxable_pay), 2) AS gross_taxable_pay,
+    ROUND(SUM(p.tds_deducted), 2) AS tds_deducted,
+    ROUND(SUM(p.reimbursements_approved), 2) AS reimbursements_approved,
+    ROUND(SUM(p.net_pay), 2) AS net_pay_disbursed,
+    ROUND(
+        (SUM(p.gross_taxable_pay) + SUM(p.reimbursements_approved))
+        / NULLIF(SUM(p.billable_service_hours), 0), 2
+    ) AS total_cost_per_billable_hour
+FROM departments d
+INNER JOIN employees e ON d.department_id = e.department_id
+INNER JOIN payroll_statements p ON e.employee_id = p.employee_id
+GROUP BY d.department_id, d.department_name
+ORDER BY gross_taxable_pay DESC;`
+      },
+      {
+        id: "overtime_service_utilization",
+        label: "3. Service Utilization & Overtime",
+        question: "How efficiently are regular hours converted into billable client service hours each month, and what share of gross payroll goes to overtime?",
+        concepts: [
+          "Joins `service_logs` and `payroll_statements` on composite key `(employee_id, pay_period)`.",
+          "Tracks monthly `billable_utilization_pct` (~86.75%) and `overtime_share_of_gross_pct`."
+        ],
+        sql: `SELECT
+    s.pay_period,
+    COUNT(DISTINCT s.employee_id) AS active_employees_billed,
+    ROUND(SUM(s.regular_hours_worked), 2) AS regular_hours_worked,
+    ROUND(SUM(s.billable_service_hours), 2) AS billable_service_hours,
+    ROUND(SUM(s.billable_service_hours) * 100.0 / NULLIF(SUM(s.regular_hours_worked), 0), 2) AS billable_utilization_pct,
+    ROUND(SUM(s.overtime_hours), 2) AS overtime_hours,
+    ROUND(SUM(p.overtime_pay), 2) AS overtime_pay,
+    ROUND(SUM(p.overtime_pay) * 100.0 / NULLIF(SUM(p.gross_taxable_pay), 0), 2) AS overtime_share_of_gross_pct
+FROM service_logs s
+INNER JOIN payroll_statements p
+    ON s.employee_id = p.employee_id AND s.pay_period = p.pay_period
+GROUP BY s.pay_period
+ORDER BY s.pay_period ASC;`
+      },
+      {
+        id: "tds_tax_bracket_summary",
+        label: "4. TDS Withholding Slab Audit",
+        question: "Why is realized effective TDS slightly higher than each employee's base statutory bracket (12%, 18%, 24%, 28%)?",
+        concepts: [
+          "Uses `CASE` expression to label statutory tax brackets.",
+          "Demonstrates how the +2.0% supplemental bonus withholding raises realized effective TDS from `12.0% -> 12.43%`, `18.0% -> 18.53%`, `24.0% -> 24.53%`, and `28.0% -> 28.55%`."
+        ],
+        sql: `SELECT
+    CASE
+        WHEN e.tax_bracket_pct <= 12.0 THEN '10%-12% Entry Slab'
+        WHEN e.tax_bracket_pct <= 18.0 THEN '18% Mid Slab'
+        WHEN e.tax_bracket_pct <= 24.0 THEN '24% Senior Slab'
+        ELSE '28%+ Executive Slab'
+    END AS tax_slab_group,
+    e.tax_bracket_pct AS statutory_base_rate_pct,
+    COUNT(DISTINCT e.employee_id) AS employee_count,
+    ROUND(SUM(p.gross_taxable_pay), 2) AS total_gross_taxable_pay,
+    ROUND(SUM(p.tds_deducted), 2) AS total_tds_deducted,
+    ROUND(SUM(p.tds_deducted) * 100.0 / NULLIF(SUM(p.gross_taxable_pay), 0), 2) AS realized_effective_tds_pct
+FROM employees e
+INNER JOIN payroll_statements p ON e.employee_id = p.employee_id
+GROUP BY tax_slab_group, e.tax_bracket_pct
+ORDER BY e.tax_bracket_pct ASC;`
+      },
+      {
+        id: "reimbursement_category_summary",
+        label: "5. Reimbursement Audit",
+        question: "Which expense reimbursement categories have the highest policy disallowance variance between submitted and approved amounts?",
+        concepts: [
+          "Audits `submitted_amount` vs `approved_amount` across all 450 reimbursement claims.",
+          "Shows that `Client Meals & Onsite Hospitality` has the strictest approval rate (93.11%) while `Telecom & Data Connectivity` has the highest (98.96%)."
+        ],
+        sql: `SELECT
+    r.expense_category,
+    COUNT(*) AS claim_count,
+    ROUND(SUM(r.submitted_amount), 2) AS total_submitted_usd,
+    ROUND(SUM(r.approved_amount), 2) AS total_approved_usd,
+    ROUND(SUM(r.submitted_amount - r.approved_amount), 2) AS disallowed_variance_usd,
+    ROUND(SUM(r.approved_amount) * 100.0 / NULLIF(SUM(r.submitted_amount), 0), 2) AS approval_rate_pct
+FROM reimbursement_claims r
+GROUP BY r.expense_category
+ORDER BY total_approved_usd DESC;`
+      },
+      {
+        id: "bonus_tenure_comparison",
+        label: "6. Headline +70% Bonus–Tenure",
+        question: "How much longer do bonus-receiving employees work at the company compared to employees who did not receive bonuses?",
+        concepts: [
+          "Uses a `LEFT JOIN` from `employees` to aggregated `bonus_awards` so non-bonus employees are retained with `COALESCE(..., 0)`.",
+          "Uses a `baseline` CTE and `CROSS JOIN` to compute `(41.56 - 24.46) / 24.46 = +69.91%` directly in SQL."
+        ],
+        sql: `WITH cohort_stats AS (
+    SELECT
+        e.received_bonus_flag,
+        CASE WHEN e.received_bonus_flag = 1 THEN 'Bonus Recipients' ELSE 'No Bonus Received' END AS bonus_cohort,
+        COUNT(*) AS employee_count,
+        ROUND(AVG(e.tenure_months), 2) AS avg_tenure_months,
+        ROUND(SUM(CASE WHEN e.employment_status = 'Active' THEN 1 ELSE 0 END) * 100.0 / COUNT(*), 2) AS active_retention_rate_pct,
+        ROUND(AVG(COALESCE(b.total_bonus_usd, 0)), 2) AS avg_bonus_per_employee_usd
+    FROM employees e
+    LEFT JOIN (
+        SELECT employee_id, SUM(bonus_amount) AS total_bonus_usd
+        FROM bonus_awards GROUP BY employee_id
+    ) b ON e.employee_id = b.employee_id
+    GROUP BY e.received_bonus_flag
+),
+baseline AS (
+    SELECT avg_tenure_months AS non_bonus_avg_tenure FROM cohort_stats WHERE received_bonus_flag = 0
+)
+SELECT
+    c.*,
+    ROUND((c.avg_tenure_months - b.non_bonus_avg_tenure) * 100.0 / NULLIF(b.non_bonus_avg_tenure, 0), 2) AS tenure_uplift_vs_no_bonus_pct
+FROM cohort_stats c CROSS JOIN baseline b;`
+      },
+      {
+        id: "bonus_tier_tenure_breakdown",
+        label: "7. Bonus Frequency Tiers",
+        question: "Does employee tenure increase monotonically as employees receive 0, 1, 2, or 3+ performance/retention bonuses?",
+        concepts: [
+          "Combines two CTEs (`employee_bonus_summary` and `employee_service_quality`) to prevent fan-out (chasm trap) when joining one-to-many `bonus_awards` and one-to-many `service_logs`!"
+        ],
+        sql: `WITH employee_bonus_summary AS (
+    SELECT e.employee_id, e.tenure_months, e.employment_status, e.bonus_count,
+           COALESCE(SUM(b.bonus_amount), 0) AS total_bonus_usd
+    FROM employees e
+    LEFT JOIN bonus_awards b ON e.employee_id = b.employee_id
+    GROUP BY e.employee_id, e.tenure_months, e.employment_status, e.bonus_count
+),
+employee_service_quality AS (
+    SELECT employee_id, ROUND(AVG(service_quality_score), 2) AS avg_quality_score,
+           ROUND(SUM(billable_service_hours), 2) AS total_billable_hours
+    FROM service_logs GROUP BY employee_id
+)
+SELECT
+    CASE
+        WHEN ebs.bonus_count = 0 THEN '0_No_Bonus'
+        WHEN ebs.bonus_count = 1 THEN '1_Single_Spot_or_Annual_Bonus'
+        WHEN ebs.bonus_count = 2 THEN '2_Dual_Performance_Bonuses'
+        ELSE '3+_Multi_Cycle_Retention_and_Performance'
+    END AS bonus_frequency_tier,
+    COUNT(*) AS employee_count,
+    ROUND(AVG(ebs.total_bonus_usd), 2) AS avg_total_bonus_usd,
+    ROUND(AVG(ebs.tenure_months), 2) AS avg_tenure_months
+FROM employee_bonus_summary ebs
+INNER JOIN employee_service_quality esq ON ebs.employee_id = esq.employee_id
+GROUP BY bonus_frequency_tier;`
+      },
+      {
+        id: "level_controlled_tenure_check",
+        label: "8. Seniority Confounding Check",
+        question: "Does the ~70% bonus-tenure uplift still hold when we compare employees within the same job level (L1, L2, L3, L4)?",
+        concepts: [
+          "Uses conditional `AVG(CASE WHEN e.received_bonus_flag = 1 THEN e.tenure_months END)` vs `received_bonus_flag = 0` inside each `job_level`.",
+          "Confirms positive uplift within every band: L1 (+52.00%), L2 (+75.50%), L3 (+72.62%), and L4 (+67.11%)."
+        ],
+        sql: `SELECT
+    e.job_level,
+    ROUND(AVG(CASE WHEN e.received_bonus_flag = 1 THEN e.tenure_months END), 2) AS bonus_recipient_tenure_months,
+    ROUND(AVG(CASE WHEN e.received_bonus_flag = 0 THEN e.tenure_months END), 2) AS non_bonus_tenure_months,
+    ROUND(
+        (AVG(CASE WHEN e.received_bonus_flag = 1 THEN e.tenure_months END)
+         - AVG(CASE WHEN e.received_bonus_flag = 0 THEN e.tenure_months END)) * 100.0
+        / NULLIF(AVG(CASE WHEN e.received_bonus_flag = 0 THEN e.tenure_months END), 0), 2
+    ) AS within_level_tenure_uplift_pct
+FROM employees e
+GROUP BY e.job_level
+ORDER BY e.job_level ASC;`
+      }
+    ];
+
+    const QUIZ_QUESTIONS = [
+      {
+        q: "1. Why does Query #7 (`bonus_tier_tenure_breakdown`) aggregate `bonus_awards` and `service_logs` in separate CTEs before joining them?",
+        options: [
+          "To prevent a many-to-many join fan-out (chasm trap) that would double-count bonus dollars across multiple monthly service logs",
+          "Because SQLite does not support joining more than two tables in a SELECT clause",
+          "Because reimbursement claims are taxed at 28%"
+        ],
+        correct: 0,
+        explanation: "Correct! An employee has up to 6 `service_logs` rows and up to 3 `bonus_awards` rows. Joining them directly without pre-aggregating in separate CTEs would multiply each bonus by the number of service log months!"
+      },
+      {
+        q: "2. How are approved expense reimbursements treated in the Gross-to-Net payroll equation?",
+        options: [
+          "They are added to Gross Taxable Pay before TDS is calculated",
+          "They are non-taxable (`is_tax_exempt = 1`) and added after TDS is deducted: Net Pay = Gross Taxable Pay - TDS + Approved Reimbursements",
+          "They are subtracted from Net Pay"
+        ],
+        correct: 1,
+        explanation: "Correct! Reimbursements compensate employees for out-of-pocket business expenses (`is_tax_exempt = 1`), so they are excluded from `gross_taxable_pay` and added after `tds_deducted`."
+      },
+      {
+        q: "3. Why is the realized effective TDS rate for the 18% Mid Slab equal to 18.53% instead of exactly 18.00%?",
+        options: [
+          "Because of floating-point rounding errors",
+          "Because pay periods that include a bonus award incur a +2.0% supplemental TDS withholding rate (20.0% in bonus months)",
+          "Because overtime hours are taxed separately at 35%"
+        ],
+        correct: 1,
+        explanation: "Correct! In months when an employee receives a bonus (`bonus_pay > 0`), the statutory withholding rate increases by +2.0% for supplemental wage withholding."
+      },
+      {
+        q: "4. How should you frame the '+69.91% (~70%) longer work duration for bonus recipients' insight in an interview?",
+        options: [
+          "As a randomized controlled experiment proving bonuses cause 70% longer tenure",
+          "As an observational cohort association (+69.91% overall, and +52% to +75% within job levels L1–L4) that controls for seniority and motivates retention experiments",
+          "As an unverified guess"
+        ],
+        correct: 1,
+        explanation: "Correct! Distinguishing observational cohort associations (even after stratifying by job level L1–L4) from causal experiments shows strong statistical maturity."
+      }
+    ];
+
+    function switchTab(tabId, btn) {
+      document.querySelectorAll(".tab-panel").forEach(p => p.classList.remove("active"));
+      document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+      document.getElementById(tabId).classList.add("active");
+      btn.classList.add("active");
+    }
+
+    function selectArchStep(index, nodeEl) {
+      document.querySelectorAll(".pipe-node").forEach(n => n.classList.remove("active"));
+      if (nodeEl) nodeEl.classList.add("active");
+      const step = ARCH_STEPS[index];
+      document.getElementById("arch-detail-card").innerHTML = `
+        <h3>${step.title}</h3>
+        <p style="font-size: 13px; color: var(--emerald); font-weight: 600; margin-bottom: 10px;">
+          Tech Used: ${step.tech}
+        </p>
+        <p style="font-size: 14px; color: var(--text); margin-bottom: 12px;">
+          ${step.howItBinds}
+        </p>
+        <pre>${step.code}</pre>
+      `;
+    }
+
+    function selectTable(tableName, btnEl) {
+      document.querySelectorAll(".table-btn").forEach(b => b.classList.remove("active"));
+      if (btnEl) btnEl.classList.add("active");
+      const info = SCHEMA_TABLES[tableName];
+      const rowsHtml = info.columns
+        .map(
+          c => `<tr>
+            <td><code>${c[0]}</code></td>
+            <td>${c[1]}</td>
+            <td>${c[2]}</td>
+          </tr>`
+        )
+        .join("");
+      document.getElementById("schema-detail-card").innerHTML = `
+        <h3>${info.title}</h3>
+        <p style="font-size: 13.5px; margin-bottom: 6px;">
+          <strong>Primary Key:</strong> <code>${info.pk}</code> &nbsp;|&nbsp;
+          <strong>Foreign Keys:</strong> <code>${info.fk}</code>
+        </p>
+        <p style="font-size: 13.5px; color: var(--text-muted); margin-bottom: 12px;">
+          ${info.role}
+        </p>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Column</th>
+              <th>Type &amp; Key</th>
+              <th>Business Meaning &amp; Domain</th>
+            </tr>
+          </thead>
+          <tbody>${rowsHtml}</tbody>
+        </table>
+      `;
+    }
+
+    function updateSimulator() {
+      const baseTaxRate = parseFloat(document.getElementById("sim-level").value);
+      const annualSalary = parseFloat(document.getElementById("sim-salary").value);
+      const regHours = parseFloat(document.getElementById("sim-reg").value);
+      const otHours = parseFloat(document.getElementById("sim-ot").value);
+      const bonusPay = parseFloat(document.getElementById("sim-bonus").value);
+      const reimbApproved = parseFloat(document.getElementById("sim-reimb").value);
+
+      const levelMap = { 12: "L1", 18: "L2", 24: "L3", 28: "L4" };
+      document.getElementById("sim-level-label").textContent = `${levelMap[baseTaxRate]} (${baseTaxRate.toFixed(1)}% Base TDS)`;
+      document.getElementById("sim-salary-val").textContent = `$${annualSalary.toLocaleString()}`;
+      document.getElementById("sim-reg-val").textContent = `${regHours} hrs`;
+
+      const otMultiplier = otHours <= 12 ? 1.5 : 1.75;
+      document.getElementById("sim-ot-val").textContent = `${otHours} hrs (${otMultiplier.toFixed(2)}x)`;
+      document.getElementById("sim-bonus-val").textContent =
+        bonusPay > 0 ? `$${bonusPay.toLocaleString()} (+2% Supplemental TDS)` : `$0 (No Supplemental TDS)`;
+      document.getElementById("sim-reimb-val").textContent = `$${reimbApproved.toLocaleString()}`;
+
+      const hourlyBaseRate = Math.round(((annualSalary / 12.0) / 160.0) * 100) / 100;
+      const baseServicePay = Math.round(regHours * hourlyBaseRate * 100) / 100;
+      const overtimePay = Math.round(otHours * hourlyBaseRate * otMultiplier * 100) / 100;
+      const grossTaxablePay = Math.round((baseServicePay + overtimePay + bonusPay) * 100) / 100;
+      const tdsRatePct = baseTaxRate + (bonusPay > 0 ? 2.0 : 0.0);
+      const tdsDeducted = Math.round(grossTaxablePay * (tdsRatePct / 100.0) * 100) / 100;
+      const netPay = Math.round((grossTaxablePay - tdsDeducted + reimbApproved) * 100) / 100;
+
+      const fmt = n => n.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
+      document.getElementById("sim-waterfall").innerHTML = `
+        <div class="waterfall-row">
+          <span>1. Hourly Base Rate <code>(Annual / 12 / 160)</code></span>
+          <strong>$${fmt(hourlyBaseRate)} / hr</strong>
+        </div>
+        <div class="waterfall-row plus">
+          <span>2. Base Service Pay <code>(${regHours} hrs × $${fmt(hourlyBaseRate)})</code></span>
+          <strong>+ $${fmt(baseServicePay)}</strong>
+        </div>
+        <div class="waterfall-row plus">
+          <span>3. Overtime Pay <code>(${otHours} hrs × $${fmt(hourlyBaseRate)} × ${otMultiplier.toFixed(2)}x)</code></span>
+          <strong>+ $${fmt(overtimePay)}</strong>
+        </div>
+        <div class="waterfall-row plus">
+          <span>4. Performance / Retention Bonus</span>
+          <strong>+ $${fmt(bonusPay)}</strong>
+        </div>
+        <div class="waterfall-row total">
+          <span>5. Gross Taxable Pay <code>(Base + Overtime + Bonus)</code></span>
+          <strong>= $${fmt(grossTaxablePay)}</strong>
+        </div>
+        <div class="waterfall-row minus">
+          <span>6. Tax Deducted at Source (TDS @ ${tdsRatePct.toFixed(1)}%)</span>
+          <strong style="color: var(--rose);">- $${fmt(tdsDeducted)}</strong>
+        </div>
+        <div class="waterfall-row plus">
+          <span>7. Approved Expense Reimbursements (Non-Taxable)</span>
+          <strong>+ $${fmt(reimbApproved)}</strong>
+        </div>
+        <div class="waterfall-row total" style="border-left-color: var(--emerald); background: var(--emerald-soft);">
+          <span>8. Net Disbursed Take-Home Pay</span>
+          <strong style="color: var(--emerald); font-size: 17px;">= $${fmt(netPay)}</strong>
+        </div>
+      `;
+
+      document.getElementById("sim-sql-preview").textContent = `-- SQL Reconciliation Assertion (analytics.py):
+gross_taxable_pay (${fmt(grossTaxablePay)}) = base_service_pay (${fmt(baseServicePay)}) + overtime_pay (${fmt(overtimePay)}) + bonus_pay (${fmt(bonusPay)})
+net_pay (${fmt(netPay)}) = gross_taxable_pay (${fmt(grossTaxablePay)}) - tds_deducted (${fmt(tdsDeducted)}) + reimbursements_approved (${fmt(reimbApproved)})`;
+    }
+
+    function renderSqlPills() {
+      const container = document.getElementById("sql-pill-list");
+      container.innerHTML = SQL_QUERIES.map(
+        (q, i) =>
+          `<button class="pill-btn ${i === 0 ? "active" : ""}" onclick="selectSqlQuery(${i}, this)">${q.label}</button>`
+      ).join("");
+      selectSqlQuery(0, null);
+    }
+
+    function selectSqlQuery(index, btnEl) {
+      if (btnEl) {
+        document.querySelectorAll(".pill-btn").forEach(b => b.classList.remove("active"));
+        btnEl.classList.add("active");
+      }
+      const q = SQL_QUERIES[index];
+      const conceptsHtml = q.concepts.map(c => `<li style="margin-bottom: 6px;">${c}</li>`).join("");
+      document.getElementById("sql-query-detail").innerHTML = `
+        <h3>Query Tag: <code>-- [QUERY: ${q.id}]</code></h3>
+        <p style="font-size: 14px; margin-bottom: 10px;">
+          <strong>Business Question:</strong> ${q.question}
+        </p>
+        <div class="callout" style="margin-bottom: 12px;">
+          <strong>Key SQL Mechanics Used:</strong>
+          <ul style="margin-left: 18px; margin-top: 6px;">${conceptsHtml}</ul>
+        </div>
+        <pre>${q.sql}</pre>
+      `;
+    }
+
+    function renderQuiz() {
+      const container = document.getElementById("quiz-container");
+      container.innerHTML = QUIZ_QUESTIONS.map(
+        (item, qIdx) => `
+          <div style="margin-bottom: 18px; padding-bottom: 14px; border-bottom: 1px solid var(--border);">
+            <div style="font-weight: 600; font-size: 14px;">${item.q}</div>
+            ${item.options
+              .map(
+                (opt, oIdx) =>
+                  `<button class="quiz-option" id="q-${qIdx}-${oIdx}" onclick="answerQuiz(${qIdx}, ${oIdx})">${opt}</button>`
+              )
+              .join("")}
+            <div id="q-exp-${qIdx}" style="display:none; margin-top: 8px; font-size: 13px; color: var(--emerald);"></div>
+          </div>
+        `
+      ).join("");
+    }
+
+    function answerQuiz(qIdx, oIdx) {
+      const item = QUIZ_QUESTIONS[qIdx];
+      item.options.forEach((_, idx) => {
+        const btn = document.getElementById(`q-${qIdx}-${idx}`);
+        btn.classList.remove("correct", "wrong");
+        if (idx === item.correct) btn.classList.add("correct");
+        else if (idx === oIdx) btn.classList.add("wrong");
+      });
+      const expEl = document.getElementById(`q-exp-${qIdx}`);
+      expEl.style.display = "block";
+      expEl.textContent = item.explanation;
+    }
+
+    // Initialize interactive modules on load
+    selectArchStep(0, null);
+    selectTable("departments", null);
+    updateSimulator();
+    renderSqlPills();
+    renderQuiz();
+  </script>
+</body>
+</html>

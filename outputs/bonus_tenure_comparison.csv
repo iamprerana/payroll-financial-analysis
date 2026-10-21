@@ -1,0 +1,3 @@
+bonus_cohort,employee_count,avg_tenure_months,min_tenure_months,max_tenure_months,active_retention_rate_pct,avg_bonus_per_employee_usd,tenure_uplift_vs_no_bonus_pct
+Bonus Recipients,108,41.56,18.1,69.1,89.81,9135.06,69.91
+No Bonus Received,72,24.46,12.6,39.4,72.22,0.0,0.0

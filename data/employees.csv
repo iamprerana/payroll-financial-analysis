@@ -1,0 +1,181 @@
+employee_id,full_name,department_id,job_title,job_level,employment_type,hire_date,exit_date,employment_status,tenure_months,annual_base_salary,standard_monthly_hours,tax_bracket_pct,received_bonus_flag,bonus_count
+EMP-0001,Priya Reed,DEPT-ENG,Associate Analyst,L1,Full-Time,2023-08-03,,Active,34.9,84000.0,160,12.0,1,2
+EMP-0002,Logan Chen,DEPT-CDS,Junior Payroll Specialist,L1,Full-Time,2024-10-29,,Active,20.0,79000.0,160,12.0,1,1
+EMP-0003,Clara Carter,DEPT-PRD,Client Implementation Specialist,L2,Full-Time,2024-03-03,,Active,27.9,102500.0,160,18.0,1,1
+EMP-0004,Adrian Kulkarni,DEPT-CLS,Software Engineer,L2,Full-Time,2022-06-06,,Active,48.8,94000.0,160,18.0,1,3
+EMP-0005,Ananya Silva,DEPT-FIN,Financial Data Analyst,L2,Full-Time,2023-07-22,,Active,35.3,93500.0,160,18.0,1,1
+EMP-0006,Mason Rao,DEPT-POP,Senior Statistical Programmer,L3,Full-Time,2022-05-31,,Active,49.0,120500.0,160,24.0,1,2
+EMP-0007,Meera Morgan,DEPT-ENG,Junior Payroll Specialist,L1,Full-Time,2023-04-03,,Active,38.9,84000.0,160,12.0,1,3
+EMP-0008,Devon Verma,DEPT-CDS,Client Implementation Specialist,L2,Full-Time,2022-06-18,,Active,48.4,92000.0,160,18.0,1,2
+EMP-0009,Sofia Brooks,DEPT-PRD,Software Engineer,L2,Full-Time,2022-03-25,,Active,51.2,99500.0,160,18.0,1,2
+EMP-0010,Rohan Joshi,DEPT-CLS,Financial Data Analyst,L2,Full-Time,2023-06-24,,Active,36.2,85000.0,160,18.0,1,1
+EMP-0011,Iris Sharma,DEPT-FIN,Senior Statistical Programmer,L3,Full-Time,2022-09-02,,Active,45.9,134000.0,160,24.0,1,1
+EMP-0012,Julian Nair,DEPT-POP,Senior Product Analyst,L3,Full-Time,2021-05-06,,Active,61.8,125500.0,160,24.0,1,3
+EMP-0013,Maya Rivera,DEPT-ENG,Client Implementation Specialist,L2,Full-Time,2023-03-13,,Active,39.6,93500.0,160,18.0,1,1
+EMP-0014,Lucas Desai,DEPT-CDS,Software Engineer,L2,Full-Time,2022-10-02,,Active,44.9,97000.0,160,18.0,1,2
+EMP-0015,Kavya Patel,DEPT-PRD,Financial Data Analyst,L2,Full-Time,2024-01-18,2026-04-28,Separated,27.3,106000.0,160,18.0,1,1
+EMP-0016,Isaac Mehta,DEPT-CLS,Senior Statistical Programmer,L3,Full-Time,2022-06-27,,Active,48.1,141000.0,160,24.0,1,1
+EMP-0017,Nora Price,DEPT-FIN,Senior Product Analyst,L3,Full-Time,2022-07-21,,Active,47.3,140000.0,160,24.0,1,2
+EMP-0018,Ethan Kapoor,DEPT-POP,Lead Engineering Manager,L4,Full-Time,2020-12-23,,Active,66.2,141500.0,160,28.0,1,2
+EMP-0019,Nadia Hayes,DEPT-ENG,Software Engineer,L2,Full-Time,2024-03-28,2026-05-28,Separated,26.0,115500.0,160,18.0,0,0
+EMP-0020,Nathan Iyer,DEPT-CDS,Financial Data Analyst,L2,Full-Time,2024-02-23,,Active,28.2,114500.0,160,18.0,0,0
+EMP-0021,Sana Bennett,DEPT-PRD,Senior Statistical Programmer,L3,Full-Time,2024-09-01,,Active,21.9,137500.0,160,24.0,0,0
+EMP-0022,Noah Nguyen,DEPT-CLS,Senior Product Analyst,L3,Full-Time,2023-12-21,,Active,30.3,145000.0,160,24.0,0,0
+EMP-0023,Elena Foster,DEPT-FIN,Lead Engineering Manager,L4,Full-Time,2023-04-03,,Active,38.9,169000.0,160,28.0,0,0
+EMP-0024,Owen Kim,DEPT-POP,Associate Analyst,L1,Full-Time,2024-11-20,,Active,19.3,72000.0,160,12.0,0,0
+EMP-0025,Leah Reed,DEPT-ENG,Financial Data Analyst,L2,Full-Time,2024-05-25,2026-04-28,Separated,23.1,98500.0,160,18.0,0,0
+EMP-0026,Liam Chen,DEPT-CDS,Senior Statistical Programmer,L3,Full-Time,2024-05-03,,Active,25.9,144500.0,160,24.0,0,0
+EMP-0027,Zoe Carter,DEPT-PRD,Senior Product Analyst,L3,Full-Time,2024-09-23,,Active,21.2,144000.0,160,24.0,0,0
+EMP-0028,Caleb Kulkarni,DEPT-CLS,Lead Engineering Manager,L4,Full-Time,2024-02-29,,Active,28.0,175500.0,160,28.0,0,0
+EMP-0029,Tara Silva,DEPT-FIN,Associate Analyst,L1,Full-Time,2024-12-12,2026-04-28,Separated,16.5,69500.0,160,12.0,0,0
+EMP-0030,Aarav Rao,DEPT-POP,Junior Payroll Specialist,L1,Full-Time,2024-09-01,,Active,21.9,63000.0,160,12.0,0,0
+EMP-0031,Priya Morgan,DEPT-ENG,Senior Statistical Programmer,L3,Full-Time,2022-03-15,,Active,51.5,150000.0,160,24.0,1,1
+EMP-0032,Logan Verma,DEPT-CDS,Senior Product Analyst,L3,Full-Time,2021-09-23,,Active,57.2,140500.0,160,24.0,1,3
+EMP-0033,Clara Brooks,DEPT-PRD,Lead Engineering Manager,L4,Full-Time,2021-02-28,,Active,64.0,165000.0,160,28.0,1,3
+EMP-0034,Adrian Joshi,DEPT-CLS,Associate Analyst,L1,Full-Time,2023-11-29,,Active,31.0,69000.0,160,12.0,1,1
+EMP-0035,Ananya Sharma,DEPT-FIN,Junior Payroll Specialist,L1,Full-Time,2024-11-10,,Active,19.6,76500.0,160,12.0,1,2
+EMP-0036,Mason Nair,DEPT-POP,Client Implementation Specialist,L2,Full-Time,2023-09-18,2026-05-28,Separated,32.3,98000.0,160,18.0,1,2
+EMP-0037,Meera Rivera,DEPT-ENG,Senior Product Analyst,L3,Full-Time,2022-12-14,,Active,42.5,131000.0,160,24.0,1,2
+EMP-0038,Devon Desai,DEPT-CDS,Lead Engineering Manager,L4,Full-Time,2020-09-26,,Active,69.1,194500.0,160,28.0,1,2
+EMP-0039,Sofia Patel,DEPT-PRD,Associate Analyst,L1,Full-Time,2024-10-05,,Active,20.8,74000.0,160,12.0,1,1
+EMP-0040,Rohan Mehta,DEPT-CLS,Junior Payroll Specialist,L1,Full-Time,2024-01-05,,Active,29.8,69000.0,160,12.0,1,1
+EMP-0041,Iris Price,DEPT-FIN,Client Implementation Specialist,L2,Full-Time,2023-04-18,,Active,38.4,85500.0,160,18.0,1,1
+EMP-0042,Julian Kapoor,DEPT-POP,Software Engineer,L2,Full-Time,2022-02-01,,Active,52.9,90000.0,160,18.0,1,3
+EMP-0043,Maya Hayes,DEPT-ENG,Lead Engineering Manager,L4,Full-Time,2021-11-17,,Active,55.4,168500.0,160,28.0,1,2
+EMP-0044,Lucas Iyer,DEPT-CDS,Associate Analyst,L1,Full-Time,2023-09-30,,Active,33.0,68500.0,160,12.0,1,1
+EMP-0045,Kavya Bennett,DEPT-PRD,Junior Payroll Specialist,L1,Full-Time,2024-04-11,,Active,26.6,75000.0,160,12.0,1,2
+EMP-0046,Isaac Nguyen,DEPT-CLS,Client Implementation Specialist,L2,Full-Time,2024-04-08,,Active,26.7,105000.0,160,18.0,1,1
+EMP-0047,Nora Foster,DEPT-FIN,Software Engineer,L2,Full-Time,2023-06-09,,Active,36.7,99500.0,160,18.0,1,2
+EMP-0048,Ethan Kim,DEPT-POP,Financial Data Analyst,L2,Full-Time,2022-04-06,,Active,50.8,96000.0,160,18.0,1,2
+EMP-0049,Nadia Reed,DEPT-ENG,Associate Analyst,L1,Full-Time,2024-11-02,2026-05-28,Separated,18.8,78500.0,160,12.0,0,0
+EMP-0050,Nathan Chen,DEPT-CDS,Junior Payroll Specialist,L1,Full-Time,2024-11-10,,Active,19.6,83000.0,160,12.0,0,0
+EMP-0051,Sana Carter,DEPT-PRD,Client Implementation Specialist,L2,Full-Time,2024-03-03,,Active,27.9,107500.0,160,18.0,0,0
+EMP-0052,Noah Kulkarni,DEPT-CLS,Software Engineer,L2,Full-Time,2024-04-17,,Active,26.4,106500.0,160,18.0,0,0
+EMP-0053,Elena Silva,DEPT-FIN,Financial Data Analyst,L2,Full-Time,2024-02-26,,Active,28.1,84500.0,160,18.0,0,0
+EMP-0054,Owen Rao,DEPT-POP,Senior Statistical Programmer,L3,Full-Time,2024-01-26,,Active,29.1,128000.0,160,24.0,0,0
+EMP-0055,Leah Morgan,DEPT-ENG,Junior Payroll Specialist,L1,Full-Time,2024-12-20,,Active,18.3,76500.0,160,12.0,0,0
+EMP-0056,Liam Verma,DEPT-CDS,Client Implementation Specialist,L2,Full-Time,2024-04-27,2026-03-28,Separated,23.0,96000.0,160,18.0,0,0
+EMP-0057,Zoe Brooks,DEPT-PRD,Software Engineer,L2,Full-Time,2024-06-21,2026-04-28,Separated,22.2,91500.0,160,18.0,0,0
+EMP-0058,Caleb Joshi,DEPT-CLS,Financial Data Analyst,L2,Full-Time,2024-11-05,2026-05-28,Separated,18.7,104500.0,160,18.0,0,0
+EMP-0059,Tara Sharma,DEPT-FIN,Senior Statistical Programmer,L3,Full-Time,2024-05-03,,Active,25.9,132000.0,160,24.0,0,0
+EMP-0060,Aarav Nair,DEPT-POP,Senior Product Analyst,L3,Full-Time,2023-11-24,2026-05-28,Separated,30.1,112000.0,160,24.0,0,0
+EMP-0061,Priya Rivera,DEPT-ENG,Client Implementation Specialist,L2,Full-Time,2023-11-02,,Active,31.9,97000.0,160,18.0,1,3
+EMP-0062,Logan Desai,DEPT-CDS,Software Engineer,L2,Full-Time,2022-08-15,,Active,46.5,107000.0,160,18.0,1,2
+EMP-0063,Clara Patel,DEPT-PRD,Financial Data Analyst,L2,Full-Time,2022-04-27,,Active,50.1,98000.0,160,18.0,1,2
+EMP-0064,Adrian Mehta,DEPT-CLS,Senior Statistical Programmer,L3,Full-Time,2022-08-03,2026-05-28,Separated,45.8,122000.0,160,24.0,1,2
+EMP-0065,Ananya Price,DEPT-FIN,Senior Product Analyst,L3,Full-Time,2022-02-01,,Active,52.9,129500.0,160,24.0,1,3
+EMP-0066,Mason Kapoor,DEPT-POP,Lead Engineering Manager,L4,Full-Time,2020-12-08,,Active,66.7,159000.0,160,28.0,1,2
+EMP-0067,Meera Hayes,DEPT-ENG,Software Engineer,L2,Full-Time,2021-11-24,2026-04-28,Separated,53.1,118000.0,160,18.0,1,3
+EMP-0068,Devon Iyer,DEPT-CDS,Financial Data Analyst,L2,Full-Time,2024-01-17,,Active,29.4,102000.0,160,18.0,1,1
+EMP-0069,Sofia Bennett,DEPT-PRD,Senior Statistical Programmer,L3,Full-Time,2021-11-05,,Active,55.8,152500.0,160,24.0,1,2
+EMP-0070,Rohan Nguyen,DEPT-CLS,Senior Product Analyst,L3,Full-Time,2022-09-05,,Active,45.8,119000.0,160,24.0,1,2
+EMP-0071,Iris Foster,DEPT-FIN,Lead Engineering Manager,L4,Full-Time,2022-07-21,,Active,47.3,151000.0,160,28.0,1,1
+EMP-0072,Julian Kim,DEPT-POP,Associate Analyst,L1,Full-Time,2024-05-09,,Active,25.7,63000.0,160,12.0,1,2
+EMP-0073,Maya Reed,DEPT-ENG,Financial Data Analyst,L2,Full-Time,2023-03-07,,Active,39.8,112000.0,160,18.0,1,2
+EMP-0074,Lucas Chen,DEPT-CDS,Senior Statistical Programmer,L3,Full-Time,2022-05-31,2026-04-28,Separated,46.9,142500.0,160,24.0,1,2
+EMP-0075,Kavya Carter,DEPT-PRD,Senior Product Analyst,L3,Full-Time,2022-10-05,,Active,44.8,131000.0,160,24.0,1,1
+EMP-0076,Isaac Kulkarni,DEPT-CLS,Lead Engineering Manager,L4,Full-Time,2021-10-26,,Active,56.1,153000.0,160,28.0,1,1
+EMP-0077,Nora Silva,DEPT-FIN,Associate Analyst,L1,Full-Time,2023-08-24,,Active,34.2,77000.0,160,12.0,1,1
+EMP-0078,Ethan Rao,DEPT-POP,Junior Payroll Specialist,L1,Full-Time,2024-08-24,2026-03-28,Separated,19.1,68000.0,160,12.0,1,1
+EMP-0079,Nadia Morgan,DEPT-ENG,Senior Statistical Programmer,L3,Full-Time,2023-08-04,2026-04-28,Separated,32.8,128000.0,160,24.0,0,0
+EMP-0080,Nathan Verma,DEPT-CDS,Senior Product Analyst,L3,Full-Time,2024-05-06,,Active,25.8,153000.0,160,24.0,0,0
+EMP-0081,Sana Brooks,DEPT-PRD,Lead Engineering Manager,L4,Full-Time,2023-05-04,2026-04-28,Separated,35.8,157500.0,160,28.0,0,0
+EMP-0082,Noah Joshi,DEPT-CLS,Associate Analyst,L1,Full-Time,2024-10-02,,Active,20.9,63000.0,160,12.0,0,0
+EMP-0083,Elena Sharma,DEPT-FIN,Junior Payroll Specialist,L1,Full-Time,2024-09-11,,Active,21.6,63500.0,160,12.0,0,0
+EMP-0084,Owen Nair,DEPT-POP,Client Implementation Specialist,L2,Full-Time,2024-10-03,2026-04-28,Separated,18.8,85000.0,160,18.0,0,0
+EMP-0085,Leah Rivera,DEPT-ENG,Senior Product Analyst,L3,Full-Time,2023-11-20,,Active,31.3,147500.0,160,24.0,0,0
+EMP-0086,Liam Desai,DEPT-CDS,Lead Engineering Manager,L4,Full-Time,2023-05-19,2026-03-28,Separated,34.3,182000.0,160,28.0,0,0
+EMP-0087,Zoe Patel,DEPT-PRD,Associate Analyst,L1,Full-Time,2025-05-12,,Active,13.6,69500.0,160,12.0,0,0
+EMP-0088,Caleb Mehta,DEPT-CLS,Junior Payroll Specialist,L1,Full-Time,2024-11-20,,Active,19.3,64000.0,160,12.0,0,0
+EMP-0089,Tara Price,DEPT-FIN,Client Implementation Specialist,L2,Full-Time,2025-02-01,,Active,16.9,98500.0,160,18.0,0,0
+EMP-0090,Aarav Kapoor,DEPT-POP,Software Engineer,L2,Full-Time,2024-07-27,,Active,23.1,93000.0,160,18.0,0,0
+EMP-0091,Priya Hayes,DEPT-ENG,Lead Engineering Manager,L4,Full-Time,2022-01-18,2026-04-28,Separated,51.3,194500.0,160,28.0,1,1
+EMP-0092,Logan Iyer,DEPT-CDS,Associate Analyst,L1,Full-Time,2024-11-17,,Active,19.4,83000.0,160,12.0,1,2
+EMP-0093,Clara Bennett,DEPT-PRD,Junior Payroll Specialist,L1,Full-Time,2023-07-25,,Active,35.2,77000.0,160,12.0,1,1
+EMP-0094,Adrian Nguyen,DEPT-CLS,Client Implementation Specialist,L2,Full-Time,2023-06-03,2026-05-28,Separated,35.8,98000.0,160,18.0,1,1
+EMP-0095,Ananya Foster,DEPT-FIN,Software Engineer,L2,Full-Time,2024-03-15,,Active,27.5,109500.0,160,18.0,1,1
+EMP-0096,Mason Kim,DEPT-POP,Financial Data Analyst,L2,Full-Time,2022-11-05,,Active,43.8,98500.0,160,18.0,1,2
+EMP-0097,Meera Reed,DEPT-ENG,Associate Analyst,L1,Full-Time,2024-12-26,,Active,18.1,86500.0,160,12.0,1,1
+EMP-0098,Devon Chen,DEPT-CDS,Junior Payroll Specialist,L1,Full-Time,2024-01-17,,Active,29.4,83500.0,160,12.0,1,2
+EMP-0099,Sofia Carter,DEPT-PRD,Client Implementation Specialist,L2,Full-Time,2022-09-14,,Active,45.5,91500.0,160,18.0,1,1
+EMP-0100,Rohan Kulkarni,DEPT-CLS,Software Engineer,L2,Full-Time,2023-04-27,,Active,38.1,111000.0,160,18.0,1,2
+EMP-0101,Iris Silva,DEPT-FIN,Financial Data Analyst,L2,Full-Time,2023-03-31,,Active,39.0,94000.0,160,18.0,1,2
+EMP-0102,Julian Rao,DEPT-POP,Senior Statistical Programmer,L3,Full-Time,2022-03-25,,Active,51.2,120000.0,160,24.0,1,3
+EMP-0103,Maya Morgan,DEPT-ENG,Junior Payroll Specialist,L1,Full-Time,2023-12-09,,Active,30.7,87500.0,160,12.0,1,3
+EMP-0104,Lucas Verma,DEPT-CDS,Client Implementation Specialist,L2,Full-Time,2023-01-14,,Active,41.5,118000.0,160,18.0,1,1
+EMP-0105,Kavya Brooks,DEPT-PRD,Software Engineer,L2,Full-Time,2022-07-06,,Active,47.8,96000.0,160,18.0,1,2
+EMP-0106,Isaac Joshi,DEPT-CLS,Financial Data Analyst,L2,Full-Time,2023-09-02,,Active,33.9,106500.0,160,18.0,1,3
+EMP-0107,Nora Sharma,DEPT-FIN,Senior Statistical Programmer,L3,Full-Time,2021-06-05,,Active,60.8,119000.0,160,24.0,1,2
+EMP-0108,Ethan Nair,DEPT-POP,Senior Product Analyst,L3,Full-Time,2023-03-04,,Active,39.9,135500.0,160,24.0,1,2
+EMP-0109,Nadia Rivera,DEPT-ENG,Client Implementation Specialist,L2,Full-Time,2024-05-30,,Active,25.0,106000.0,160,18.0,0,0
+EMP-0110,Nathan Desai,DEPT-CDS,Software Engineer,L2,Full-Time,2024-04-24,,Active,26.2,91000.0,160,18.0,0,0
+EMP-0111,Sana Patel,DEPT-PRD,Financial Data Analyst,L2,Full-Time,2024-08-05,,Active,22.8,112000.0,160,18.0,0,0
+EMP-0112,Noah Mehta,DEPT-CLS,Senior Statistical Programmer,L3,Full-Time,2023-08-12,,Active,34.6,134500.0,160,24.0,0,0
+EMP-0113,Elena Price,DEPT-FIN,Senior Product Analyst,L3,Full-Time,2024-02-17,,Active,28.4,116500.0,160,24.0,0,0
+EMP-0114,Owen Kapoor,DEPT-POP,Lead Engineering Manager,L4,Full-Time,2023-10-15,,Active,32.5,163000.0,160,28.0,0,0
+EMP-0115,Leah Hayes,DEPT-ENG,Software Engineer,L2,Full-Time,2024-05-24,,Active,25.2,96000.0,160,18.0,0,0
+EMP-0116,Liam Iyer,DEPT-CDS,Financial Data Analyst,L2,Full-Time,2024-10-17,,Active,20.4,117500.0,160,18.0,0,0
+EMP-0117,Zoe Bennett,DEPT-PRD,Senior Statistical Programmer,L3,Full-Time,2023-10-30,,Active,32.0,144000.0,160,24.0,0,0
+EMP-0118,Caleb Nguyen,DEPT-CLS,Senior Product Analyst,L3,Full-Time,2023-11-17,,Active,31.4,135500.0,160,24.0,0,0
+EMP-0119,Tara Foster,DEPT-FIN,Lead Engineering Manager,L4,Full-Time,2023-03-19,,Active,39.4,162500.0,160,28.0,0,0
+EMP-0120,Aarav Kim,DEPT-POP,Associate Analyst,L1,Full-Time,2024-11-13,,Active,19.5,76000.0,160,12.0,0,0
+EMP-0121,Priya Reed,DEPT-ENG,Financial Data Analyst,L2,Full-Time,2023-03-10,,Active,39.7,113000.0,160,18.0,1,2
+EMP-0122,Logan Chen,DEPT-CDS,Senior Statistical Programmer,L3,Full-Time,2023-03-10,,Active,39.7,147000.0,160,24.0,1,1
+EMP-0123,Clara Carter,DEPT-PRD,Senior Product Analyst,L3,Full-Time,2022-10-08,,Active,44.7,132500.0,160,24.0,1,1
+EMP-0124,Adrian Kulkarni,DEPT-CLS,Lead Engineering Manager,L4,Full-Time,2022-04-24,,Active,50.2,181500.0,160,28.0,1,1
+EMP-0125,Ananya Silva,DEPT-FIN,Associate Analyst,L1,Full-Time,2023-11-14,,Active,31.5,73000.0,160,12.0,1,2
+EMP-0126,Mason Rao,DEPT-POP,Junior Payroll Specialist,L1,Full-Time,2024-08-29,,Active,22.0,66000.0,160,12.0,1,1
+EMP-0127,Meera Morgan,DEPT-ENG,Senior Statistical Programmer,L3,Full-Time,2022-04-03,,Active,50.9,146000.0,160,24.0,1,1
+EMP-0128,Devon Verma,DEPT-CDS,Senior Product Analyst,L3,Full-Time,2022-11-26,,Active,43.1,124500.0,160,24.0,1,1
+EMP-0129,Sofia Brooks,DEPT-PRD,Lead Engineering Manager,L4,Full-Time,2021-08-27,,Active,58.1,172000.0,160,28.0,1,1
+EMP-0130,Rohan Joshi,DEPT-CLS,Associate Analyst,L1,Full-Time,2024-06-20,,Active,24.3,79500.0,160,12.0,1,1
+EMP-0131,Iris Sharma,DEPT-FIN,Junior Payroll Specialist,L1,Full-Time,2024-05-21,,Active,25.3,65000.0,160,12.0,1,1
+EMP-0132,Julian Nair,DEPT-POP,Client Implementation Specialist,L2,Full-Time,2024-04-14,,Active,26.5,94000.0,160,18.0,1,1
+EMP-0133,Maya Rivera,DEPT-ENG,Senior Product Analyst,L3,Full-Time,2022-12-06,2026-04-28,Separated,40.7,137000.0,160,24.0,1,3
+EMP-0134,Lucas Desai,DEPT-CDS,Lead Engineering Manager,L4,Full-Time,2022-07-24,,Active,47.2,176000.0,160,28.0,1,3
+EMP-0135,Kavya Patel,DEPT-PRD,Associate Analyst,L1,Full-Time,2023-12-15,,Active,30.5,74000.0,160,12.0,1,1
+EMP-0136,Isaac Mehta,DEPT-CLS,Junior Payroll Specialist,L1,Full-Time,2024-09-29,,Active,21.0,65500.0,160,12.0,1,2
+EMP-0137,Nora Price,DEPT-FIN,Client Implementation Specialist,L2,Full-Time,2023-02-28,,Active,40.0,106500.0,160,18.0,1,1
+EMP-0138,Ethan Kapoor,DEPT-POP,Software Engineer,L2,Full-Time,2022-09-05,,Active,45.8,104000.0,160,18.0,1,2
+EMP-0139,Nadia Hayes,DEPT-ENG,Lead Engineering Manager,L4,Full-Time,2023-01-20,2026-03-28,Separated,38.2,192000.0,160,28.0,0,0
+EMP-0140,Nathan Iyer,DEPT-CDS,Associate Analyst,L1,Full-Time,2024-10-20,,Active,20.3,82500.0,160,12.0,0,0
+EMP-0141,Sana Bennett,DEPT-PRD,Junior Payroll Specialist,L1,Full-Time,2024-09-26,,Active,21.1,84000.0,160,12.0,0,0
+EMP-0142,Noah Nguyen,DEPT-CLS,Client Implementation Specialist,L2,Full-Time,2024-03-15,2026-03-28,Separated,24.4,96000.0,160,18.0,0,0
+EMP-0143,Elena Foster,DEPT-FIN,Software Engineer,L2,Full-Time,2024-09-04,,Active,21.8,92500.0,160,18.0,0,0
+EMP-0144,Owen Kim,DEPT-POP,Financial Data Analyst,L2,Full-Time,2025-02-10,,Active,16.6,96500.0,160,18.0,0,0
+EMP-0145,Leah Reed,DEPT-ENG,Associate Analyst,L1,Full-Time,2025-04-21,,Active,14.3,87000.0,160,12.0,0,0
+EMP-0146,Liam Chen,DEPT-CDS,Junior Payroll Specialist,L1,Full-Time,2025-06-11,,Active,12.6,75500.0,160,12.0,0,0
+EMP-0147,Zoe Carter,DEPT-PRD,Client Implementation Specialist,L2,Full-Time,2024-08-05,2026-03-28,Separated,19.7,110500.0,160,18.0,0,0
+EMP-0148,Caleb Kulkarni,DEPT-CLS,Software Engineer,L2,Full-Time,2024-05-30,,Active,25.0,108500.0,160,18.0,0,0
+EMP-0149,Tara Silva,DEPT-FIN,Financial Data Analyst,L2,Full-Time,2024-05-03,,Active,25.9,83000.0,160,18.0,0,0
+EMP-0150,Aarav Rao,DEPT-POP,Senior Statistical Programmer,L3,Full-Time,2024-02-05,2026-03-28,Separated,25.7,115500.0,160,24.0,0,0
+EMP-0151,Priya Morgan,DEPT-ENG,Junior Payroll Specialist,L1,Full-Time,2024-03-12,,Active,27.6,79500.0,160,12.0,1,1
+EMP-0152,Logan Verma,DEPT-CDS,Client Implementation Specialist,L2,Full-Time,2022-04-06,,Active,50.8,109000.0,160,18.0,1,2
+EMP-0153,Clara Brooks,DEPT-PRD,Software Engineer,L2,Full-Time,2022-03-28,,Active,51.1,110000.0,160,18.0,1,2
+EMP-0154,Adrian Joshi,DEPT-CLS,Financial Data Analyst,L2,Full-Time,2022-04-21,,Active,50.3,110500.0,160,18.0,1,2
+EMP-0155,Ananya Sharma,DEPT-FIN,Senior Statistical Programmer,L3,Full-Time,2023-07-22,,Active,35.3,118500.0,160,24.0,1,1
+EMP-0156,Mason Nair,DEPT-POP,Senior Product Analyst,L3,Full-Time,2021-12-15,2026-04-28,Separated,52.4,119000.0,160,24.0,1,1
+EMP-0157,Meera Rivera,DEPT-ENG,Client Implementation Specialist,L2,Full-Time,2022-08-12,,Active,46.6,122000.0,160,18.0,1,1
+EMP-0158,Devon Desai,DEPT-CDS,Software Engineer,L2,Full-Time,2024-03-15,,Active,27.5,110000.0,160,18.0,1,1
+EMP-0159,Sofia Patel,DEPT-PRD,Financial Data Analyst,L2,Full-Time,2022-04-30,,Active,50.0,106500.0,160,18.0,1,2
+EMP-0160,Rohan Mehta,DEPT-CLS,Senior Statistical Programmer,L3,Full-Time,2023-01-11,,Active,41.6,118000.0,160,24.0,1,2
+EMP-0161,Iris Price,DEPT-FIN,Senior Product Analyst,L3,Full-Time,2021-01-29,,Active,65.0,139500.0,160,24.0,1,3
+EMP-0162,Julian Kapoor,DEPT-POP,Lead Engineering Manager,L4,Full-Time,2020-10-02,,Active,68.9,166000.0,160,28.0,1,3
+EMP-0163,Maya Hayes,DEPT-ENG,Software Engineer,L2,Full-Time,2023-07-12,,Active,35.6,112500.0,160,18.0,1,1
+EMP-0164,Lucas Iyer,DEPT-CDS,Financial Data Analyst,L2,Full-Time,2022-10-15,,Active,44.5,112000.0,160,18.0,1,1
+EMP-0165,Kavya Bennett,DEPT-PRD,Senior Statistical Programmer,L3,Full-Time,2021-07-30,,Active,59.0,132000.0,160,24.0,1,2
+EMP-0166,Isaac Nguyen,DEPT-CLS,Senior Product Analyst,L3,Full-Time,2023-07-31,,Active,35.0,144500.0,160,24.0,1,1
+EMP-0167,Nora Foster,DEPT-FIN,Lead Engineering Manager,L4,Full-Time,2022-10-02,,Active,44.9,154000.0,160,28.0,1,2
+EMP-0168,Ethan Kim,DEPT-POP,Associate Analyst,L1,Full-Time,2023-09-03,2026-03-28,Separated,30.8,62000.0,160,12.0,1,1
+EMP-0169,Nadia Reed,DEPT-ENG,Financial Data Analyst,L2,Full-Time,2024-10-18,2026-05-28,Separated,19.3,118000.0,160,18.0,0,0
+EMP-0170,Nathan Chen,DEPT-CDS,Senior Statistical Programmer,L3,Full-Time,2024-04-08,,Active,26.7,154000.0,160,24.0,0,0
+EMP-0171,Sana Carter,DEPT-PRD,Senior Product Analyst,L3,Full-Time,2024-05-24,,Active,25.2,124000.0,160,24.0,0,0
+EMP-0172,Noah Kulkarni,DEPT-CLS,Lead Engineering Manager,L4,Full-Time,2023-07-09,,Active,35.7,159000.0,160,28.0,0,0
+EMP-0173,Elena Silva,DEPT-FIN,Associate Analyst,L1,Full-Time,2025-05-09,,Active,13.7,71000.0,160,12.0,0,0
+EMP-0174,Owen Rao,DEPT-POP,Junior Payroll Specialist,L1,Full-Time,2025-03-15,,Active,15.5,69500.0,160,12.0,0,0
+EMP-0175,Leah Morgan,DEPT-ENG,Senior Statistical Programmer,L3,Full-Time,2024-07-24,,Active,23.2,155000.0,160,24.0,0,0
+EMP-0176,Liam Verma,DEPT-CDS,Senior Product Analyst,L3,Full-Time,2023-09-27,2026-04-28,Separated,31.0,124000.0,160,24.0,0,0
+EMP-0177,Zoe Brooks,DEPT-PRD,Lead Engineering Manager,L4,Full-Time,2024-02-27,2026-04-28,Separated,26.0,176500.0,160,28.0,0,0
+EMP-0178,Caleb Joshi,DEPT-CLS,Associate Analyst,L1,Full-Time,2024-09-26,2026-05-28,Separated,20.0,73500.0,160,12.0,0,0
+EMP-0179,Tara Sharma,DEPT-FIN,Junior Payroll Specialist,L1,Full-Time,2025-06-02,,Active,12.9,67500.0,160,12.0,0,0
+EMP-0180,Aarav Nair,DEPT-POP,Client Implementation Specialist,L2,Full-Time,2024-05-27,,Active,25.1,97000.0,160,18.0,0,0
